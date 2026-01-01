@@ -100,12 +100,9 @@ export function Footer({ onPrivacyClick, onTermsClick }: FooterProps) {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">
+        <div className="pt-8 border-t border-border">
+          <p className="text-sm text-muted-foreground text-center">
             © {new Date().getFullYear()} GoRelay. All rights reserved.
-          </p>
-          <p className="text-sm text-muted-foreground">
-            Built for contractors, by contractors.
           </p>
         </div>
       </div>
