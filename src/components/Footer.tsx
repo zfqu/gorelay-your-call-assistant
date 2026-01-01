@@ -1,7 +1,28 @@
 import logoLight from "@/assets/logo-light.png";
 import { Mail } from "lucide-react";
 
-export function Footer() {
+interface FooterProps {
+  onPrivacyClick?: () => void;
+  onTermsClick?: () => void;
+}
+
+export function Footer({ onPrivacyClick, onTermsClick }: FooterProps) {
+  const handlePrivacyClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    onPrivacyClick?.();
+    setTimeout(() => {
+      document.getElementById("privacy")?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  };
+
+  const handleTermsClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    onTermsClick?.();
+    setTimeout(() => {
+      document.getElementById("terms")?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  };
+
   return (
     <footer className="section-padding border-t border-border">
       <div className="container-wide mx-auto">
@@ -58,12 +79,20 @@ export function Footer() {
             <h4 className="font-semibold text-foreground mb-4">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a
+                  href="#privacy"
+                  onClick={handlePrivacyClick}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+                >
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a
+                  href="#terms"
+                  onClick={handleTermsClick}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+                >
                   Terms of Service
                 </a>
               </li>

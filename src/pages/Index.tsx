@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { Problem } from "@/components/Problem";
@@ -13,6 +14,9 @@ import { PrivacyPolicy, TermsOfService } from "@/components/PrivacyTerms";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
+  const [showPrivacy, setShowPrivacy] = useState(false);
+  const [showTerms, setShowTerms] = useState(false);
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -27,10 +31,10 @@ const Index = () => {
         <FAQ />
         <ContactForm />
         <Compliance />
-        <PrivacyPolicy />
-        <TermsOfService />
+        {showPrivacy && <PrivacyPolicy />}
+        {showTerms && <TermsOfService />}
       </main>
-      <Footer />
+      <Footer onPrivacyClick={() => setShowPrivacy(true)} onTermsClick={() => setShowTerms(true)} />
     </div>
   );
 };
