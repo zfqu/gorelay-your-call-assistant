@@ -28,9 +28,8 @@ export function Footer({ onPrivacyClick, onTermsClick }: FooterProps) {
       <div className="container-wide mx-auto">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-1 mb-4">
-              <span className="text-xl font-bold text-foreground">Go</span>
-              <img src={logoLight} alt="GoRelay" className="h-8 w-auto" />
+            <div className="flex items-center mb-4">
+              <img src={logoLight} alt="Relay" className="h-8 w-auto" />
             </div>
             <p className="text-muted-foreground text-sm max-w-md mb-4">
               Voice AI receptionist for home service contractors. Never miss a call. Never miss a job.
@@ -102,7 +101,7 @@ export function Footer({ onPrivacyClick, onTermsClick }: FooterProps) {
 
         <div className="pt-8 border-t border-border">
           <p className="text-sm text-muted-foreground text-center">
-            © {new Date().getFullYear()} GoRelay. All rights reserved.
+            © {new Date().getFullYear()} Relay. All rights reserved.
           </p>
         </div>
       </div>

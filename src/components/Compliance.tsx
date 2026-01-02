@@ -1,4 +1,4 @@
-import { Shield, MessageSquareOff, Lock, Ban } from "lucide-react";
+import { Shield, MessageSquareOff, Lock } from "lucide-react";
 
 const items = [
   {
@@ -12,10 +12,6 @@ const items = [
   {
     icon: Lock,
     text: "We collect only information needed to handle service requests.",
-  },
-  {
-    icon: Ban,
-    text: "Opt-out support: customers can reply STOP at any time.",
   },
 ];
 

@@ -17,9 +17,8 @@ export function Navigation() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="container-wide mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="flex items-center gap-1">
-            <span className="text-xl font-bold text-foreground">Go</span>
-            <img src={logoLight} alt="GoRelay" className="h-8 w-auto" />
+          <a href="#" className="flex items-center">
+            <img src={logoLight} alt="Relay" className="h-8 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
