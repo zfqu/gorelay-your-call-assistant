@@ -32,7 +32,7 @@ export function Solution() {
             Never miss a call. <span className="gradient-text">Never miss a job.</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            GoRelay handles your calls professionally, 24/7, so you can focus on what you do best.
+            Relay handles your calls professionally, 24/7, so you can focus on what you do best.
           </p>
         </div>
 
