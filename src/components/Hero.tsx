@@ -8,7 +8,7 @@ export function Hero() {
         <div className="animate-fade-up">
           <p className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-sm font-medium mb-6">
             <Phone className="h-4 w-4" />
-            Built for local 1–5 truck home contractors in Utah
+            Built for Utah's 1–5 truck home service contractors
           </p>
           
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
