@@ -10,7 +10,7 @@ const steps = [
   {
     icon: Bot,
     number: "2",
-    title: "GoRelay triages + captures details",
+    title: "Relay triages + captures details",
     description: "Our AI answers professionally, asks the right questions, and classifies urgency.",
   },
   {

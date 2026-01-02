@@ -18,7 +18,7 @@ export function Hero() {
           </h1>
           
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-            GoRelay answers every call 24/7, triages emergencies, and texts you the details — so you can stay focused on the job.
+            Relay answers every call 24/7, triages emergencies, and texts you the details — so you can stay focused on the job.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">

@@ -55,7 +55,7 @@ export function ContactForm() {
               Thanks for reaching out!
             </h2>
             <p className="text-muted-foreground">
-              We'll reach out shortly to discuss how GoRelay can help your business.
+              We'll reach out shortly to discuss how Relay can help your business.
             </p>
           </div>
         </div>
@@ -71,7 +71,7 @@ export function ContactForm() {
             Request a demo
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            See how GoRelay works for your business. We'll have you set up in under an hour.
+            See how Relay works for your business. We'll have you set up in under an hour.
           </p>
         </div>
 

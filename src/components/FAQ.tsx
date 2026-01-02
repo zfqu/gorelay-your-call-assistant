@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "Does it book appointments?",
     answer:
-      "GoRelay captures all the details and confirms next steps with the customer. Calendar integration for direct booking is available as an optional add-on.",
+      "Relay captures all the details and confirms next steps with the customer. Calendar integration for direct booking is available as an optional add-on.",
   },
   {
     question: "What happens with emergencies?",
@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "Will it work after hours?",
     answer:
-      "Absolutely. GoRelay answers 24/7/365 — nights, weekends, and holidays. That's when you need it most.",
+      "Absolutely. Relay answers 24/7/365 — nights, weekends, and holidays. That's when you need it most.",
   },
   {
     question: "Do customers need an app?",
@@ -42,7 +42,7 @@ export function FAQ() {
             Frequently asked questions
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to know about GoRelay.
+            Everything you need to know about Relay.
           </p>
         </div>
 
