@@ -13,7 +13,7 @@ export function PrivacyPolicy() {
             <div className="space-y-4">
               <h3 className="text-lg font-semibold text-foreground">Information We Collect</h3>
               <p>
-                GoRelay collects only the information necessary to provide our voice AI receptionist service. This includes:
+                Relay collects only the information necessary to provide our voice AI receptionist service. This includes:
               </p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Caller information provided during calls (name, phone number, address, service request details)</li>
@@ -38,7 +38,7 @@ export function PrivacyPolicy() {
             <div className="space-y-4">
               <h3 className="text-lg font-semibold text-foreground">SMS Messaging</h3>
               <p>
-                All SMS messages sent by GoRelay are transactional in nature, triggered by customer-initiated phone calls. We do not send marketing or promotional messages. Customers may opt out by replying STOP to any message.
+                All SMS messages sent by Relay are transactional in nature, triggered by customer-initiated phone calls. We do not send marketing or promotional messages. Customers may opt out by replying STOP to any message.
               </p>
             </div>
 
@@ -80,14 +80,14 @@ export function TermsOfService() {
             <div className="space-y-4">
               <h3 className="text-lg font-semibold text-foreground">Service Description</h3>
               <p>
-                GoRelay provides an AI-powered voice receptionist service for home service contractors. Our service answers inbound calls, triages requests, and delivers summaries via SMS.
+                Relay provides an AI-powered voice receptionist service for home service contractors. Our service answers inbound calls, triages requests, and delivers summaries via SMS.
               </p>
             </div>
 
             <div className="space-y-4">
               <h3 className="text-lg font-semibold text-foreground">Acceptable Use</h3>
               <p>
-                You agree to use GoRelay only for legitimate business purposes related to your home service contracting business. You will not use our service for:
+                You agree to use Relay only for legitimate business purposes related to your home service contracting business. You will not use our service for:
               </p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Sending unsolicited marketing messages</li>
