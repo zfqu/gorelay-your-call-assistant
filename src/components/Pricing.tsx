@@ -5,6 +5,11 @@ const tiers = [
   {
     name: "Starter",
     subtitle: "Solo / 1 truck",
+    pricing: {
+      setup: "$500",
+      monthly: "$99",
+      usage: "100 mins included, overage $0.5/min",
+    },
     features: [
       "24/7 call answering",
       "Emergency triage",
@@ -13,11 +18,16 @@ const tiers = [
       "Basic customization",
       "Live transfer (optional)",
     ],
-    cta: "Get Started",
+    cta: "Get Pricing",
   },
   {
     name: "Pro",
     subtitle: "2–5 trucks",
+    pricing: {
+      setup: "$500",
+      monthly: "$299",
+      usage: "100 mins included, overage $0.5/min",
+    },
     features: [
       "Everything in Starter",
       "Customized workflows",
@@ -38,7 +48,7 @@ export function Pricing() {
             Simple, transparent pricing
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Pricing depends on call volume. We'll quote in 10 minutes.
+            No contract, no hassle, cancel anytime.
           </p>
         </div>
 
@@ -61,10 +71,19 @@ export function Pricing() {
                 <h3 className="text-2xl font-bold text-foreground">{tier.name}</h3>
                 <p className="text-muted-foreground">{tier.subtitle}</p>
               </div>
-              <div className="text-center mb-6">
-                <p className="text-sm text-muted-foreground">
-                  Setup + monthly + usage
-                </p>
+              <div className="space-y-2 mb-6 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">One-time setup:</span>
+                  <span className="font-semibold text-foreground">{tier.pricing.setup}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Monthly:</span>
+                  <span className="font-semibold text-foreground">{tier.pricing.monthly}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Usage:</span>
+                  <span className="font-semibold text-foreground text-right">{tier.pricing.usage}</span>
+                </div>
               </div>
               <ul className="space-y-3 mb-8">
                 {tier.features.map((feature, featureIndex) => (
