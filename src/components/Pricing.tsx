@@ -50,7 +50,7 @@ export function Pricing() {
             Simple, transparent pricing
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            No contract, no hassle, cancel anytime.
+            No contract, no commitment, cancel anytime.
           </p>
         </div>
 
