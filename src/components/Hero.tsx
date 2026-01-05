@@ -21,6 +21,14 @@ export function Hero() {
             Relay answers every call 24/7, triages emergencies, and texts you the details — so you can stay focused on the job.
           </p>
           
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
+            {["No dashboard", "No CRM", "No training", "Works within your phone"].map((item) => (
+              <span key={item} className="px-3 py-1.5 rounded-full bg-secondary text-secondary-foreground text-sm font-medium">
+                {item}
+              </span>
+            ))}
+          </div>
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <a href="#contact">
               <Button variant="hero" className="w-full sm:w-auto">
