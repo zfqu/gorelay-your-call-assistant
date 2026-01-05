@@ -8,7 +8,8 @@ const tiers = [
     pricing: {
       setup: "$500",
       monthly: "$99",
-      usage: "100 mins included, overage $0.5/min",
+      usageLine1: "100 mins included",
+      usageLine2: "overage $0.5/min",
     },
     features: [
       "24/7 call answering",
@@ -26,7 +27,8 @@ const tiers = [
     pricing: {
       setup: "$500",
       monthly: "$299",
-      usage: "100 mins included, overage $0.5/min",
+      usageLine1: "100 mins included",
+      usageLine2: "overage $0.5/min",
     },
     features: [
       "Everything in Starter",
@@ -80,9 +82,12 @@ export function Pricing() {
                   <span className="text-muted-foreground">Monthly:</span>
                   <span className="font-semibold text-foreground">{tier.pricing.monthly}</span>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between items-start">
                   <span className="text-muted-foreground">Usage:</span>
-                  <span className="font-semibold text-foreground text-right">{tier.pricing.usage}</span>
+                  <span className="font-semibold text-foreground text-right">
+                    {tier.pricing.usageLine1}<br />
+                    {tier.pricing.usageLine2}
+                  </span>
                 </div>
               </div>
               <ul className="space-y-3 mb-8">
