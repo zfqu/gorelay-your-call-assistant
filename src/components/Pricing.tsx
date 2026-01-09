@@ -6,8 +6,8 @@ const tiers = [
     name: "Starter",
     subtitle: "Solo / 1 truck",
     pricing: {
-      setup: "$500",
-      monthly: "$99",
+    setup: "$249",
+    monthly: "$99",
       usageLine1: "100 mins included",
       usageLine2: "overage $0.5/min",
     },
@@ -25,8 +25,8 @@ const tiers = [
     name: "Pro",
     subtitle: "2–5 trucks",
     pricing: {
-      setup: "$500",
-      monthly: "$299",
+    setup: "$249",
+    monthly: "$299",
       usageLine1: "100 mins included",
       usageLine2: "overage $0.5/min",
     },
