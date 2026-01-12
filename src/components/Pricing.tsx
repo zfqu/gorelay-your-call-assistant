@@ -18,6 +18,7 @@ const tiers = [
       "Customer confirmation texts",
       "Basic customization",
       "Live transfer (optional)",
+      "Monthly customer support",
     ],
     cta: "Get Pricing",
   },
