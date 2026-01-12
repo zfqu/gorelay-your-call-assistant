@@ -19,7 +19,7 @@ const faqs = [
   {
     question: "Can I keep my existing phone number?",
     answer:
-      "Yes! We can forward calls from your current number, or port it over later if you prefer. Your customers never need to dial a new number.",
+      "Yes, you can simply forward calls from your cellphone, landline, or VoIP number to Relay voice AI receptionist. Your customers never need to dial a new number.",
   },
   {
     question: "Will it work after hours?",
