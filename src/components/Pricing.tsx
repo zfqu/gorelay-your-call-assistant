@@ -36,6 +36,8 @@ const tiers = [
       "Customized workflows",
       "Multiple phone numbers",
       "Priority support",
+      "Customized integrations",
+      "Dual trade (plumbing and HVAC) support",
     ],
     cta: "Get Pricing",
     popular: true,
