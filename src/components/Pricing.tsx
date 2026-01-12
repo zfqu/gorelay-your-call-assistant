@@ -37,7 +37,7 @@ const tiers = [
       "Multiple phone numbers",
       "Priority support",
       "Customized integrations",
-      "Dual trade (plumbing and HVAC) support",
+      "Dual trade (plumbing and HVAC) support (optional)",
     ],
     cta: "Get Pricing",
     popular: true,
