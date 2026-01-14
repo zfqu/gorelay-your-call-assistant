@@ -7,6 +7,11 @@ const useCases = [
     description: "Emergency triage + fast callback capture for burst pipes, leaks, and water heater issues.",
   },
   {
+    icon: Building,
+    title: "Restoration Service",
+    description: "Capture water damage, fire, and mold emergencies with priority escalation.",
+  },
+  {
     icon: Wind,
     title: "HVAC",
     description: "Handle A/C emergencies in summer and heating issues in winter. 24/7 coverage.",
@@ -15,11 +20,6 @@ const useCases = [
     icon: Zap,
     title: "Electrician",
     description: "Capture electrical emergencies safely with proper priority escalation.",
-  },
-  {
-    icon: Building,
-    title: "Restoration Service",
-    description: "Capture water damage, fire, and mold emergencies with priority escalation.",
   },
 ];
 
