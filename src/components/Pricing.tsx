@@ -43,13 +43,10 @@ const tiers = [
     popular: true,
   },
   {
-    name: "Custom",
+    name: "Enterprise",
     subtitle: "6–10 trucks",
     pricing: {
-      setup: "Custom",
-      monthly: "Custom",
-      usageLine1: "Volume-based",
-      usageLine2: "pricing available",
+      custom: true,
     },
     features: [
       "Everything in Pro",
@@ -95,23 +92,29 @@ export function Pricing() {
                 <h3 className="text-2xl font-bold text-foreground">{tier.name}</h3>
                 <p className="text-muted-foreground">{tier.subtitle}</p>
               </div>
-              <div className="space-y-2 mb-6 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">One-time setup:</span>
-                  <span className="font-semibold text-foreground">{tier.pricing.setup}</span>
+              {'custom' in tier.pricing ? (
+                <div className="text-center mb-6">
+                  <span className="text-3xl font-bold text-foreground">Custom</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Monthly:</span>
-                  <span className="font-semibold text-foreground">{tier.pricing.monthly}</span>
+              ) : (
+                <div className="space-y-2 mb-6 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">One-time setup:</span>
+                    <span className="font-semibold text-foreground">{tier.pricing.setup}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Monthly:</span>
+                    <span className="font-semibold text-foreground">{tier.pricing.monthly}</span>
+                  </div>
+                  <div className="flex justify-between items-start">
+                    <span className="text-muted-foreground">Usage:</span>
+                    <span className="font-semibold text-foreground text-right">
+                      {tier.pricing.usageLine1}<br />
+                      {tier.pricing.usageLine2}
+                    </span>
+                  </div>
                 </div>
-                <div className="flex justify-between items-start">
-                  <span className="text-muted-foreground">Usage:</span>
-                  <span className="font-semibold text-foreground text-right">
-                    {tier.pricing.usageLine1}<br />
-                    {tier.pricing.usageLine2}
-                  </span>
-                </div>
-              </div>
+              )}
               <ul className="space-y-3 mb-8">
                 {tier.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start gap-3">
