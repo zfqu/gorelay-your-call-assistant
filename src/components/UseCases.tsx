@@ -18,8 +18,8 @@ const useCases = [
   },
   {
     icon: Building,
-    title: "Property Management",
-    description: "Multi-unit triage for maintenance requests and tenant emergencies.",
+    title: "Restoration Service",
+    description: "Capture water damage, fire, and mold emergencies with priority escalation.",
   },
 ];
 

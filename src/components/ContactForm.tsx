@@ -17,7 +17,7 @@ const tradeTypes = [
   "HVAC",
   "Electrical",
   "General Contractor",
-  "Property Management",
+  "Restoration Service",
   "Other",
 ];
 
