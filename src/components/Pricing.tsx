@@ -7,7 +7,7 @@ const tiers = [
     subtitle: "Solo / 1 truck",
     pricing: {
       setup: "$499",
-    monthly: "$99",
+      monthly: "$99",
       usageLine1: "100 mins included",
       usageLine2: "overage $0.5/min",
     },
@@ -26,8 +26,8 @@ const tiers = [
     name: "Pro",
     subtitle: "2–5 trucks",
     pricing: {
-    setup: "$499",
-    monthly: "$299",
+      setup: "$499",
+      monthly: "$299",
       usageLine1: "100 mins included",
       usageLine2: "overage $0.5/min",
     },
@@ -41,6 +41,25 @@ const tiers = [
     ],
     cta: "Get Pricing",
     popular: true,
+  },
+  {
+    name: "Custom",
+    subtitle: "6–10 trucks",
+    pricing: {
+      setup: "Custom",
+      monthly: "Custom",
+      usageLine1: "Volume-based",
+      usageLine2: "pricing available",
+    },
+    features: [
+      "Everything in Pro",
+      "Customized solution for higher volume",
+      "Dedicated account manager",
+      "Custom integrations & workflows",
+      "Multi-trade support",
+      "Volume discounts",
+    ],
+    cta: "Contact Us",
   },
 ];
 
@@ -57,7 +76,7 @@ export function Pricing() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {tiers.map((tier, index) => (
             <div
               key={index}
