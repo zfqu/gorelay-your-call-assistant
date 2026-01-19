@@ -18,7 +18,7 @@ export function PrivacyPolicy() {
               <ul className="list-disc pl-6 space-y-2">
                 <li>Caller information provided during calls (name, phone number, address, service request details)</li>
                 <li>Business contact information you provide during signup</li>
-                <li>Call recordings and transcripts for service quality purposes</li>
+                <li>Call recordings and transcripts for service quality and accuracy purposes</li>
               </ul>
             </div>
 
@@ -29,7 +29,7 @@ export function PrivacyPolicy() {
               </p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Provide call answering and message relay services</li>
-                <li>Send transactional SMS messages related to customer-initiated calls</li>
+                <li>Send transactional SMS messages related to customer-initiated service requests</li>
                 <li>Improve our service quality and AI accuracy</li>
                 <li>Communicate with you about your account</li>
               </ul>
@@ -38,14 +38,33 @@ export function PrivacyPolicy() {
             <div className="space-y-4">
               <h3 className="text-lg font-semibold text-foreground">SMS Messaging</h3>
               <p>
-                All SMS messages sent by Relay are transactional in nature, triggered by customer-initiated phone calls. We do not send marketing or promotional messages. Customers may opt out by replying STOP to any message.
+                Relay sends SMS messages only in connection with customer-initiated interactions.
+              </p>
+              <p>
+                🔧 Customers initiate contact by calling a business that uses Relay. During the call, customers are informed that they may receive SMS messages related to their request (such as confirmations or follow-up notifications). By continuing the call and providing their phone number, customers provide verbal consent to receive these transactional messages.
+              </p>
+              <p>
+                All SMS messages are transactional in nature. Relay does not send marketing or promotional messages.
+              </p>
+              <p>
+                🔧 Message and data rates may apply.
+              </p>
+              <p>
+                Customers may opt out of SMS messages at any time by replying STOP. Customers may reply HELP for assistance.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-lg font-semibold text-foreground">Data Sharing</h3>
+              <p>
+                🔧 Relay does not sell, rent, or share personal information or phone numbers for marketing or advertising purposes.
               </p>
             </div>
 
             <div className="space-y-4">
               <h3 className="text-lg font-semibold text-foreground">Data Security</h3>
               <p>
-                We implement industry-standard security measures to protect your data, including encryption in transit and at rest, secure access controls, and regular security audits.
+                We implement industry-standard security measures to protect your data, including encryption in transit and at rest, secure access controls, and regular security reviews.
               </p>
             </div>
 
