@@ -29,6 +29,14 @@ export function Hero() {
             ))}
           </div>
 
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 dark:bg-amber-900/30 border border-amber-300 dark:border-amber-700 text-amber-800 dark:text-amber-200 text-sm font-medium mb-6">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-500 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+            </span>
+            Speed-to-lead feature (by SMS) coming soon
+          </div>
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <a href="#contact">
               <Button variant="hero" className="w-full sm:w-auto">
