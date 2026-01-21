@@ -1,15 +1,10 @@
-import { Wrench, Wind, Zap, Building } from "lucide-react";
+import { Wrench, Wind, Zap } from "lucide-react";
 
 const useCases = [
   {
     icon: Wrench,
     title: "Plumbing",
     description: "Emergency triage + fast callback capture for burst pipes, leaks, and water heater issues.",
-  },
-  {
-    icon: Building,
-    title: "Restoration Service",
-    description: "Capture water damage, fire, and mold emergencies with priority escalation.",
   },
   {
     icon: Wind,
