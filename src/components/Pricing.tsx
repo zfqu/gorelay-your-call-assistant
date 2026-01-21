@@ -14,7 +14,6 @@ const tiers = [
       "AI answers inbound calls when you're busy",
       "After-hours & overflow call handling",
       "Caller intent capture (job type, urgency, contact info)",
-      "SMS follow-up when calls are missed",
       "Call summaries sent to you",
     ],
     badges: [
@@ -30,7 +29,6 @@ const tiers = [
     description: "For businesses that want faster response & higher booking rates",
     pricing: {
       monthly: "$299",
-      note: "usage-based voice & messaging",
     },
     features: [
       "Everything in Starter, plus:",
