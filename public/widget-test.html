@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Relay AI Web Widget Demo</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #111827;
+      --card2: #0f172a;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #3b82f6;
+      --danger: #ef4444;
+      --ok: #22c55e;
+      --shadow: 0 20px 60px rgba(0,0,0,.5);
+      --radius: 16px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: linear-gradient(180deg, #0b0f19 0%, #050814 100%);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    .page {
+      max-width: 960px;
+      padding: 40px 20px;
+      margin: 0 auto;
+    }
+
+    .demo-card {
+      background: rgba(17,24,39,.6);
+      border: 1px solid rgba(148,163,184,.2);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    /* Floating button */
+    .rw-fab {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 9999;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 999px;
+      padding: 14px 18px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 10px 30px rgba(59,130,246,.35);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .rw-fab:active { transform: translateY(1px); }
+    .rw-fab svg { width: 18px; height: 18px; }
+
+    /* Modal overlay */
+    .rw-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.55);
+      backdrop-filter: blur(6px);
+      z-index: 10000;
+      display: none;
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding: 18px;
+    }
+
+    .rw-modal {
+      width: min(420px, 100%);
+      background: rgba(17,24,39,.92);
+      border: 1px solid rgba(148,163,184,.25);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transform: translateY(10px);
+      opacity: 0;
+      transition: all .18s ease;
+    }
+
+    .rw-overlay.open { display: flex; }
+    .rw-overlay.open .rw-modal { transform: translateY(0); opacity: 1; }
+
+    .rw-header {
+      padding: 16px 16px 12px 16px;
+      background: rgba(15,23,42,.85);
+      border-bottom: 1px solid rgba(148,163,184,.18);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .rw-title {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .rw-title strong { font-size: 14px; letter-spacing: .2px; }
+    .rw-title span { font-size: 12px; color: var(--muted); }
+
+    .rw-close {
+      background: transparent;
+      border: 1px solid rgba(148,163,184,.25);
+      color: var(--text);
+      border-radius: 10px;
+      padding: 6px 10px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .rw-body { padding: 14px 16px 16px 16px; }
+
+    label { display:block; font-size: 12px; color: var(--muted); margin: 10px 0 6px; }
+    input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(148,163,184,.25);
+      background: rgba(2,6,23,.5);
+      color: var(--text);
+      outline: none;
+    }
+    input:focus { border-color: rgba(59,130,246,.7); box-shadow: 0 0 0 4px rgba(59,130,246,.18); }
+
+    .rw-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .rw-actions {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .rw-send {
+      background: var(--accent);
+      border: none;
+      color: white;
+      font-weight: 800;
+      padding: 12px 14px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    .rw-send[disabled] {
+      opacity: .6;
+      cursor: not-allowed;
+    }
+
+    .rw-status {
+      font-size: 12px;
+      color: var(--muted);
+      min-height: 18px;
+    }
+    .rw-status.ok { color: var(--ok); }
+    .rw-status.err { color: var(--danger); }
+
+    .rw-footnote {
+      margin-top: 10px;
+      font-size: 11px;
+      color: rgba(148,163,184,.85);
+      line-height: 1.35;
+    }
+
+    /* Turnstile container spacing */
+    #turnstile-container { margin-top: 12px; }
+  </style>
+
+  <!-- Cloudflare Turnstile -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+
+<body>
+  <div class="page">
+    <div class="demo-card">
+      <h1 style="margin:0 0 8px 0;">Relay AI Widget Demo</h1>
+      <p style="margin:0;color:var(--muted);">
+        Click <strong>Text us</strong> in the bottom-right to open the form. On submit, it posts to <code>/ingest/chat</code>.
+      </p>
+    </div>
+  </div>
+
+  <!-- Floating button -->
+  <button class="rw-fab" id="rw-open">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+    </svg>
+    Text us
+  </button>
+
+  <!-- Modal -->
+  <div class="rw-overlay" id="rw-overlay" role="dialog" aria-modal="true" aria-labelledby="rw-heading">
+    <div class="rw-modal">
+      <div class="rw-header">
+        <div class="rw-title">
+          <strong id="rw-heading">Text us</strong>
+          <span>We’ll text you back ASAP.</span>
+        </div>
+        <button class="rw-close" id="rw-close" aria-label="Close">Close</button>
+      </div>
+
+      <div class="rw-body">
+        <div class="rw-row">
+          <div>
+            <label for="rw-name">Name (optional)</label>
+            <input id="rw-name" placeholder="John" autocomplete="name" />
+          </div>
+          <div>
+            <label for="rw-phone">Phone</label>
+            <input id="rw-phone" placeholder="801-555-1234" autocomplete="tel" inputmode="tel" />
+          </div>
+        </div>
+
+        <!-- Turnstile -->
+        <div id="turnstile-container"></div>
+
+        <div class="rw-actions">
+          <button class="rw-send" id="rw-send" disabled>Send</button>
+          <div class="rw-status" id="rw-status"></div>
+        </div>
+
+        <div class="rw-footnote">
+          By texting, you agree to receive messages related to your request. Reply STOP to opt out.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ==========================
+    // CONFIG — set these 3 values
+    // ==========================
+    const WORKER_BASE_URL = "https://outbound.gorelay.ai"; // e.g. "https://your-worker.yourdomain.com" (leave "" for same-origin)
+    const SOURCE_KEY = "website-main";
+    const TURNSTILE_SITEKEY = "0x4AAAAAACNe2c5Cr6HikfRv4czYzq94qaI";
+
+    // ==========================
+    // Internals
+    // ==========================
+    const $open = document.getElementById("rw-open");
+    const $overlay = document.getElementById("rw-overlay");
+    const $close = document.getElementById("rw-close");
+    const $send = document.getElementById("rw-send");
+    const $status = document.getElementById("rw-status");
+    const $name = document.getElementById("rw-name");
+    const $phone = document.getElementById("rw-phone");
+
+    let turnstileToken = null;
+    let turnstileWidgetId = null;
+
+    function setStatus(msg, kind) {
+      $status.className = "rw-status" + (kind ? " " + kind : "");
+      $status.textContent = msg || "";
+    }
+
+    function openModal() {
+      $overlay.classList.add("open");
+      setStatus("", "");
+      // Render Turnstile only once when modal opens the first time
+      if (turnstileWidgetId === null) {
+        // wait for turnstile script to be ready
+        const timer = setInterval(() => {
+          if (window.turnstile && typeof window.turnstile.render === "function") {
+            clearInterval(timer);
+            renderTurnstile();
+          }
+        }, 50);
+      } else {
+        // reset token each open
+        resetTurnstile();
+      }
+    }
+
+    function closeModal() {
+      $overlay.classList.remove("open");
+      setStatus("", "");
+    }
+
+    function renderTurnstile() {
+      turnstileWidgetId = window.turnstile.render("#turnstile-container", {
+        sitekey: TURNSTILE_SITEKEY,
+        theme: "dark",
+        callback: (token) => {
+          turnstileToken = token;
+          $send.disabled = false;
+        },
+        "error-callback": () => {
+          turnstileToken = null;
+          $send.disabled = true;
+          setStatus("Turnstile failed to load. Please refresh.", "err");
+        },
+        "expired-callback": () => {
+          turnstileToken = null;
+          $send.disabled = true;
+          setStatus("Verification expired. Please verify again.", "err");
+        }
+      });
+    }
+
+    function resetTurnstile() {
+      try {
+        if (window.turnstile && turnstileWidgetId !== null) {
+          window.turnstile.reset(turnstileWidgetId);
+        }
+      } catch (_) {}
+      turnstileToken = null;
+      $send.disabled = true;
+    }
+
+    function uuidv4() {
+      // Simple UUIDv4 for submission_id
+      // (crypto.randomUUID is supported in modern browsers; fallback for older ones)
+      if (crypto && crypto.randomUUID) return crypto.randomUUID();
+      const s = ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+        (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+      );
+      return s;
+    }
+
+    async function send() {
+      const name = ($name.value || "").trim();
+      const phone = ($phone.value || "").trim();
+
+      if (!phone) {
+        setStatus("Please enter your phone number.", "err");
+        return;
+      }
+      if (!turnstileToken) {
+        setStatus("Please complete verification.", "err");
+        return;
+      }
+
+      $send.disabled = true;
+      setStatus("Sending…", "");
+
+      const payload = {
+        domain: window.location.hostname,
+        source_key: SOURCE_KEY,
+        turnstile_token: turnstileToken,
+        submission_id: uuidv4(),
+        name: name || undefined,
+        phone
+      };
+
+      try {
+        const res = await fetch(`${WORKER_BASE_URL}/ingest/chat`, {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+
+        const data = await res.json().catch(() => ({}));
+
+        if (!res.ok || !data.ok) {
+          const msg = data?.error ? `Error: ${data.error}` : `Request failed (${res.status})`;
+          setStatus(msg, "err");
+          resetTurnstile();
+          return;
+        }
+
+        setStatus("✅ Got it. We’ll text you shortly.", "ok");
+        // You can auto-close after success
+        setTimeout(() => closeModal(), 900);
+      } catch (e) {
+        setStatus("Network error. Please try again.", "err");
+        resetTurnstile();
+      }
+    }
+
+    // Events
+    $open.addEventListener("click", openModal);
+    $close.addEventListener("click", closeModal);
+    $overlay.addEventListener("click", (e) => {
+      if (e.target === $overlay) closeModal();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeModal();
+    });
+    $send.addEventListener("click", send);
+  </script>
+</body>
+</html>
