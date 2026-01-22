@@ -203,6 +203,31 @@ export function Pricing() {
             </div>
           ))}
         </div>
+
+        {/* 30-Day Pilot Disclaimer */}
+        <div className="mt-16 max-w-3xl mx-auto">
+          <div className="bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary/20 rounded-2xl p-8 text-center">
+            <h3 className="text-2xl font-bold text-foreground mb-4">
+              30-Day Pilot
+            </h3>
+            <div className="space-y-4 text-muted-foreground">
+              <p>
+                We're offering a limited 30-day pilot for local contractors (plumber, HVAC, electrician) who want to capture missed calls and respond to new leads instantly. <span className="font-semibold text-foreground">There is no charge during the 30 days pilot.</span>
+              </p>
+              <p>
+                This is not a self-serve trial. We work directly with a small number of businesses to make sure the system is set up correctly, monitor it and review together.
+              </p>
+              <p>
+                If you've been missing calls or slow to follow up on new leads, you may be a fit. If the system doesn't capture leads for you after 30 days, cancel it, no commitment.
+              </p>
+            </div>
+            <a href="#contact" className="inline-block mt-6">
+              <Button size="lg" className="px-8">
+                Request a Pilot
+              </Button>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
