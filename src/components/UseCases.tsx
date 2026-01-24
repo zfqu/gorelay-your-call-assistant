@@ -19,7 +19,7 @@ const useCases = [
   {
     icon: Sparkles,
     title: "Cleaning",
-    description: "Residential and commercial cleaning lead capture with scheduling and callback handling.",
+    description: "Residential and commercial cleaning lead capture with inbound voice AI.",
   },
 ];
 
