@@ -1,4 +1,4 @@
-import { Wrench, Wind, Zap } from "lucide-react";
+import { Wrench, Wind, Zap, Sparkles } from "lucide-react";
 
 const useCases = [
   {
@@ -15,6 +15,11 @@ const useCases = [
     icon: Zap,
     title: "Electrician",
     description: "Capture electrical emergencies safely with proper priority escalation.",
+  },
+  {
+    icon: Sparkles,
+    title: "Cleaning",
+    description: "Residential and commercial cleaning lead capture with scheduling and callback handling.",
   },
 ];
 
