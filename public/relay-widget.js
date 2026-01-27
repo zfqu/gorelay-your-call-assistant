@@ -13,7 +13,7 @@
   
     const cfg = {
       workerBaseUrl: (scriptEl?.dataset?.workerBaseUrl || "").trim() || "https://outbound.gorelay.ai",
-      sourceKey: (scriptEl?.dataset?.sourceKey || "").trim() || "website-main",
+      sourceKey: (scriptEl?.dataset?.sourceKey || "").trim() || "website-plumbing",
       turnstileSitekey: (scriptEl?.dataset?.turnstileSitekey || "").trim() || "",
       buttonText: (scriptEl?.dataset?.buttonText || "").trim() || "Text us",
       theme: (scriptEl?.dataset?.theme || "").trim() || "dark", // "dark" | "light" (Turnstile)
