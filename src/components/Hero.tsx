@@ -6,6 +6,10 @@ export function Hero() {
     <section className="pt-24 pb-16 sm:pt-32 sm:pb-24 section-padding">
       <div className="container-narrow mx-auto text-center">
         <div className="animate-fade-up">
+          <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+            Built for Utah small to mid-size trade owners
+          </div>
+          
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
             Stop losing jobs when
             <br />
@@ -24,7 +28,7 @@ export function Hero() {
             ))}
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="#contact">
               <Button variant="hero" className="w-full sm:w-auto">
                 Start a Free Pilot
@@ -37,10 +41,6 @@ export function Hero() {
               </Button>
             </a>
           </div>
-
-          <p className="text-sm text-muted-foreground max-w-xl mx-auto">
-            Built for local small plumbing, HVAC, electrical, cleaning and trade teams — no dashboards, no setup.
-          </p>
         </div>
       </div>
     </section>
