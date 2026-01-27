@@ -1,25 +1,25 @@
-import { PhoneOff, Moon, AlertTriangle, DollarSign } from "lucide-react";
+import { PhoneOff, Clock, Moon, UserX } from "lucide-react";
 
 const problems = [
   {
     icon: PhoneOff,
-    title: "Calls come in while you're on a job",
-    description: "Hands are dirty, tools in use — you can't answer.",
+    title: "Leads come in while you're on a job",
+    description: "You're focused on the work — calls and forms pile up.",
+  },
+  {
+    icon: Clock,
+    title: "Missed calls and web forms don't get answered fast enough",
+    description: "Every minute of delay costs you a potential customer.",
   },
   {
     icon: Moon,
-    title: "After-hours leads go to voicemail",
-    description: "By morning, they've already called your competitor.",
+    title: "After-hours calls go nowhere",
+    description: "Customers expect a response — even at night.",
   },
   {
-    icon: AlertTriangle,
-    title: "Emergencies need immediate escalation",
-    description: "A burst pipe at 2 AM can't wait until you check your messages.",
-  },
-  {
-    icon: DollarSign,
-    title: "Missed calls = lost revenue",
-    description: "Every unanswered call is money walking out the door.",
+    icon: UserX,
+    title: "One missed follow-up = one lost job",
+    description: "They've already called your competitor.",
   },
 ];
 
@@ -50,6 +50,10 @@ export function Problem() {
             </div>
           ))}
         </div>
+
+        <p className="text-center text-sm text-muted-foreground mt-8">
+          Most trade owners don't realize how many leads disappear silently.
+        </p>
       </div>
     </section>
   );
