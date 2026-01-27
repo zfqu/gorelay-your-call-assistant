@@ -31,9 +31,6 @@ export function Footer({ onPrivacyClick, onTermsClick }: FooterProps) {
             <div className="flex items-center mb-4">
               <img src={logoLight} alt="Relay" className="h-8 w-auto" />
             </div>
-            <p className="text-muted-foreground text-sm max-w-md mb-4">
-              Voice AI receptionist for home service contractors. Never miss a call. Never miss a job.
-            </p>
             <a
               href="mailto:support@gorelay.ai"
               className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"

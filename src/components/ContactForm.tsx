@@ -21,12 +21,6 @@ const tradeTypes = [
   "Other",
 ];
 
-const callVolumes = [
-  "1-5 calls/day",
-  "5-15 calls/day",
-  "15-30 calls/day",
-  "30+ calls/day",
-];
 
 export function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -126,60 +120,31 @@ export function ContactForm() {
               </div>
             </div>
 
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <Label htmlFor="phone">Phone *</Label>
-                <Input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  placeholder="(555) 123-4567"
-                  required
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="email">Email *</Label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="john@abcplumbing.com"
-                  required
-                />
-              </div>
+            <div className="space-y-2">
+              <Label htmlFor="phone">Phone *</Label>
+              <Input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="(555) 123-4567"
+                required
+              />
             </div>
 
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <Label htmlFor="trade">Trade Type *</Label>
-                <Select name="trade" required>
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select trade" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {tradeTypes.map((trade) => (
-                      <SelectItem key={trade} value={trade.toLowerCase()}>
-                        {trade}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="volume">Approx. Calls/Day</Label>
-                <Select name="volume">
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select volume" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {callVolumes.map((volume) => (
-                      <SelectItem key={volume} value={volume.toLowerCase()}>
-                        {volume}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
+            <div className="space-y-2">
+              <Label htmlFor="trade">Trade Type *</Label>
+              <Select name="trade" required>
+                <SelectTrigger>
+                  <SelectValue placeholder="Select trade" />
+                </SelectTrigger>
+                <SelectContent>
+                  {tradeTypes.map((trade) => (
+                    <SelectItem key={trade} value={trade.toLowerCase()}>
+                      {trade}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
             </div>
 
             <div className="space-y-2">

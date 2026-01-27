@@ -52,11 +52,11 @@ export function ExampleMessages() {
             </p>
             <div className="sms-bubble-outgoing">
               <p className="text-sm">
-                Thanks for contacting ABC Plumbing. We got your request and will contact you shortly.
+                Thanks for contacting ABC Plumbing. How can we help you today?
               </p>
             </div>
             <p className="text-xs text-muted-foreground mt-3 italic">
-              Sets clear expectations and keeps the lead warm.
+              Capture leads intent and contact info, keep the lead warm.
             </p>
           </div>
         </div>
