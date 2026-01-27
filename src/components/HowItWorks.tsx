@@ -1,23 +1,23 @@
-import { Phone, Bot, MessageCircle, ArrowDown } from "lucide-react";
+import { Phone, MessageCircle, PhoneCall, ArrowDown } from "lucide-react";
 
 const steps = [
   {
     icon: Phone,
     number: "1",
-    title: "Customer calls your number",
-    description: "Your existing phone number works — no changes for your customers.",
-  },
-  {
-    icon: Bot,
-    number: "2",
-    title: "Relay triages + captures details",
-    description: "Our AI answers professionally, asks the right questions, and classifies urgency.",
+    title: "Customer calls or submits a form",
+    description: "A lead comes in through your phone line or website.",
   },
   {
     icon: MessageCircle,
+    number: "2",
+    title: "Relay sends an immediate SMS follow-up",
+    description: "Confirmation + callback expectations sent instantly.",
+  },
+  {
+    icon: PhoneCall,
     number: "3",
-    title: "You get an SMS summary",
-    description: "Instant text with caller info, issue, and priority. Call back or dispatch.",
+    title: "You call back when ready",
+    description: "The customer is already engaged and expecting your call.",
   },
 ];
 

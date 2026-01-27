@@ -1,25 +1,25 @@
-import { Phone, Filter, MessageSquare, CheckCircle } from "lucide-react";
+import { MessageSquare, FileText, Clock, Bell } from "lucide-react";
 
 const features = [
   {
-    icon: Phone,
-    title: "Answers inbound calls in your business voice",
-    description: "Professional, friendly, and personalized to your brand.",
-  },
-  {
-    icon: Filter,
-    title: "Classifies calls: Emergency / Urgent / Non-urgent",
-    description: "Smart triage so you know what needs attention first.",
-  },
-  {
     icon: MessageSquare,
-    title: "Live transfers + always texts details",
-    description: "Optional live transfer for emergencies, plus SMS summary every time.",
+    title: "Instantly texts customers when they miss a call",
+    description: "No more silent missed calls — customers know you're on it.",
   },
   {
-    icon: CheckCircle,
-    title: "Sends customer confirmation text",
-    description: "Customers know you got their message and when to expect a callback.",
+    icon: FileText,
+    title: "Sends immediate follow-up for website form submissions",
+    description: "Web leads get a response in seconds, not hours.",
+  },
+  {
+    icon: Clock,
+    title: "Sets clear callback expectations for customers",
+    description: "Customers know when to expect your call back.",
+  },
+  {
+    icon: Bell,
+    title: "Notifies you by SMS — no login required",
+    description: "Get lead details straight to your phone.",
   },
 ];
 
@@ -29,10 +29,10 @@ export function Solution() {
       <div className="container-wide mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Never miss a call. <span className="gradient-text">Never miss a job.</span>
+            Relay protects every lead — <span className="gradient-text">automatically.</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Relay handles your calls professionally, 24/7, so you can focus on what you do best.
+            It works alongside your existing phone system or CRM.
           </p>
         </div>
 

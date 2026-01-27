@@ -1,72 +1,48 @@
-import { Check, Zap, Clock } from "lucide-react";
+import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const tiers = [
   {
     name: "Starter",
-    subtitle: "Inbound Coverage",
-    description: "For contractors who never want missed customer calls",
-    pricing: {
-      monthly: "$149",
-      note: "plus usage-based voice minutes",
-    },
+    subtitle: "Leads Capture + Protection",
+    price: "$149",
     features: [
-      "AI answers inbound calls when you're busy",
-      "After-hours & overflow call handling",
-      "Caller intent capture (job type, urgency, contact info)",
-      "Call summaries sent to you",
+      "Website form → instant automatic SMS follow-up",
+      "Missed call → instant automatic SMS follow-up",
+      "Owner notification with lead details",
+      "Weekly summary",
     ],
-    badges: [
-      { label: "Live today", type: "live" },
-      { label: "No contract", type: "live" },
-    ],
-    footnote: "Usage-based voice minutes billed separately",
     cta: "Get Started",
+    color: "green",
   },
   {
     name: "Growth",
-    subtitle: "Lead Capture + Follow-Up",
-    description: "For businesses that want faster response & higher booking rates",
-    pricing: {
-      monthly: "$299",
-    },
+    subtitle: "Leads + Reputation",
+    price: "$249",
     features: [
       "Everything in Starter, plus:",
+      "On-site review request via SMS command",
+      "Trackable review links",
+      "One automatic reminder (if not clicked)",
+      "Weekly review summary",
     ],
-    upcomingFeatures: [
-      "Instant SMS response to web form leads and missed calls",
-      "Automated follow-up until the customer responds",
-    ],
-    additionalFeatures: [
-      "Priority handling for high-intent leads",
-      "Unified conversation history (calls + SMS)",
-    ],
-    badges: [
-      { label: "Outbound SMS automation rolling out", type: "coming" },
-      { label: "Early-access customers onboarded first", type: "coming" },
-    ],
-    cta: "Join Waitlist",
+    cta: "Get Started",
     popular: true,
+    color: "blue",
   },
   {
     name: "Pro",
-    subtitle: "Missed Call Recovery",
-    description: "For businesses that want zero lead leakage",
-    pricing: {
-      custom: true,
-      note: "early access",
-    },
+    subtitle: "Hands-Off Revenue",
+    price: "$349",
     features: [
-      "Missed-call detection",
-      "Automated call-back & SMS recovery",
-      "Appointment intent detection",
-      "Revenue tracking (leads recovered)",
+      "Everything in Growth, plus:",
+      "Inbound AI voice (after-hours or overflow)",
+      "Fallback handling when staff is not available",
+      "Smart call triage and routing",
+      "Owner notification with caller details",
     ],
-    badges: [
-      { label: "Pilot-only availability", type: "coming" },
-    ],
-    cta: "Contact Us",
-    limited: true,
+    cta: "Get Started",
+    color: "purple",
   },
 ];
 
@@ -89,7 +65,7 @@ export function Pricing() {
               key={index}
               className={`card-elevated p-8 relative flex flex-col ${
                 tier.popular ? "ring-2 ring-primary" : ""
-              } ${tier.limited ? "ring-2 ring-amber-500" : ""}`}
+              }`}
             >
               {tier.popular && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2">
@@ -98,41 +74,29 @@ export function Pricing() {
                   </span>
                 </div>
               )}
-              {tier.limited && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <span className="bg-amber-500 text-white text-xs font-medium px-3 py-1 rounded-full">
-                    Limited Access
-                  </span>
-                </div>
-              )}
+
+              {/* Tier color indicator */}
+              <div className={`w-3 h-3 rounded-full mb-4 ${
+                tier.color === "green" ? "bg-green-500" :
+                tier.color === "blue" ? "bg-blue-500" :
+                "bg-purple-500"
+              }`} />
               
-              <div className="text-center mb-4">
+              <div className="mb-4">
                 <h3 className="text-2xl font-bold text-foreground">{tier.name}</h3>
                 <p className="text-primary font-medium">{tier.subtitle}</p>
               </div>
-              
-              <p className="text-sm text-muted-foreground text-center mb-6">
-                {tier.description}
-              </p>
 
-              {'custom' in tier.pricing ? (
-                <div className="text-center mb-2">
-                  <span className="text-3xl font-bold text-foreground">Custom pricing</span>
-                  <p className="text-sm text-muted-foreground mt-1">{tier.pricing.note}</p>
-                </div>
-              ) : (
-                <div className="text-center mb-2">
-                  <span className="text-3xl font-bold text-foreground">{tier.pricing.monthly}</span>
-                  <span className="text-muted-foreground"> / month</span>
-                  <p className="text-sm text-muted-foreground mt-1">{tier.pricing.note}</p>
-                </div>
-              )}
+              <div className="mb-6">
+                <span className="text-3xl font-bold text-foreground">{tier.price}</span>
+                <span className="text-muted-foreground"> / month</span>
+              </div>
 
-              <div className="border-t border-border my-6"></div>
+              <div className="border-t border-border my-4"></div>
 
               <div className="flex-grow">
                 <p className="text-sm font-medium text-foreground mb-3">Includes</p>
-                <ul className="space-y-3 mb-4">
+                <ul className="space-y-3 mb-6">
                   {tier.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-3">
                       <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
@@ -140,57 +104,7 @@ export function Pricing() {
                     </li>
                   ))}
                 </ul>
-
-                {tier.upcomingFeatures && (
-                  <ul className="space-y-3 mb-4">
-                    {tier.upcomingFeatures.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start gap-3">
-                        <Zap className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
-                        <span className="text-sm text-foreground">
-                          {feature} <span className="text-xs text-amber-600 dark:text-amber-400">(coming soon)</span>
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-
-                {tier.additionalFeatures && (
-                  <ul className="space-y-3 mb-4">
-                    {tier.additionalFeatures.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start gap-3">
-                        <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-sm text-foreground">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
               </div>
-
-              {tier.badges && (
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {tier.badges.map((badge, badgeIndex) => (
-                    <span
-                      key={badgeIndex}
-                      className={`inline-flex items-center gap-1.5 text-xs font-medium px-2 py-1 rounded-full ${
-                        badge.type === "live"
-                          ? "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300"
-                          : "bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300"
-                      }`}
-                    >
-                      {badge.type === "live" ? (
-                        <Check className="h-3 w-3" />
-                      ) : (
-                        <Clock className="h-3 w-3" />
-                      )}
-                      {badge.label}
-                    </span>
-                  ))}
-                </div>
-              )}
-
-              {tier.footnote && (
-                <p className="text-xs text-muted-foreground mb-4">{tier.footnote}</p>
-              )}
 
               <a href="#contact" className="block mt-auto">
                 <Button
