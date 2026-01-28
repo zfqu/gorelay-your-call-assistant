@@ -8,9 +8,7 @@ import { ExampleMessages } from "@/components/ExampleMessages";
 import { AddOns } from "@/components/AddOns";
 import { UseCases } from "@/components/UseCases";
 import { Pricing } from "@/components/Pricing";
-import { CallToAction } from "@/components/CallToAction";
 import { FAQ } from "@/components/FAQ";
-import { ContactForm } from "@/components/ContactForm";
 import { Compliance } from "@/components/Compliance";
 import { PrivacyPolicy, TermsOfService } from "@/components/PrivacyTerms";
 import { Footer } from "@/components/Footer";
@@ -31,9 +29,7 @@ const Index = () => {
         <AddOns />
         <UseCases />
         <Pricing />
-        <CallToAction />
         <FAQ />
-        <ContactForm />
         <Compliance />
         {showPrivacy && <PrivacyPolicy />}
         {showTerms && <TermsOfService />}
