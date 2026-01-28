@@ -28,13 +28,14 @@ export function Hero() {
             ))}
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#contact">
+          <div className="flex flex-col items-center justify-center gap-4">
+            <a href="https://calendly.com/zhengfengqu/30min" target="_blank" rel="noopener noreferrer">
               <Button variant="hero" className="w-full sm:w-auto">
-                Start a Free Pilot
+                Book a Quick Demo
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </a>
+            <p className="text-sm text-muted-foreground">20-minutes call · No pressure</p>
             <a href="#how-it-works">
               <Button variant="heroOutline" className="w-full sm:w-auto">
                 See How It Works
