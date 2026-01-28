@@ -28,7 +28,7 @@ export function Hero() {
             ))}
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-4">
+          <div className="flex flex-col items-center justify-center gap-3">
             <a href="https://calendly.com/zhengfengqu/30min" target="_blank" rel="noopener noreferrer">
               <Button variant="hero" className="w-full sm:w-auto">
                 Book a Quick Demo
@@ -36,11 +36,6 @@ export function Hero() {
               </Button>
             </a>
             <p className="text-sm text-muted-foreground">20-minutes call · No pressure</p>
-            <a href="#how-it-works">
-              <Button variant="heroOutline" className="w-full sm:w-auto">
-                See How It Works
-              </Button>
-            </a>
           </div>
         </div>
       </div>
