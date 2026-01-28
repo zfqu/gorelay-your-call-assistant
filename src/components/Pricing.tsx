@@ -135,7 +135,7 @@ export function Pricing() {
                 If you've been missing calls or slow to follow up on new leads, you may be a fit. If the system doesn't capture leads for you after 30 days, cancel it, no commitment.
               </p>
             </div>
-            <a href="#contact" className="inline-block mt-6">
+            <a href="https://calendly.com/zhengfengqu/30min" target="_blank" rel="noopener noreferrer" className="inline-block mt-6">
               <Button size="lg" className="px-8">
                 Request a Pilot
               </Button>
