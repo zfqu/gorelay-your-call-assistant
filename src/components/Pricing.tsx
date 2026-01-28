@@ -108,7 +108,7 @@ export function Pricing() {
                 </ul>
               </div>
 
-              <a href="#contact" className="block mt-auto">
+              <a href="https://calendly.com/zhengfengqu/30min" target="_blank" rel="noopener noreferrer" className="block mt-auto">
                 <Button
                   className="w-full"
                   variant={tier.popular ? "default" : "outline"}
