@@ -9,8 +9,9 @@ const tiers = [
     features: [
       "Website widget → instant automatic SMS follow-up",
       "Missed call → instant automatic SMS follow-up",
+      "Direct SMS → instant auto SMS flow kicks off",
       "Intelligent frictionless SMS flow, truly speed-to-lead powered by AI",
-      "Owner instant SMS with lead details",
+      "Owner receives instant SMS notification with the lead details",
       "Weekly SMS leads summary to owner",
       "No dashboard, no login, no configuration to owner, peace of mind",
     ],

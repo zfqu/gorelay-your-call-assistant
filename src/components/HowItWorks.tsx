@@ -4,7 +4,7 @@ const steps = [
   {
     icon: Phone,
     number: "1",
-    title: "Customer calls or submits a form",
+    title: "Leads click web widget, or SMS, or call you (missed)",
     description: "A lead comes in through your phone line or website.",
   },
   {
