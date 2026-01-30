@@ -3,12 +3,12 @@ import { MessageSquare, FileText, Clock, Bell } from "lucide-react";
 const features = [
   {
     icon: MessageSquare,
-    title: "Instantly texts customers when they miss a call",
+    title: "Instantly texts customers when a call is missed",
     description: "No more silent missed calls — customers know you're on it.",
   },
   {
     icon: FileText,
-    title: "Sends immediate follow-up for website form submissions",
+    title: "Instantly texts customers when a web widget is clicked",
     description: "Web leads get a response in seconds, not hours.",
   },
   {
