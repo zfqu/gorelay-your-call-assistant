@@ -1,5 +1,4 @@
 import { Star, Phone } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const addOns = [
   {
@@ -42,14 +41,6 @@ export function AddOns() {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center">
-          <a href="#contact">
-            <Button variant="outline" size="lg">
-              Ask about add-ons during your pilot
-            </Button>
-          </a>
         </div>
       </div>
     </section>
