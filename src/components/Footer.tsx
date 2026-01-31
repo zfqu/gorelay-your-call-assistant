@@ -1,20 +1,12 @@
+import { Link } from "react-router-dom";
 import logoLight from "@/assets/logo-light.png";
 import { Mail } from "lucide-react";
 
 interface FooterProps {
-  onPrivacyClick?: () => void;
   onTermsClick?: () => void;
 }
 
-export function Footer({ onPrivacyClick, onTermsClick }: FooterProps) {
-  const handlePrivacyClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    onPrivacyClick?.();
-    setTimeout(() => {
-      document.getElementById("privacy")?.scrollIntoView({ behavior: "smooth" });
-    }, 100);
-  };
-
+export function Footer({ onTermsClick }: FooterProps) {
   const handleTermsClick = (e: React.MouseEvent) => {
     e.preventDefault();
     onTermsClick?.();
@@ -75,13 +67,12 @@ export function Footer({ onPrivacyClick, onTermsClick }: FooterProps) {
             <h4 className="font-semibold text-foreground mb-4">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#privacy"
-                  onClick={handlePrivacyClick}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+                <Link
+                  to="/privacy-policy"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
                 <a
