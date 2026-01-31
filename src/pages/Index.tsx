@@ -10,11 +10,10 @@ import { UseCases } from "@/components/UseCases";
 import { Pricing } from "@/components/Pricing";
 import { FAQ } from "@/components/FAQ";
 import { Compliance } from "@/components/Compliance";
-import { PrivacyPolicy, TermsOfService } from "@/components/PrivacyTerms";
+import { TermsOfService } from "@/components/PrivacyTerms";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
-  const [showPrivacy, setShowPrivacy] = useState(false);
   const [showTerms, setShowTerms] = useState(false);
 
   return (
@@ -31,10 +30,9 @@ const Index = () => {
         <Pricing />
         <FAQ />
         <Compliance />
-        {showPrivacy && <PrivacyPolicy />}
         {showTerms && <TermsOfService />}
       </main>
-      <Footer onPrivacyClick={() => setShowPrivacy(true)} onTermsClick={() => setShowTerms(true)} />
+      <Footer onTermsClick={() => setShowTerms(true)} />
     </div>
   );
 };
