@@ -2,18 +2,7 @@ import { Link } from "react-router-dom";
 import logoLight from "@/assets/logo-light.png";
 import { Mail } from "lucide-react";
 
-interface FooterProps {
-  onTermsClick?: () => void;
-}
-
-export function Footer({ onTermsClick }: FooterProps) {
-  const handleTermsClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    onTermsClick?.();
-    setTimeout(() => {
-      document.getElementById("terms")?.scrollIntoView({ behavior: "smooth" });
-    }, 100);
-  };
+export function Footer() {
 
   return (
     <footer className="section-padding border-t border-border">
@@ -75,13 +64,12 @@ export function Footer({ onTermsClick }: FooterProps) {
                 </Link>
               </li>
               <li>
-                <a
-                  href="#terms"
-                  onClick={handleTermsClick}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+                <Link
+                  to="/terms-of-service"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Terms of Service
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
