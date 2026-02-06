@@ -25,27 +25,27 @@ export function Footer() {
             <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <a href="/#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Features
                 </a>
               </li>
               <li>
-                <a href="#how-it-works" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/#how-it-works" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   How It Works
                 </a>
               </li>
               <li>
-                <a href="#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Pricing
                 </a>
               </li>
               <li>
-                <a href="#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   FAQ
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Contact
                 </a>
               </li>
