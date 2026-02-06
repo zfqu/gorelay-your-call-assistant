@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
               </p>
 
               <p>
-                Relay ("Relay," "we," "our," or "us") provides communication services for small businesses, including inbound call handling and transactional SMS messaging. This Privacy Policy explains how we collect, use, and protect personal information, including mobile information.
+                Relay AI, Inc. ("Relay," "we," "our," or "us") provides communication services for small businesses, including inbound call handling and transactional SMS messaging. This Privacy Policy explains how we collect, use, and protect personal information, including mobile information.
               </p>
 
               <div className="space-y-4">
