@@ -8,7 +8,7 @@ const problems = [
   },
   {
     icon: Clock,
-    title: "Missed calls and web forms don't get answered fast enough",
+    title: "Missed calls don't get answered fast enough",
     description: "Every minute of delay costs you a potential customer.",
   },
   {
