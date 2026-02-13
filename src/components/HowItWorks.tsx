@@ -4,20 +4,20 @@ const steps = [
   {
     icon: Phone,
     number: "1",
-    title: "Leads click web widget, or SMS, or call you (missed)",
-    description: "A lead comes in through your phone line or website.",
+    title: "Customer calls your number",
+    description: "A customer reaches out to your business phone line.",
   },
   {
     icon: MessageCircle,
     number: "2",
-    title: "Relay sends an immediate SMS follow-up",
-    description: "Confirmation + callback expectations sent instantly.",
+    title: "Relay triages and captures details",
+    description: "Relay handles the call and gathers key information.",
   },
   {
     icon: PhoneCall,
     number: "3",
-    title: "You call back when ready",
-    description: "The customer is already engaged and expecting your call.",
+    title: "Customer receives service confirmation via SMS",
+    description: "An instant text confirms their request was received.",
   },
 ];
 
