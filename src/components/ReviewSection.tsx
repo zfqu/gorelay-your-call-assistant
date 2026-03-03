@@ -64,7 +64,7 @@ export function ReviewSection() {
               </div>
             ))}
           </div>
-          <p className="text-lg font-medium text-foreground italic">
+          <p className="text-lg font-medium text-foreground">
             No awkward asking. No chasing. No damage control.
           </p>
         </div>

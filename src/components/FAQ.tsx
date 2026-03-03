@@ -12,14 +12,9 @@ const faqs = [
       "Relay captures all the details and confirms next steps with the customer. Calendar integration for direct booking is available as an optional add-on.",
   },
   {
-    question: "What happens with emergencies?",
-    answer:
-      "You choose: live transfer for true emergencies (burst pipe, no heat in winter), or immediate SMS notification. Either way, you get the alert right away.",
-  },
-  {
     question: "Can I keep my existing phone number?",
     answer:
-      "Yes, you can simply forward calls from your cellphone, landline, or VoIP number to Relay voice AI receptionist. Your customers never need to dial a new number.",
+      "Yes, Relay will provide a new number for SMS or call forwarding. Your existing number has no impact.",
   },
   {
     question: "Will it work after hours?",
