@@ -29,7 +29,7 @@ const faqs = [
   {
     question: "Do customers need an app?",
     answer:
-      "No. Customers just call your regular phone number and receive standard SMS texts. No downloads, no accounts, no friction.",
+      "No. Relay works perfectly on your phone without an app, login, or config. It's very simple to use.",
   },
 ];
 
