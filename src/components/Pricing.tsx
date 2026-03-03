@@ -29,7 +29,6 @@ const tiers = [
     ],
     tagline: "Stop bad reviews before they happen.",
     cta: "Get Started",
-    popular: true,
     color: "blue",
   },
   {
@@ -45,6 +44,7 @@ const tiers = [
     ],
     tagline: "Capture every opportunity — even when you're on a job.",
     cta: "Get Started",
+    popular: true,
     color: "purple",
   },
 ];
