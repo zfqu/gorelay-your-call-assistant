@@ -7,17 +7,17 @@ export function Hero() {
       <div className="container-narrow mx-auto text-center">
         <div className="animate-fade-up">
           <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-            Built for Utah small to mid-size trade owners
+            Built for small to mid-size trade owners
           </div>
           
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-            Stop losing jobs when
+            Turn every job into
             <br />
-            <span className="gradient-text">leads don't get a response.</span>
+            <span className="gradient-text">growth.</span>
           </h1>
           
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-            Relay instantly follows up on missed calls and website leads — so every customer hears back, even when you're busy.
+            Relay automatically captures new leads, follows up instantly, and converts happy customers into 5-star reviews — even when you're busy.
           </p>
           
           <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
