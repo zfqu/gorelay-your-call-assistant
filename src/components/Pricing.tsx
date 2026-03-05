@@ -5,7 +5,7 @@ const tiers = [
   {
     name: "Review Booster",
     subtitle: "Turn completed jobs into 5-star reviews — automatically.",
-    price: "$79",
+    price: "$75",
     features: [
       "Automatic SMS review request after each job",
       "Direct Google review link",
@@ -51,7 +51,7 @@ const tiers = [
 
 const addOn = {
   name: "AI Call Answering",
-  price: "+$79",
+  price: "+$75",
   subtitle: "Answer every call — even after hours.",
   features: [
     "AI answers when you can't",
