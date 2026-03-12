@@ -27,7 +27,7 @@ const tiers = [
       "Missed call → automatic text-back",
       "Intelligent lead capture and qualification",
       "Owner notification with full lead details",
-      "Weekly lead summary",
+      "Weekly lead summary to owner",
     ],
     tagline: "Capture every opportunity automatically.",
     cta: "Get Started",
