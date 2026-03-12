@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { ReviewSection } from "@/components/ReviewSection";
@@ -10,6 +11,15 @@ import { Compliance } from "@/components/Compliance";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => {
+        const el = document.querySelector(hash);
+        el?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }, []);
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
