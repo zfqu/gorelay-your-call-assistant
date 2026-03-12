@@ -34,16 +34,13 @@ const tiers = [
     color: "blue",
   },
   {
-    name: "Revenue Capture",
+    name: "Revenue Protection",
     subtitle: "Reviews + Leads — the complete growth engine.",
     price: "$249",
     includesFrom: "everything in Review Booster & Lead Capture",
     features: [
       "All review and reputation features",
       "All lead capture features",
-      "Website lead → instant SMS follow-up",
-      "Missed call → automatic text-back",
-      "Owner notification with full lead details",
       "Weekly lead & review summary",
     ],
     tagline: "Never miss a lead. Never miss a review.",
