@@ -101,7 +101,7 @@ export function Pricing() {
               <p className="text-sm text-muted-foreground mb-6">/month</p>
               {tier.includesFrom && (
                 <p className="text-sm text-muted-foreground mb-3">
-                  Includes {tier.includesFrom}, plus:
+                  Includes {tier.includesFrom}:
                 </p>
               )}
               <ul className="space-y-3 mb-6 flex-1">
