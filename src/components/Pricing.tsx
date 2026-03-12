@@ -10,11 +10,9 @@ const tiers = [
       "Automatic SMS review request after each job",
       "Direct Google review link",
       "One follow-up reminder (if no review link clicked)",
-      "Weekly review summary to owner",
       "Intelligent feedback gathering",
-      "Private feedback capture before it hits Google",
       "Instant owner alert for negative feedback",
-      "Trackable review links",
+      "Weekly review summary to owner",
     ],
     tagline: "Stop bad reviews before they happen.",
     cta: "Get Started",
@@ -22,11 +20,12 @@ const tiers = [
   },
   {
     name: "Lead Capture",
-    subtitle: "Never miss a lead — even when you're on a job.",
+    subtitle: "Speed to lead followup. Never miss leads across channels.",
     price: "$149",
     features: [
       "Website lead → instant SMS follow-up",
       "Missed call → automatic text-back",
+      "Intelligent lead capture and qualification",
       "Owner notification with full lead details",
       "Weekly lead summary",
     ],
@@ -102,7 +101,7 @@ export function Pricing() {
               <p className="text-sm text-muted-foreground mb-6">/month</p>
               {tier.includesFrom && (
                 <p className="text-sm text-muted-foreground mb-3">
-                  Includes {tier.includesFrom}, plus:
+                  Includes {tier.includesFrom}:
                 </p>
               )}
               <ul className="space-y-3 mb-6 flex-1">
