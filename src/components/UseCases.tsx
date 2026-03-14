@@ -32,7 +32,7 @@ const useCases = [
     description: "Storm damage calls, inspection requests, and emergency leak leads — captured instantly.",
   },
   {
-    icon: Sparkles,
+    icon: Hammer,
     title: "Remodeling",
     description: "Kitchen, bath, and whole-home remodel leads captured and qualified automatically.",
   },
