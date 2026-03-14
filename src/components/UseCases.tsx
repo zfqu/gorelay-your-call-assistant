@@ -1,4 +1,4 @@
-import { Wrench, Wind, Zap, Sparkles } from "lucide-react";
+import { Wrench, Wind, Zap, Sparkles, PaintBucket, Home, Hammer } from "lucide-react";
 
 const useCases = [
   {
