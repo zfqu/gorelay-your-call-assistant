@@ -49,7 +49,7 @@ export function UseCases() {
       <div className="container-wide mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Built for home service pros
+            Built for trades
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Whether you're on a ladder or under a sink, we've got your calls covered.
