@@ -36,6 +36,11 @@ const useCases = [
     title: "Remodeling",
     description: "Kitchen, bath, and whole-home remodel leads captured and qualified automatically.",
   },
+  {
+    icon: Car,
+    title: "Car Detailing",
+    description: "Capture mobile and shop detailing appointments with automated booking and follow-up.",
+  },
 ];
 
 export function UseCases() {
