@@ -22,7 +22,7 @@ const useCases = [
     description: "Residential and commercial cleaning lead capture with inbound voice AI.",
   },
   {
-    icon: Sparkles,
+    icon: PaintBucket,
     title: "Painting",
     description: "Capture painting estimates and project inquiries automatically.",
   },
