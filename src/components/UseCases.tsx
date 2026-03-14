@@ -21,6 +21,21 @@ const useCases = [
     title: "Cleaning",
     description: "Residential and commercial cleaning lead capture with inbound voice AI.",
   },
+  {
+    icon: Sparkles,
+    title: "Painting",
+    description: "Capture painting estimates and project inquiries automatically.",
+  },
+  {
+    icon: Sparkles,
+    title: "Roofing",
+    description: "Storm damage calls, inspection requests, and emergency leak leads — captured instantly.",
+  },
+  {
+    icon: Sparkles,
+    title: "Remodeling",
+    description: "Kitchen, bath, and whole-home remodel leads captured and qualified automatically.",
+  },
 ];
 
 export function UseCases() {
