@@ -27,7 +27,7 @@ const useCases = [
     description: "Capture painting estimates and project inquiries automatically.",
   },
   {
-    icon: Sparkles,
+    icon: Home,
     title: "Roofing",
     description: "Storm damage calls, inspection requests, and emergency leak leads — captured instantly.",
   },
