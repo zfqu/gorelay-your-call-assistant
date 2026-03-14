@@ -1,4 +1,4 @@
-import { Wrench, Wind, Zap, Sparkles } from "lucide-react";
+import { Wrench, Wind, Zap, Sparkles, PaintBucket, Home, Hammer } from "lucide-react";
 
 const useCases = [
   {
@@ -20,6 +20,21 @@ const useCases = [
     icon: Sparkles,
     title: "Cleaning",
     description: "Residential and commercial cleaning lead capture with inbound voice AI.",
+  },
+  {
+    icon: PaintBucket,
+    title: "Painting",
+    description: "Capture painting estimates and project inquiries automatically.",
+  },
+  {
+    icon: Home,
+    title: "Roofing",
+    description: "Storm damage calls, inspection requests, and emergency leak leads — captured instantly.",
+  },
+  {
+    icon: Hammer,
+    title: "Remodeling",
+    description: "Kitchen, bath, and whole-home remodel leads captured and qualified automatically.",
   },
 ];
 

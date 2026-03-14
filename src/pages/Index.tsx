@@ -25,9 +25,9 @@ const Index = () => {
       <Navigation />
       <main>
         <Hero />
-        <ReviewSection />
         <Solution />
         <ExampleMessages />
+        <ReviewSection />
         <UseCases />
         <Pricing />
         <FAQ />

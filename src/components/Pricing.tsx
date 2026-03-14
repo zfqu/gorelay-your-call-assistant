@@ -3,6 +3,21 @@ import { Button } from "@/components/ui/button";
 
 const tiers = [
   {
+    name: "Lead Capture",
+    subtitle: "Speed to lead followup. Never miss leads across channels.",
+    price: "$149",
+    features: [
+      "Website lead → instant SMS follow-up",
+      "Missed call → automatic text-back",
+      "Intelligent lead capture and qualification",
+      "Owner notification with full lead details",
+      "Weekly lead summary to owner",
+    ],
+    tagline: "Capture every opportunity automatically.",
+    cta: "Get Started",
+    color: "blue",
+  },
+  {
     name: "Review Booster",
     subtitle: "Turn completed jobs into 5-star reviews — and protect your reputation.",
     price: "$149",
@@ -19,28 +34,13 @@ const tiers = [
     color: "green",
   },
   {
-    name: "Lead Capture",
-    subtitle: "Speed to lead followup. Never miss leads across channels.",
-    price: "$149",
-    features: [
-      "Website lead → instant SMS follow-up",
-      "Missed call → automatic text-back",
-      "Intelligent lead capture and qualification",
-      "Owner notification with full lead details",
-      "Weekly lead summary to owner",
-    ],
-    tagline: "Capture every opportunity automatically.",
-    cta: "Get Started",
-    color: "blue",
-  },
-  {
     name: "Revenue Protection",
     subtitle: "Reviews + Leads — the complete growth engine.",
     price: "$249",
-    includesFrom: "everything in Review Booster & Lead Capture",
+    includesFrom: "everything in Lead Capture & Review Booster",
     features: [
-      "All review and reputation features",
       "All lead capture features",
+      "All review and reputation features",
       "Weekly lead & review summary",
     ],
     tagline: "Never miss a lead. Never miss a review.",
