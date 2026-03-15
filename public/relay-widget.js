@@ -267,7 +267,7 @@
         }
   
         setStatus("✅ Sent. We’ll text you shortly.", "ok");
-        setTimeout(() => closeModal(), 900);
+        setTimeout(() => closeModal(), 3500);
       } catch (_) {
         setStatus("Network error. Please try again.", "err");
         resetTurnstile();
