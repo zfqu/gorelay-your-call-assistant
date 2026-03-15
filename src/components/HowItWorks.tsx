@@ -7,7 +7,7 @@ const videos = [
   },
   {
     title: "Review booster",
-    embedUrl: "https://www.youtube.com/embed/YzhUGKAJJy0",
+    embedUrl: "https://www.youtube.com/embed/t7uUdhi3tmg",
   },
 ];
 
