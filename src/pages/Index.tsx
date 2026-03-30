@@ -6,7 +6,7 @@ import { Solution } from "@/components/Solution";
 import { ExampleMessages } from "@/components/ExampleMessages";
 import { UseCases } from "@/components/UseCases";
 import { HowItWorks } from "@/components/HowItWorks";
-import { Pricing } from "@/components/Pricing";
+
 import { FAQ } from "@/components/FAQ";
 import { Compliance } from "@/components/Compliance";
 import { Footer } from "@/components/Footer";
