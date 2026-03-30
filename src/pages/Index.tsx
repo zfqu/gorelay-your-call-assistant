@@ -31,7 +31,7 @@ const Index = () => {
         <ReviewSection />
         <UseCases />
         <HowItWorks />
-        <Pricing />
+        
         <FAQ />
         <Compliance />
       </main>

@@ -6,7 +6,7 @@ import logoLight from "@/assets/logo-light.png";
 const navLinks = [
   { href: "/#features", label: "Features" },
   { href: "/#how-it-works", label: "How It Works" },
-  { href: "/#pricing", label: "Pricing" },
+  { href: "/pricing", label: "Pricing" },
   { href: "/#faq", label: "FAQ" },
 ];
 
