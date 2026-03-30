@@ -1,10 +1,16 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Link } from "react-router-dom";
+import { PageMeta } from "@/components/PageMeta";
 
 const TermsOfService = () => {
   return (
     <div className="min-h-screen bg-background">
+      <PageMeta
+        title="Terms of Service"
+        description="Relay AI terms of service. Read the terms governing your use of Relay's communication and revenue protection services."
+        path="/terms-of-service"
+      />
       <Navigation />
       <main className="pt-24 pb-16">
         <div className="container-narrow mx-auto px-4 sm:px-6 lg:px-8">

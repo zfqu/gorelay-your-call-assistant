@@ -1,9 +1,15 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { PageMeta } from "@/components/PageMeta";
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
+      <PageMeta
+        title="Privacy Policy"
+        description="Relay AI privacy policy. Learn how we collect, use, and protect your personal and business information."
+        path="/privacy-policy"
+      />
       <Navigation />
       <main className="pt-24 pb-16">
         <div className="container-narrow mx-auto px-4 sm:px-6 lg:px-8">
