@@ -1,10 +1,16 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Link } from "react-router-dom";
+import { PageMeta } from "@/components/PageMeta";
 
 const SmsConsent = () => {
   return (
     <div className="min-h-screen bg-background">
+      <PageMeta
+        title="SMS Consent"
+        description="Relay AI SMS consent call script and messaging disclosure for home service contractors."
+        path="/sms-consent"
+      />
       <Navigation />
       <main className="pt-24 pb-16">
         <div className="container-narrow mx-auto px-4 sm:px-6 lg:px-8">
