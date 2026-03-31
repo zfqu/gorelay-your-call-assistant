@@ -27,6 +27,7 @@ const App = () => (
           <Route path="/sms-consent" element={<SmsConsent />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/features/missed-call-text-back" element={<MissedCallTextBack />} />
+          <Route path="/features/web-widget" element={<WebWidgetFollowUp />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
