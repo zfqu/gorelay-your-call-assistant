@@ -9,6 +9,7 @@ import TermsOfService from "./pages/TermsOfService";
 import SmsConsent from "./pages/SmsConsent";
 import PricingPage from "./pages/PricingPage";
 import MissedCallTextBack from "./pages/MissedCallTextBack";
+import WebWidgetFollowUp from "./pages/WebWidgetFollowUp";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/sms-consent" element={<SmsConsent />} />
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/features/missed-call-text-back" element={<MissedCallTextBack />} />
+          <Route path="/features/web-widget" element={<WebWidgetFollowUp />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

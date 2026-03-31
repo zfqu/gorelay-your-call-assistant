@@ -11,6 +11,7 @@ import logoLight from "@/assets/logo-light.png";
 
 const featureLinks = [
   { href: "/features/missed-call-text-back", label: "Missed Call Text Back" },
+  { href: "/features/web-widget", label: "Web Widget Follow-Up" },
 ];
 
 const navLinks = [
