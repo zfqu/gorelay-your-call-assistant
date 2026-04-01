@@ -31,6 +31,7 @@ const App = () => (
           <Route path="/features/missed-call-text-back" element={<MissedCallTextBack />} />
           <Route path="/features/web-widget" element={<WebWidgetFollowUp />} />
           <Route path="/features/reviews" element={<AutomatedReviews />} />
+          <Route path="/features/ai-voice" element={<AIVoice />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

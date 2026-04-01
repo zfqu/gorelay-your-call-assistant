@@ -13,6 +13,7 @@ const featureLinks = [
   { href: "/features/missed-call-text-back", label: "Missed Call Text Back" },
   { href: "/features/web-widget", label: "Web Widget Follow-Up" },
   { href: "/features/reviews", label: "Automated Review Requests" },
+  { href: "/features/ai-voice", label: "Inbound AI Voice" },
 ];
 
 const navLinks = [
