@@ -10,6 +10,7 @@ import SmsConsent from "./pages/SmsConsent";
 import PricingPage from "./pages/PricingPage";
 import MissedCallTextBack from "./pages/MissedCallTextBack";
 import WebWidgetFollowUp from "./pages/WebWidgetFollowUp";
+import AutomatedReviews from "./pages/AutomatedReviews";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
