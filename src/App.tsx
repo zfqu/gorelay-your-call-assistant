@@ -11,6 +11,7 @@ import PricingPage from "./pages/PricingPage";
 import MissedCallTextBack from "./pages/MissedCallTextBack";
 import WebWidgetFollowUp from "./pages/WebWidgetFollowUp";
 import AutomatedReviews from "./pages/AutomatedReviews";
+import AIVoice from "./pages/AIVoice";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/features/missed-call-text-back" element={<MissedCallTextBack />} />
           <Route path="/features/web-widget" element={<WebWidgetFollowUp />} />
           <Route path="/features/reviews" element={<AutomatedReviews />} />
+          <Route path="/features/ai-voice" element={<AIVoice />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
