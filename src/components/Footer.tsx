@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import logoLight from "@/assets/logo-light.png";
-import { Mail } from "lucide-react";
+import { Mail, Phone, Youtube } from "lucide-react";
 
 export function Footer() {
 
@@ -12,13 +12,31 @@ export function Footer() {
             <div className="flex items-center mb-4">
               <img src={logoLight} alt="Relay" className="h-8 w-auto" />
             </div>
-            <a
-              href="mailto:support@gorelay.ai"
-              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <Mail className="h-4 w-4" />
-              support@gorelay.ai
-            </a>
+            <div className="flex flex-col gap-2">
+              <a
+                href="mailto:info@gorelay.ai"
+                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Mail className="h-4 w-4" />
+                info@gorelay.ai
+              </a>
+              <a
+                href="tel:8016923196"
+                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Phone className="h-4 w-4" />
+                801.692.3196
+              </a>
+              <a
+                href="https://www.youtube.com/@go-relay-ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Youtube className="h-4 w-4" />
+                YouTube
+              </a>
+            </div>
           </div>
 
           <div>
@@ -42,11 +60,6 @@ export function Footer() {
               <li>
                 <a href="/#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   FAQ
-                </a>
-              </li>
-              <li>
-                <a href="/#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Contact
                 </a>
               </li>
             </ul>
