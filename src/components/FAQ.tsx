@@ -7,24 +7,24 @@ import {
 
 const faqs = [
   {
-    question: "Does it book appointments?",
+    question: "Do I need to change my number?",
     answer:
-      "Relay captures all the details and confirms next steps with the customer. Calendar integration for direct booking is available as an optional add-on.",
+      "No — Relay works with your existing number.",
   },
   {
-    question: "Can I keep my existing phone number?",
+    question: "Does this replace my staff?",
     answer:
-      "Yes, Relay will provide a new number for SMS or call forwarding. Your existing number has no impact.",
+      "No — it supports and augments your team by handling missed and after-hours interactions.",
   },
   {
-    question: "Will it work after hours?",
+    question: "How long does setup take?",
     answer:
-      "Absolutely. Relay answers 24/7/365 — nights, weekends, and holidays. That's when you need it most.",
+      "Just a few minutes. No dashboard, no login, no apps — very simple to use.",
   },
   {
-    question: "Do customers need an app?",
+    question: "Do you integrate with my existing CRM or calendars?",
     answer:
-      "No. Relay works perfectly on your phone without an app, login, or config. It's very simple to use.",
+      "Yes — if you choose to book the job directly, Relay can integrate with your existing scheduling system. Otherwise, you can manually confirm with the lead to book the job (safer).",
   },
 ];
 
