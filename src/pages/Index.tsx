@@ -1,13 +1,13 @@
 import { useEffect } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
-import { ReviewSection } from "@/components/ReviewSection";
-import { Solution } from "@/components/Solution";
-import { ExampleMessages } from "@/components/ExampleMessages";
+import { ProblemSection } from "@/components/ProblemSection";
+import { SolutionOverview } from "@/components/SolutionOverview";
+import { HowItWorksSteps } from "@/components/HowItWorksSteps";
 import { UseCases } from "@/components/UseCases";
-import { HowItWorks } from "@/components/HowItWorks";
-
+import { TrustSection } from "@/components/TrustSection";
 import { FAQ } from "@/components/FAQ";
+import { FinalCTA } from "@/components/FinalCTA";
 import { Compliance } from "@/components/Compliance";
 import { Footer } from "@/components/Footer";
 
@@ -26,13 +26,13 @@ const Index = () => {
       <Navigation />
       <main>
         <Hero />
-        <Solution />
-        <ExampleMessages />
-        <ReviewSection />
+        <ProblemSection />
+        <SolutionOverview />
+        <HowItWorksSteps />
         <UseCases />
-        <HowItWorks />
-        
+        <TrustSection />
         <FAQ />
+        <FinalCTA />
         <Compliance />
       </main>
       <Footer />
