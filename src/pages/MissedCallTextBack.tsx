@@ -222,7 +222,7 @@ export default function MissedCallTextBack() {
               Missed call text back works for any contractor who's too busy to answer every call.
             </p>
             <div className="flex flex-wrap justify-center gap-3 max-w-xl mx-auto">
-              {["Plumbers", "HVAC Contractors", "Electricians", "Roofers", "Painters", "Remodelers", "Small service teams (2–10 techs)"].map((t) => (
+              {["Plumbing", "HVAC", "Electrical", "Roofing", "Remodeling", "Painting", "Cleaning", "Landscaping"].map((t) => (
                 <span key={t} className="px-4 py-2 bg-secondary text-secondary-foreground rounded-full text-sm font-medium">
                   {t}
                 </span>
