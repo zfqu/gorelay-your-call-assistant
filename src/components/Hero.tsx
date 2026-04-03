@@ -7,7 +7,7 @@ export function Hero() {
       <div className="container-narrow mx-auto text-center">
         <div className="animate-fade-up">
           <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-            Built for small to mid-size trade owners
+            Built for Small to Mid-size Trades
           </div>
           
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
