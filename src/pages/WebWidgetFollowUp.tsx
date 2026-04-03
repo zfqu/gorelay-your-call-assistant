@@ -35,8 +35,8 @@ const benefits = [
 ];
 
 const trades = [
-  "Plumbing", "HVAC", "Electrical", "Painting", "Remodeling",
-  "Pest Control", "Landscaping", "Cleaning", "Auto Repair",
+  "Painting", "Cleaning", "Remodeling", "Landscaping",
+  "Plumbing", "HVAC", "Electrical", "Car Detailing",
 ];
 
 const faqs = [
@@ -209,7 +209,7 @@ export default function WebWidgetFollowUp() {
               Who this is for
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Any contractor or service business getting leads from their website or running Google Ads.
+              Any contractor or service business getting leads from their website. (Leads intent is less urgent)
             </p>
             <div className="flex flex-wrap justify-center gap-3 mb-6">
               {trades.map((t) => (
