@@ -57,7 +57,7 @@ export function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                className="text-[1.05rem] font-bold text-muted-foreground hover:text-foreground transition-colors"
               >
                 {link.label}
               </a>
