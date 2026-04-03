@@ -190,6 +190,10 @@ export default function MissedCallTextBack() {
                 </p>
               </div>
             </div>
+            <p className="text-center text-muted-foreground mt-8 text-sm">
+              This same instant text follow-up also works for website form leads.{" "}
+              <a href="/features/web-widget" className="text-primary font-medium hover:underline">Learn more →</a>
+            </p>
           </div>
         </section>
 

@@ -180,6 +180,10 @@ export default function WebWidgetFollowUp() {
                 <p className="text-sm text-muted-foreground mt-4 italic">Delivered straight to your phone — ready to follow up.</p>
               </div>
             </div>
+            <p className="text-center text-muted-foreground mt-8 text-sm">
+              This same instant follow-up also works when customers call and you can't answer.{" "}
+              <a href="/features/missed-call-text-back" className="text-primary font-medium hover:underline">Learn more →</a>
+            </p>
           </div>
         </section>
 
