@@ -35,8 +35,8 @@ const benefits = [
 ];
 
 const trades = [
-  "Plumbing", "HVAC", "Electrical", "Painting", "Remodeling",
-  "Pest Control", "Landscaping", "Cleaning", "Auto Repair",
+  "Painting", "Cleaning", "Remodeling", "Landscaping",
+  "Plumbing", "HVAC", "Electrical", "Car Detailing",
 ];
 
 const faqs = [
