@@ -38,7 +38,7 @@ export function Navigation() {
           <div className="hidden md:flex items-center gap-8">
             {/* Features Dropdown */}
             <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors outline-none">
+              <DropdownMenuTrigger className="flex items-center gap-1 text-[1.05rem] font-bold text-muted-foreground hover:text-foreground transition-colors outline-none">
                 Features
                 <ChevronDown className="h-3.5 w-3.5" />
               </DropdownMenuTrigger>
