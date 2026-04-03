@@ -31,7 +31,7 @@ export function Navigation() {
       <div className="container-wide mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href="/" className="flex items-center">
-            <img src={logoLight} alt="Relay" className="h-8 w-auto" />
+            <img src={logoLight} alt="Relay" className="h-11 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
