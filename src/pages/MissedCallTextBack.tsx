@@ -63,6 +63,10 @@ export default function MissedCallTextBack() {
         {/* HERO */}
         <section className="section-padding pt-28 sm:pt-32">
           <div className="container-narrow mx-auto text-center">
+            <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+              <Phone className="inline h-4 w-4 mr-1 -mt-0.5" />
+              Missed Call Text Back
+            </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               Never miss a job again.{" "}
               <span className="gradient-text">Instantly text back missed calls.</span>
