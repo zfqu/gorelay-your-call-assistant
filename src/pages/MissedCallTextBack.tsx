@@ -74,7 +74,7 @@ export default function MissedCallTextBack() {
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               When a customer calls and no one answers, Relay automatically texts them back in seconds, captures what they need, and keeps them engaged until you follow up.
             </p>
-            <a href="https://calendly.com/zhengfengqu/30min" target="_blank" rel="noopener noreferrer">
+            <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
               <Button variant="hero">Get Started</Button>
             </a>
           </div>
@@ -293,7 +293,7 @@ export default function MissedCallTextBack() {
             <p className="text-lg text-muted-foreground mb-8 max-w-lg mx-auto">
               Stop losing jobs to missed calls. Let Relay handle the first response so you can focus on the work.
             </p>
-            <a href="https://calendly.com/zhengfengqu/30min" target="_blank" rel="noopener noreferrer">
+            <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
               <Button variant="hero">Book a Demo</Button>
             </a>
           </div>

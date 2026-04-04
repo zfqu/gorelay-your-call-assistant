@@ -124,7 +124,7 @@ export default function AIVoice() {
               everything your team needs to follow up.
             </p>
             <a
-              href="https://calendly.com/zhengfengqu/30min"
+              href="https://calendly.com/relayai/30min"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -482,7 +482,7 @@ export default function AIVoice() {
               and overflow calls so your team never misses an opportunity.
             </p>
             <a
-              href="https://calendly.com/zhengfengqu/30min"
+              href="https://calendly.com/relayai/30min"
               target="_blank"
               rel="noopener noreferrer"
             >

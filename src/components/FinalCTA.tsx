@@ -8,7 +8,7 @@ export function FinalCTA() {
         <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
           Start capturing every lead today
         </h2>
-        <a href="https://calendly.com/zhengfengqu/30min" target="_blank" rel="noopener noreferrer">
+        <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
           <Button variant="hero">
             Book a Demo
             <ArrowRight className="ml-2 h-5 w-5" />
