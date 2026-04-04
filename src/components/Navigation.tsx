@@ -18,6 +18,7 @@ const featureLinks = [
 
 const navLinks = [
   { href: "/#how-it-works", label: "How It Works" },
+  { href: "/blog", label: "Blog" },
   { href: "/pricing", label: "Pricing" },
   { href: "/#faq", label: "FAQ" },
 ];
