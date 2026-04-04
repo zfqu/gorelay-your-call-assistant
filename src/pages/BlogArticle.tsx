@@ -4,6 +4,11 @@ import { Footer } from "@/components/Footer";
 import { PageMeta } from "@/components/PageMeta";
 import { blogPosts } from "@/data/blogPosts";
 import NotFound from "./NotFound";
+import blogMissedCall from "@/assets/blog-missed-call.jpg";
+
+const thumbnailMap: Record<string, string> = {
+  "missed-call-text-back-hvac-plumbing": blogMissedCall,
+};
 
 // Article content components keyed by slug
 const articleContent: Record<string, React.ReactNode> = {
@@ -122,6 +127,13 @@ const BlogArticle = () => {
                 day: "numeric",
               })}
             </time>
+            {thumbnailMap[post.slug] && (
+              <img
+                src={thumbnailMap[post.slug]}
+                alt={post.title}
+                className="w-full rounded-lg mb-8 aspect-[16/10] object-cover"
+              />
+            )}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-8 leading-tight">
               {post.title}
             </h1>
