@@ -34,6 +34,8 @@ const App = () => (
           <Route path="/features/web-widget" element={<WebWidgetFollowUp />} />
           <Route path="/features/reviews" element={<AutomatedReviews />} />
           <Route path="/features/ai-voice" element={<AIVoice />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogArticle />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
