@@ -127,6 +127,13 @@ const BlogArticle = () => {
                 day: "numeric",
               })}
             </time>
+            {thumbnailMap[post.slug] && (
+              <img
+                src={thumbnailMap[post.slug]}
+                alt={post.title}
+                className="w-full rounded-lg mb-8 aspect-[16/10] object-cover"
+              />
+            )}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-8 leading-tight">
               {post.title}
             </h1>
