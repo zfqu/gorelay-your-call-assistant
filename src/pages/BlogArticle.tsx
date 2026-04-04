@@ -4,6 +4,11 @@ import { Footer } from "@/components/Footer";
 import { PageMeta } from "@/components/PageMeta";
 import { blogPosts } from "@/data/blogPosts";
 import NotFound from "./NotFound";
+import blogMissedCall from "@/assets/blog-missed-call.jpg";
+
+const thumbnailMap: Record<string, string> = {
+  "missed-call-text-back-hvac-plumbing": blogMissedCall,
+};
 
 // Article content components keyed by slug
 const articleContent: Record<string, React.ReactNode> = {
