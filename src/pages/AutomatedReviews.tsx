@@ -68,7 +68,7 @@ export default function AutomatedReviews() {
                 Relay texts your customers after each job, asks for feedback, and sends happy customers straight to your Google review page.
               </p>
               <div className="flex flex-col items-center justify-center gap-3">
-                <a href="https://calendly.com/zhengfengqu/30min" target="_blank" rel="noopener noreferrer">
+                <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
                   <Button variant="hero" className="w-full sm:w-auto">
                     Get Started
                     <ArrowRight className="ml-2 h-5 w-5" />
@@ -306,7 +306,7 @@ export default function AutomatedReviews() {
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
               Start getting more 5-star reviews today
             </h2>
-            <a href="https://calendly.com/zhengfengqu/30min" target="_blank" rel="noopener noreferrer">
+            <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
               <Button variant="hero">
                 Book a Demo
                 <ArrowRight className="ml-2 h-5 w-5" />

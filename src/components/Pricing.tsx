@@ -110,7 +110,7 @@ export function Pricing() {
                 ))}
               </ul>
               <p className="text-sm font-medium text-foreground mb-6 italic">{tier.tagline}</p>
-              <a href="https://calendly.com/zhengfengqu/30min" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
                 <Button className="w-full" variant={tier.popular ? "default" : "outline"}>
                   {tier.cta}
                 </Button>
@@ -158,7 +158,7 @@ export function Pricing() {
                 If you've been missing calls or slow to follow up on new leads, you may be a fit. If the system doesn't capture leads for you after 30 days, cancel it, no commitment.
               </p>
             </div>
-            <a href="https://calendly.com/zhengfengqu/30min" target="_blank" rel="noopener noreferrer" className="inline-block mt-6">
+            <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer" className="inline-block mt-6">
               <Button size="lg" className="px-8">
                 Request a Pilot
               </Button>

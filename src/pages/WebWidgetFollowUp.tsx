@@ -79,7 +79,7 @@ export default function WebWidgetFollowUp() {
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
               When someone fills out your website form, Relay texts them in seconds, starts a conversation, and captures everything you need to follow up.
             </p>
-            <a href="https://calendly.com/zhengfengqu/30min" target="_blank" rel="noopener noreferrer">
+            <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
               <Button variant="hero">
                 Book a Demo
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -268,7 +268,7 @@ export default function WebWidgetFollowUp() {
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
               Turn more website visitors into paying customers
             </h2>
-            <a href="https://calendly.com/zhengfengqu/30min" target="_blank" rel="noopener noreferrer">
+            <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
               <Button variant="hero">
                 Book a Demo
                 <ArrowRight className="ml-2 h-5 w-5" />

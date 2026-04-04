@@ -62,8 +62,8 @@ export function Navigation() {
                 {link.label}
               </a>
             ))}
-            <a href="https://calendly.com/zhengfengqu/30min" target="_blank" rel="noopener noreferrer">
-              <Button size="sm">Book a Demo</Button>
+            <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
+              <Button size="sm">Talk to Us</Button>
             </a>
           </div>
 
@@ -116,8 +116,8 @@ export function Navigation() {
                   {link.label}
                 </a>
               ))}
-              <a href="https://calendly.com/zhengfengqu/30min" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
-                <Button className="w-full">Book a Demo</Button>
+              <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
+                <Button className="w-full">Talk to Us</Button>
               </a>
             </div>
           </div>
