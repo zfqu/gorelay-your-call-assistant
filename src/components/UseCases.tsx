@@ -13,7 +13,7 @@ const useCases = [
   },
   {
     icon: Zap,
-    title: "Electrician",
+    title: "Electrical",
     description: "Capture electrical emergencies safely with proper priority escalation.",
   },
   {
