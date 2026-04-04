@@ -12,6 +12,8 @@ import MissedCallTextBack from "./pages/MissedCallTextBack";
 import WebWidgetFollowUp from "./pages/WebWidgetFollowUp";
 import AutomatedReviews from "./pages/AutomatedReviews";
 import AIVoice from "./pages/AIVoice";
+import Blog from "./pages/Blog";
+import BlogArticle from "./pages/BlogArticle";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
