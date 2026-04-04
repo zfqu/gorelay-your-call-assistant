@@ -117,7 +117,7 @@ export function Navigation() {
                 </a>
               ))}
               <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
-                <Button className="w-full">Book a Demo</Button>
+                <Button className="w-full">Talk to Us</Button>
               </a>
             </div>
           </div>
