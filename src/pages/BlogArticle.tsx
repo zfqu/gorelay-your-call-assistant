@@ -5,13 +5,117 @@ import { PageMeta } from "@/components/PageMeta";
 import { blogPosts } from "@/data/blogPosts";
 import NotFound from "./NotFound";
 import blogMissedCall from "@/assets/blog-missed-call.jpg";
+import blogGoogleReviews from "@/assets/blog-google-reviews.jpg";
 
 const thumbnailMap: Record<string, string> = {
   "missed-call-text-back-hvac-plumbing": blogMissedCall,
+  "get-more-google-reviews-home-services-contractors": blogGoogleReviews,
 };
 
 // Article content components keyed by slug
 const articleContent: Record<string, React.ReactNode> = {
+  "get-more-google-reviews-home-services-contractors": (
+    <>
+      <p>Most contractors don't have a quality problem.</p>
+      <p>They have a visibility problem.</p>
+      <p>You can do great work, have happy customers, and still struggle to get consistent Google reviews.</p>
+      <p>Not because people don't like your service — but because they never get around to leaving one.</p>
+      <p>And over time, that adds up.</p>
+      <p>Fewer reviews → less trust → fewer calls → less revenue.</p>
+
+      <h2>The Real Reason You're Not Getting Reviews</h2>
+      <p>It's not that customers don't want to leave a review.</p>
+      <p>It's that they forget.</p>
+      <p>Think about what usually happens:</p>
+      <p>You finish the job.</p>
+      <p>The customer says "thanks."</p>
+      <p>You pack up and move on to the next one.</p>
+      <p>Maybe later that day — or the next — you think about sending a review link.</p>
+      <p>But by then, the moment is gone.</p>
+      <p>The customer is back to their routine.</p>
+      <p>Your job is no longer top of mind.</p>
+      <p>And asking at that point feels easy to ignore.</p>
+
+      <h2>Timing Matters More Than You Think</h2>
+      <p>The best time to ask for a review isn't later.</p>
+      <p>It's right after the job is done — when the experience is still fresh.</p>
+      <p>That's when the customer is:</p>
+      <ul>
+        <li>still thinking about the service</li>
+        <li>still feeling the result</li>
+        <li>most likely to respond</li>
+      </ul>
+      <p>Wait a few hours, and that energy drops.</p>
+      <p>Wait a day, and it's mostly gone.</p>
+      <p>That's why so many review systems underperform — they ask at the wrong time.</p>
+
+      <h2>Why Most Contractors Don't Ask Consistently</h2>
+      <p>Even if you know timing matters, it's hard to execute.</p>
+      <p>You're busy.</p>
+      <p>You're moving from job to job.</p>
+      <p>You're dealing with scheduling, calls, and everything else.</p>
+      <p>Remembering to manually send a review request every time just isn't realistic.</p>
+      <p>So what happens?</p>
+      <p>You ask sometimes.</p>
+      <p>You forget most of the time.</p>
+      <p>And your review growth stays very slow and inconsistent.</p>
+
+      <h2>What Actually Works: A Simple, Consistent System</h2>
+      <p>The contractors who consistently build strong review profiles don't rely on memory.</p>
+      <p>They use a simple system.</p>
+      <p>After every job, a message goes out automatically.</p>
+      <p>Something like:</p>
+      <p>"Thanks for choosing us — how did we do?"</p>
+      <p>It's not pushy.</p>
+      <p>It's not complicated.</p>
+      <p>It just starts the conversation.</p>
+      <p>From there, the flow naturally leads to a review — at the right moment.</p>
+      <p>If you want to see how that works in practice, check out our <Link to="/features/reviews">review system</Link>.</p>
+
+      <h2>Why Asking Directly for a Review Isn't Always the Best Move</h2>
+      <p>A lot of people jump straight to:</p>
+      <p>"Can you leave us a review?"</p>
+      <p>Sometimes that works. But not always.</p>
+      <p>A better approach is to start with feedback.</p>
+      <p>Ask how the experience was first.</p>
+      <p>It gives you a chance to understand the customer experience before sending them to Google. It avoids negative reviews showing up there.</p>
+
+      <h2>More Reviews = More Calls (It's That Simple)</h2>
+      <p>When someone searches for a home service provider, they don't overthink it.</p>
+      <p>They compare:</p>
+      <ul>
+        <li>rating</li>
+        <li>number of reviews</li>
+        <li>how recent they are</li>
+      </ul>
+      <p>Then they pick.</p>
+      <p>If your competitor has significantly more reviews, you're at a disadvantage — even if you do better work.</p>
+      <p>Reviews directly impact how many calls you get.</p>
+
+      <h2>You Can Grow Reviews From the Ones You Already Have</h2>
+      <p>Most contractors are already doing enough jobs to grow their review count.</p>
+      <p>The issue isn't volume.</p>
+      <p>It's capture.</p>
+      <p>Every completed job is an opportunity for a review.</p>
+      <p>Without a system, most of those opportunities are lost.</p>
+
+      <h2>A Small Change That Compounds Over Time</h2>
+      <p>If you start consistently collecting reviews after every job, the impact builds quickly.</p>
+      <p>A few extra reviews per week becomes:</p>
+      <ul>
+        <li>dozens per month</li>
+        <li>hundreds per year</li>
+      </ul>
+      <p>Over time, that changes how your business shows up online.</p>
+      <p>More trust.</p>
+      <p>More clicks.</p>
+      <p>More calls.</p>
+
+      <h2>Want a Simple Way to Start Collecting More Reviews?</h2>
+      <p>If you want to consistently ask at the right time — without having to remember every time:</p>
+      <p>👉 <Link to="/features/reviews">See how the review system works</Link></p>
+    </>
+  ),
   "missed-call-text-back-hvac-plumbing": (
     <>
       <p>If you run an HVAC or plumbing business, you already know how this goes.</p>

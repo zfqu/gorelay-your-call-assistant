@@ -4,9 +4,11 @@ import { Footer } from "@/components/Footer";
 import { PageMeta } from "@/components/PageMeta";
 import { blogPosts } from "@/data/blogPosts";
 import blogMissedCall from "@/assets/blog-missed-call.jpg";
+import blogGoogleReviews from "@/assets/blog-google-reviews.jpg";
 
 const thumbnailMap: Record<string, string> = {
   "missed-call-text-back-hvac-plumbing": blogMissedCall,
+  "get-more-google-reviews-home-services-contractors": blogGoogleReviews,
 };
 
 const Blog = () => {
