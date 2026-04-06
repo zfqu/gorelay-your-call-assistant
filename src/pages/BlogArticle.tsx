@@ -5,9 +5,11 @@ import { PageMeta } from "@/components/PageMeta";
 import { blogPosts } from "@/data/blogPosts";
 import NotFound from "./NotFound";
 import blogMissedCall from "@/assets/blog-missed-call.jpg";
+import blogGoogleReviews from "@/assets/blog-google-reviews.jpg";
 
 const thumbnailMap: Record<string, string> = {
   "missed-call-text-back-hvac-plumbing": blogMissedCall,
+  "get-more-google-reviews-home-services-contractors": blogGoogleReviews,
 };
 
 // Article content components keyed by slug
