@@ -6,14 +6,110 @@ import { blogPosts } from "@/data/blogPosts";
 import NotFound from "./NotFound";
 import blogMissedCall from "@/assets/blog-missed-call.jpg";
 import blogGoogleReviews from "@/assets/blog-google-reviews.jpg";
+import blogSpeedToLead from "@/assets/blog-speed-to-lead.jpg";
 
 const thumbnailMap: Record<string, string> = {
   "missed-call-text-back-hvac-plumbing": blogMissedCall,
   "get-more-google-reviews-home-services-contractors": blogGoogleReviews,
+  "speed-to-lead-home-services": blogSpeedToLead,
 };
 
 // Article content components keyed by slug
 const articleContent: Record<string, React.ReactNode> = {
+  "speed-to-lead-home-services": (
+    <>
+      <p>Most contractors think they need more leads.</p>
+      <p>They believe more ads, more traffic, means more calls.</p>
+      <p>But in many cases, that's a high cost, low ROI option. It may never pan out.</p>
+      <p>The real problem to solve is what happens after a lead comes in.</p>
+      <p>Because if you're not responding fast enough, those hot leads are lost and never turn into jobs.</p>
+
+      <h2>What "Speed to Lead" Actually Means</h2>
+      <p>Speed to lead is simple.</p>
+      <p>It's how fast you respond after someone reaches out.</p>
+      <p>That could be:</p>
+      <ul>
+        <li>a phone call</li>
+        <li>a web widget/form submission</li>
+        <li>a text</li>
+      </ul>
+      <p>From the customer's perspective, it's not complicated.</p>
+      <p>They reach out, and they wait to see who responds first. (most of home service inquiries have high intent).</p>
+
+      <h2>Customers Don't Wait — They Compare</h2>
+      <p>Think about how people look for home services.</p>
+      <p>If their AC stops working, or there's a plumbing issue, they don't contact just one company.</p>
+      <p>They reach out to a few.</p>
+      <p>Then they go with whoever responds first and seems reliable.</p>
+      <p>Not necessarily the cheapest.</p>
+      <p>Not necessarily the best.</p>
+      <p>Just the one who got back to them quickly.</p>
+
+      <h2>Where Most Contractors Lose the Job</h2>
+      <p>It's usually not because of price.</p>
+      <p>It's not because of skill.</p>
+      <p>It's because of delay.</p>
+      <p>You're on a job or it's after hours.</p>
+      <p>You miss a call.</p>
+      <p>You plan to follow up later.</p>
+      <p>Or a web inquiry comes in from your website, and you don't see it right away.</p>
+      <p>By the time you respond, the customer has already moved on.</p>
+
+      <h2>The First Response Wins More Than You Think</h2>
+      <p>Speed creates trust.</p>
+      <p>When someone hears back quickly, it signals professionalism, reliability, and availability.</p>
+      <p>Even a simple response is enough to keep the lead engaged.</p>
+      <p>Without that, you're just another option they contacted.</p>
+
+      <h2>It's Not About Being Available 24/7</h2>
+      <p>Most small teams can't answer every call or reply instantly.</p>
+      <p>That's not realistic.</p>
+      <p>But what is realistic is making sure every lead gets a response right away — even if you're busy.</p>
+      <p>That could be:</p>
+      <ul>
+        <li>a missed call text back</li>
+        <li>an instant reply to a web widget or form</li>
+        <li>a quick acknowledgment message</li>
+      </ul>
+      <p>If you want to see how missed calls can be handled instantly, take a look at</p>
+      <p><Link to="/features/missed-call-text-back">missed call text back</Link>.</p>
+
+      <h2>Speed Doesn't Mean Rushing — It Means Starting the Conversation</h2>
+      <p>You don't need to solve customer's problem in your reply.</p>
+      <p>You just need to respond.</p>
+      <p>Once the conversation starts, you've already increased your chances of getting the job.</p>
+      <p>From there, you can gather details and move things forward.</p>
+
+      <h2>Fast Response + Simple System = More Booked Jobs</h2>
+      <p>The contractors who consistently win more work usually have one thing in common.</p>
+      <p>They respond fast, every time.</p>
+      <p>Not manually. But through a simple system that makes sure no lead is missed.</p>
+
+      <h2>Speed to Lead and Reviews Work Together</h2>
+      <p>There's another layer to this.</p>
+      <p>Speed helps you win the job.</p>
+      <p>Reviews help you win the next job.</p>
+      <p>When someone finds your business, they look at how quickly you respond and how many good reviews you have.</p>
+      <p>That combination is powerful.</p>
+      <p>If you're already responding quickly, the next step is making sure you consistently collect good reviews.</p>
+      <p>You can see how that works here:</p>
+      <p><Link to="/features/reviews">review system</Link></p>
+
+      <h2>Most Businesses Don't Have a Lead Problem — They Have a Response Problem</h2>
+      <p>Before spending more on ads or SEO, it's worth asking:</p>
+      <p>Are you fully capturing the leads you already have?</p>
+      <p>Because improving your response speed often has a bigger impact than generating more traffic. And it's the low hanging fruit to act on.</p>
+
+      <h2>A Small Change That Makes a Big Difference</h2>
+      <p>You don't need to overhaul your business.</p>
+      <p>You just need to make sure every lead gets a fast response.</p>
+      <p>That one change can increase conversion, reduce missed opportunities, and turn more inquiries into actual jobs.</p>
+
+      <h2>Want to Respond Faster Without Changing Your Daily Workflow?</h2>
+      <p>If you want to make sure every call, text, or web inquiry gets an instant response:</p>
+      <p>👉 <Link to="/features/web-widget">See how it works</Link></p>
+    </>
+  ),
   "get-more-google-reviews-home-services-contractors": (
     <>
       <p>Most contractors don't have a quality problem.</p>

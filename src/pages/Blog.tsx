@@ -5,10 +5,12 @@ import { PageMeta } from "@/components/PageMeta";
 import { blogPosts } from "@/data/blogPosts";
 import blogMissedCall from "@/assets/blog-missed-call.jpg";
 import blogGoogleReviews from "@/assets/blog-google-reviews.jpg";
+import blogSpeedToLead from "@/assets/blog-speed-to-lead.jpg";
 
 const thumbnailMap: Record<string, string> = {
   "missed-call-text-back-hvac-plumbing": blogMissedCall,
   "get-more-google-reviews-home-services-contractors": blogGoogleReviews,
+  "speed-to-lead-home-services": blogSpeedToLead,
 };
 
 const Blog = () => {
