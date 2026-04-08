@@ -14,6 +14,7 @@ import AutomatedReviews from "./pages/AutomatedReviews";
 import AIVoice from "./pages/AIVoice";
 import Blog from "./pages/Blog";
 import BlogArticle from "./pages/BlogArticle";
+import ScrollToTop from "./components/ScrollToTop";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

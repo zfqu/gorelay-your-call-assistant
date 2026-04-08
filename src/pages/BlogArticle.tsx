@@ -72,7 +72,7 @@ const articleContent: Record<string, React.ReactNode> = {
         <li>a quick acknowledgment message</li>
       </ul>
       <p>If you want to see how missed calls can be handled instantly, take a look at</p>
-      <p><Link to="/features/missed-call-text-back">missed call text back</Link>.</p>
+      <p>👉 <Link to="/features/missed-call-text-back">missed call text back</Link>.</p>
 
       <h2>Speed Doesn't Mean Rushing — It Means Starting the Conversation</h2>
       <p>You don't need to solve customer's problem in your reply.</p>
@@ -93,7 +93,7 @@ const articleContent: Record<string, React.ReactNode> = {
       <p>That combination is powerful.</p>
       <p>If you're already responding quickly, the next step is making sure you consistently collect good reviews.</p>
       <p>You can see how that works here:</p>
-      <p><Link to="/features/reviews">review system</Link></p>
+      <p>👉 <Link to="/features/reviews">review system</Link></p>
 
       <h2>Most Businesses Don't Have a Lead Problem — They Have a Response Problem</h2>
       <p>Before spending more on ads or SEO, it's worth asking:</p>
