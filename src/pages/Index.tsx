@@ -5,6 +5,7 @@ import { ProblemSection } from "@/components/ProblemSection";
 import { SolutionOverview } from "@/components/SolutionOverview";
 import { HowItWorksSteps } from "@/components/HowItWorksSteps";
 import { UseCases } from "@/components/UseCases";
+import { ContractorInsights } from "@/components/ContractorInsights";
 import { TrustSection } from "@/components/TrustSection";
 import { FAQ } from "@/components/FAQ";
 import { FinalCTA } from "@/components/FinalCTA";
