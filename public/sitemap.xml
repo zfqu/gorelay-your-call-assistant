@@ -51,6 +51,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://gorelay.ai/blog/respond-to-website-leads-instantly</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://gorelay.ai/privacy-policy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

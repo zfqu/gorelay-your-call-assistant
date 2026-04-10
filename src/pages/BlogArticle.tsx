@@ -7,8 +7,10 @@ import NotFound from "./NotFound";
 import blogMissedCall from "@/assets/blog-missed-call.jpg";
 import blogGoogleReviews from "@/assets/blog-google-reviews.jpg";
 import blogSpeedToLead from "@/assets/blog-speed-to-lead.jpg";
+import blogWebLeads from "@/assets/blog-web-leads.jpg";
 
 const thumbnailMap: Record<string, string> = {
+  "respond-to-website-leads-instantly": blogWebLeads,
   "missed-call-text-back-hvac-plumbing": blogMissedCall,
   "get-more-google-reviews-home-services-contractors": blogGoogleReviews,
   "speed-to-lead-home-services": blogSpeedToLead,
@@ -16,6 +18,121 @@ const thumbnailMap: Record<string, string> = {
 
 // Article content components keyed by slug
 const articleContent: Record<string, React.ReactNode> = {
+  "respond-to-website-leads-instantly": (
+    <>
+      <p>Most contractors think their website is capturing leads.</p>
+      <p>In reality, it's probably losing them.</p>
+      <p>Not because people aren't interested — but because of how those leads are being captured and handled.</p>
+
+      <h2>The Problem With Website Forms (That Nobody Talks About)</h2>
+      <p>Most website forms look like this:</p>
+      <ul>
+        <li>name</li>
+        <li>email</li>
+        <li>phone</li>
+        <li>address</li>
+        <li>message</li>
+        <li>a few more fields</li>
+      </ul>
+      <p>From the business side, it seems reasonable.</p>
+      <p>From the customer's side, it feels like work.</p>
+      <p>And most people simply won't do it.</p>
+      <p>They land on your site, take a quick look, and leave.</p>
+
+      <h2>Even When Someone Fills It Out… It Still Breaks</h2>
+      <p>Let's say someone actually does fill out the form.</p>
+      <p>Now what?</p>
+      <p>That submission usually goes into an email inbox.</p>
+      <p>And no one is watching that inbox in real time.</p>
+      <p>You might check it later that day.</p>
+      <p>Or the next morning.</p>
+      <p>Sometimes even longer.</p>
+      <p>By the time you respond, the lead is gone for sure.</p>
+
+      <h2>This Is Why Website Leads "Don't Convert"</h2>
+      <p>It's easy to blame the lead:</p>
+      <p>"They weren't serious."</p>
+      <p>"Bad quality."</p>
+      <p>But most of the time, it's not the lead.</p>
+      <p>It's the delay.</p>
+      <p>People are looking for help now — not hours or days later.</p>
+
+      <h2>What Works Better Than Forms</h2>
+      <p>Instead of asking someone to fill out a long form and wait…</p>
+      <p>You give them something immediate.</p>
+      <p>A simple widget on your site that shows:</p>
+      <p>"Text Us"</p>
+      <p>No friction. No long form.</p>
+      <p>Just a highly visible CTA widget.</p>
+
+      <h2>How the Web Widget Actually Works</h2>
+      <p>Here's what happens instead:</p>
+      <p>Someone lands on your site →</p>
+      <p>They see the widget →</p>
+      <p>They enter what their name and phone number →</p>
+      <p>They immediately get a text</p>
+      <p>Now the conversation has started.</p>
+      <p>You capture:</p>
+      <ul>
+        <li>what they need</li>
+        <li>how to contact them</li>
+      </ul>
+      <p>That's it. Very simple, no friction, no waiting.</p>
+
+      <h2>Why This Converts Better (Especially on Mobile)</h2>
+      <p>Most website visitors are on their phone.</p>
+      <p>They don't want to:</p>
+      <ul>
+        <li>fill out multiple fields</li>
+        <li>wait for an email</li>
+        <li>wonder if anyone will respond</li>
+      </ul>
+      <p>But they will:</p>
+      <ul>
+        <li>tap a widget</li>
+        <li>send a quick message</li>
+        <li>reply to a text</li>
+      </ul>
+      <p>It feels natural — like texting any other business.</p>
+
+      <h2>The Real Advantage Is Timing</h2>
+      <p>The difference isn't just the format.</p>
+      <p>It's the timing.</p>
+      <p>With a form:</p>
+      <ul>
+        <li>lead submits</li>
+        <li>sits in inbox</li>
+        <li>delayed response</li>
+      </ul>
+      <p>With a widget:</p>
+      <ul>
+        <li>lead engages</li>
+        <li>conversation starts immediately</li>
+      </ul>
+      <p>That's the difference between chasing a lead and actually capturing it.</p>
+
+      <h2>This Is the Same Problem as Missed Calls</h2>
+      <p>If you miss a call and respond later, the job is usually gone.</p>
+      <p>Website leads are no different.</p>
+      <p>They just fail more quietly.</p>
+      <p>👉 <Link to="/features/missed-call-text-back">missed call text back</Link></p>
+
+      <h2>Speed to Lead Applies Here Too</h2>
+      <p>Whether it's a call or a website visit, the rule is the same:</p>
+      <p>The faster you respond, the better your chances.</p>
+      <p>👉 <Link to="/blog/speed-to-lead-home-services">speed to lead</Link></p>
+
+      <h2>A Small Change That Makes a Big Difference</h2>
+      <p>You don't need more traffic.</p>
+      <p>You don't need better leads.</p>
+      <p>You need to capture and respond while they're still there.</p>
+      <p>That's what actually changes conversion.</p>
+
+      <h2>Want to Turn Website Visitors Into Real Conversations?</h2>
+      <p>If you want your website to engage visitors instantly, capture their info, and start a conversation in real time:</p>
+      <p>👉 <Link to="/features/web-widget">See how the web widget works</Link></p>
+    </>
+  ),
   "speed-to-lead-home-services": (
     <>
       <p>Most contractors think they need more leads.</p>
