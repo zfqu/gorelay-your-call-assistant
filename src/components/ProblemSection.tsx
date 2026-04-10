@@ -11,7 +11,7 @@ const problems = [
   },
   {
     icon: Users,
-    text: "They've already hired someone else",
+    text: "Your competitors get the job",
   },
 ];
 
@@ -23,7 +23,7 @@ export function ProblemSection() {
           Leads are lost in minutes
         </h2>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-4">
-          Customers don't wait. If you miss a call or respond late, they move on to the next company.
+          Customers don't wait. If you miss a call and respond late, they move on to the next company.
         </p>
         <p className="text-lg font-medium text-foreground mb-10">
           Most jobs go to whoever responds first.
