@@ -21,7 +21,7 @@ export function ContractorInsights() {
           What contractors are seeing
         </h2>
         <p className="text-sm text-muted-foreground mb-10">
-          Based on real conversations with home service contractors using Relay
+          Feedback from home service contractors using Relay
         </p>
 
         <div className="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
