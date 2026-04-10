@@ -20,7 +20,7 @@ export function ContractorInsights() {
         <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">
           What contractors are seeing
         </h2>
-        <p className="text-sm text-muted-foreground mb-10">
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10">
           Feedback from home service contractors using Relay
         </p>
 
