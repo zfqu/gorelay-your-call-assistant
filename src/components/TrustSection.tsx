@@ -3,7 +3,7 @@ import { Zap, MessageSquare, Trophy } from "lucide-react";
 const points = [
   {
     icon: Zap,
-    text: "If you miss a call, chances are they're already calling the next company.",
+    text: "If you miss a call or web inquiry, chances are they're already calling the next company.",
   },
   {
     icon: MessageSquare,
