@@ -8,6 +8,13 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "respond-to-website-leads-instantly",
+    title: "How to Respond to Website Leads Instantly (Before They Go Cold)",
+    excerpt: "Most people don't fill out website forms — and if they do, the lead often goes cold. Here's a better way to capture and respond instantly.",
+    date: "2026-04-10",
+    thumbnail: "/src/assets/blog-web-leads.jpg",
+  },
+  {
     slug: "speed-to-lead-home-services",
     title: "Why Speed to Lead Matters for Home Service Businesses (And How to Fix It)",
     excerpt: "Most contractors don't need more leads — they need to respond faster. Here's why speed to lead directly impacts how many jobs you win.",
