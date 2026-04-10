@@ -3,7 +3,7 @@ import { Clock, PhoneOff, Users } from "lucide-react";
 const problems = [
   {
     icon: PhoneOff,
-    text: "You miss a call while on a job",
+    text: "You miss a call or web inquiry",
   },
   {
     icon: Clock,
