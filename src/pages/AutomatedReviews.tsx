@@ -246,7 +246,7 @@ export default function AutomatedReviews() {
               Who this is for
             </h2>
             <div className="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto">
-              {["All trades", "Local service businesses", "Any business relying on Google reviews"].map((item) => (
+              {["Local service businesses", "Clinics & offices", "Any business relying on Google reviews"].map((item) => (
                 <span key={item} className="px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-sm font-medium">
                   {item}
                 </span>
