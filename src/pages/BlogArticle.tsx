@@ -115,7 +115,7 @@ const articleContent: Record<string, React.ReactNode> = {
       <p>If you miss a call and respond later, the job is usually gone.</p>
       <p>Website leads are no different.</p>
       <p>They just fail more quietly.</p>
-      <p>👉 <Link to="/features/missed-call-text-back">missed call text back</Link></p>
+      <p>👉 <Link to="/features/speed-to-lead">missed call text back</Link></p>
 
       <h2>Speed to Lead Applies Here Too</h2>
       <p>Whether it's a call or a website visit, the rule is the same:</p>
@@ -130,7 +130,7 @@ const articleContent: Record<string, React.ReactNode> = {
 
       <h2>Want to Turn Website Visitors Into Real Conversations?</h2>
       <p>If you want your website to engage visitors instantly, capture their info, and start a conversation in real time:</p>
-      <p>👉 <Link to="/features/web-widget">See how the web widget works</Link></p>
+      <p>👉 <Link to="/features/speed-to-lead">See how the web widget works</Link></p>
     </>
   ),
   "speed-to-lead-home-services": (
@@ -189,7 +189,7 @@ const articleContent: Record<string, React.ReactNode> = {
         <li>a quick acknowledgment message</li>
       </ul>
       <p>If you want to see how missed calls can be handled instantly, take a look at</p>
-      <p>👉 <Link to="/features/missed-call-text-back">missed call text back</Link>.</p>
+      <p>👉 <Link to="/features/speed-to-lead">missed call text back</Link>.</p>
 
       <h2>Speed Doesn't Mean Rushing — It Means Starting the Conversation</h2>
       <p>You don't need to solve customer's problem in your reply.</p>
@@ -224,7 +224,7 @@ const articleContent: Record<string, React.ReactNode> = {
 
       <h2>Want to Respond Faster Without Changing Your Daily Workflow?</h2>
       <p>If you want to make sure every call, text, or web inquiry gets an instant response:</p>
-      <p>👉 <Link to="/features/web-widget">See how it works</Link></p>
+      <p>👉 <Link to="/features/speed-to-lead">See how it works</Link></p>
     </>
   ),
   "get-more-google-reviews-home-services-contractors": (
@@ -386,7 +386,7 @@ const articleContent: Record<string, React.ReactNode> = {
         <li>how urgent it is</li>
       </ul>
       <p>So when you follow up, you're not starting from zero.</p>
-      <p>If you want to see how that works in practice, check out our <Link to="/features/missed-call-text-back">missed call text back system</Link>.</p>
+      <p>If you want to see how that works in practice, check out our <Link to="/features/speed-to-lead">missed call text back system</Link>.</p>
 
       <h2>Why This Matters More for HVAC & Plumbing</h2>
       <p>In trades like HVAC and plumbing, most inbound calls are high intent.</p>
@@ -413,7 +413,7 @@ const articleContent: Record<string, React.ReactNode> = {
 
       <h2>Want to Capture More of the Jobs You're Already Getting?</h2>
       <p>If you want to automatically respond to missed calls, qualify leads over text, and get job details before calling back:</p>
-      <p>👉 <Link to="/features/missed-call-text-back">See how it works</Link></p>
+      <p>👉 <Link to="/features/speed-to-lead">See how it works</Link></p>
     </>
   ),
 };
