@@ -7,21 +7,21 @@ export function Hero() {
       <div className="container-narrow mx-auto text-center">
         <div className="animate-fade-up">
           <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-            Built for Small to Mid-size Trades
+            Built for Local Service Businesses
           </div>
           
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-            Win more jobs — without
+            Win more customers — without
             <br />
             <span className="gradient-text">missing a single lead.</span>
           </h1>
           
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-            Relay responds instantly to missed calls, website leads, and after-hours inquiries — so every customer hears back and you get the first shot at the job.
+            Relay responds instantly to missed calls, website leads, and after-hours inquiries — so every lead hears back fast and you get the first shot at the booking.
           </p>
           
           <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
-            {["No dashboard", "No app", "No training", "Works within your phone"].map((item) => (
+            {["No dashboard", "No app", "No training", "Works with your existing tools"].map((item) => (
               <span key={item} className="px-3 py-1.5 rounded-full bg-secondary text-secondary-foreground text-sm font-medium">
                 {item}
               </span>

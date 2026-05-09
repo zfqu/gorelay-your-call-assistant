@@ -10,10 +10,9 @@ import {
 import logoLight from "@/assets/logo-light.png";
 
 const featureLinks = [
-  { href: "/features/web-widget", label: "Web Widget Follow-Up" },
-  { href: "/features/missed-call-text-back", label: "Missed Call Text Back" },
-  { href: "/features/reviews", label: "Automated Review Requests" },
-  { href: "/features/ai-voice", label: "Inbound AI Voice" },
+  { href: "/features/speed-to-lead", label: "Speed-to-Lead & Follow-Up" },
+  { href: "/features/reviews", label: "Review Automation" },
+  { href: "/features/lead-reactivation", label: "Lead Reactivation" },
 ];
 
 const navLinks = [

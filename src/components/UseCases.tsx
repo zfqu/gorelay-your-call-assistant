@@ -1,46 +1,14 @@
-import { Wrench, Wind, Zap, Sparkles, PaintBucket, Home, Hammer, Car } from "lucide-react";
-
-const useCases = [
-  {
-    icon: Wrench,
-    title: "Plumbing",
-    description: "Emergency triage + fast callback capture for burst pipes, leaks, and water heater issues.",
-  },
-  {
-    icon: Wind,
-    title: "HVAC",
-    description: "Handle A/C emergencies in summer and heating issues in winter. 24/7 coverage.",
-  },
-  {
-    icon: Zap,
-    title: "Electrical",
-    description: "Capture electrical emergencies safely with proper priority escalation.",
-  },
-  {
-    icon: Sparkles,
-    title: "Cleaning",
-    description: "Residential and commercial cleaning lead capture with inbound voice AI.",
-  },
-  {
-    icon: PaintBucket,
-    title: "Painting",
-    description: "Capture painting estimates and project inquiries automatically.",
-  },
-  {
-    icon: Home,
-    title: "Roofing",
-    description: "Storm damage calls, inspection requests, and emergency leak leads — captured instantly.",
-  },
-  {
-    icon: Hammer,
-    title: "Remodeling",
-    description: "Kitchen, bath, and whole-home remodel leads captured and qualified automatically.",
-  },
-  {
-    icon: Car,
-    title: "Car Detailing",
-    description: "Capture mobile and shop detailing appointments with automated booking and follow-up.",
-  },
+const niches = [
+  "Chiropractors",
+  "Dental Offices",
+  "Med Spas",
+  "Personal Injury Lawyers",
+  "Health Insurance Agents",
+  "Martial Arts & Dance Studios",
+  "Veterinary Clinics",
+  "Coaches & Consultants",
+  "Hair & Nail Salons",
+  "Home Service Contractors",
 ];
 
 export function UseCases() {
@@ -49,25 +17,21 @@ export function UseCases() {
       <div className="container-wide mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Built for trades
+            Built for every local service business
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Whether you're on a ladder or under a sink, we've got your calls covered.
+            Whether you run a clinic, law office, studio, or service company — if your business runs on appointments and local leads, Relay works for you.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {useCases.map((useCase, index) => (
-            <div
-              key={index}
-              className="card-elevated p-6 text-center transition-all duration-300 hover:-translate-y-1"
+        <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+          {niches.map((n) => (
+            <span
+              key={n}
+              className="px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-sm font-medium"
             >
-              <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <useCase.icon className="h-7 w-7 text-primary" />
-              </div>
-              <h3 className="font-semibold text-foreground mb-2">{useCase.title}</h3>
-              <p className="text-sm text-muted-foreground">{useCase.description}</p>
-            </div>
+              {n}
+            </span>
           ))}
         </div>
       </div>

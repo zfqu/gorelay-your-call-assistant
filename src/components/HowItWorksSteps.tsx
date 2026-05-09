@@ -1,9 +1,10 @@
 const steps = [
-  { number: "1", text: "A customer calls (missed) or submits a web widget request" },
-  { number: "2", text: "Relay responds instantly, follows up and qualifies the lead" },
-  { number: "3", text: "You receive the job details and qualified lead info" },
-  { number: "4", text: "You follow up and close the job" },
-  { number: "5", text: "Relay collects a review automatically after the job is done" },
+  { number: "1", text: "A lead contacts you — missed call, web form, website widget, or social media DM" },
+  { number: "2", text: "Relay responds instantly via SMS, captures their intent and sends a booking link" },
+  { number: "3", text: "If they don't book, Relay follows up automatically with a 3-day SMS nurture sequence" },
+  { number: "4", text: "The lead books — you get notified immediately with full details" },
+  { number: "5", text: "After their visit, Relay sends a multi-day review request sequence via SMS and email" },
+  { number: "6", text: "Owner receives a monthly performance report of leads and reviews" },
 ];
 
 export function HowItWorksSteps() {
@@ -15,7 +16,7 @@ export function HowItWorksSteps() {
             How Relay works
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A simple system that captures leads and reviews while you focus on the work.
+            A simple system that captures leads, converts bookings, and builds your reputation — while you focus on your clients.
           </p>
         </div>
 

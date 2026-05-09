@@ -8,7 +8,7 @@ const PricingPage = () => {
     <div className="min-h-screen bg-background">
       <PageMeta
         title="Pricing"
-        description="Simple, transparent pricing for Relay's revenue protection system. Lead capture, review automation, and missed call text-back for home service contractors."
+        description="Simple, transparent pricing for Relay's revenue protection system. Speed-to-lead, review automation, and lead reactivation for local service businesses."
         path="/pricing"
       />
       <Navigation />

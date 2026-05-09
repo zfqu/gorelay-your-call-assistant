@@ -37,8 +37,8 @@ export function PageMeta({ title, description, path }: PageMetaProps) {
     canonical.href = `https://gorelay.ai${path}`;
 
     return () => {
-      document.title = "Never Miss a Lead | Missed Call Text Back & Lead Follow-Up for Contractors | Relay";
-      setMeta("name", "description", "Automatically text back missed calls, respond to website leads instantly, and get more 5-star reviews. Relay helps contractors capture more leads and win more jobs.");
+      document.title = "Never Miss a Lead | Speed-to-Lead & Review Automation for Local Service Businesses | Relay";
+      setMeta("name", "description", "Automatically text back missed calls, respond to website leads instantly, and get more 5-star reviews. Relay helps local service businesses capture more leads and win more customers.");
       if (canonical) canonical.href = "https://gorelay.ai";
     };
   }, [title, description, path]);

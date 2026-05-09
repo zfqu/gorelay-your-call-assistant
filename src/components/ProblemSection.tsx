@@ -11,7 +11,7 @@ const problems = [
   },
   {
     icon: Users,
-    text: "Your competitors get the job",
+    text: "Your competitors get the customer",
   },
 ];
 
@@ -26,7 +26,7 @@ export function ProblemSection() {
           Customers don't wait. If you miss a call and respond late, they move on to the next company.
         </p>
         <p className="text-lg font-medium text-foreground mb-10">
-          Most jobs go to whoever responds first.
+          Most bookings go to whoever responds first.
         </p>
 
         <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">

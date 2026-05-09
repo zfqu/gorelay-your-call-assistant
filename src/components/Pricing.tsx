@@ -3,65 +3,73 @@ import { Button } from "@/components/ui/button";
 
 const tiers = [
   {
-    name: "Lead Capture",
-    subtitle: "Speed to lead followup. Never miss leads across channels.",
-    price: "$149",
+    name: "Speed-to-Lead & Follow-Up",
+    subtitle: "Respond instantly. Follow up automatically. Never lose a warm lead.",
+    price: "$297",
     features: [
-      "Website lead → instant SMS follow-up",
-      "Missed call → automatic text-back",
-      "Intelligent lead capture and qualification",
-      "Owner notification with full lead details",
-      "Weekly lead summary to owner",
+      "Missed call → instant SMS text-back",
+      "Web widget & web form → instant SMS follow-up",
+      "AI agent captures intent and sends booking link",
+      "3-day SMS follow-up drip if no booking",
+      "Instant owner notification on booking",
+      "Weekly lead summary report to owner",
     ],
-    tagline: "Capture every opportunity automatically.",
+    tagline: "Capture every opportunity. Convert more bookings.",
     cta: "Get Started",
-    color: "blue",
   },
   {
-    name: "Review Booster",
-    subtitle: "Turn completed jobs into 5-star reviews — and protect your reputation.",
-    price: "$149",
+    name: "Review Automation",
+    subtitle: "Turn happy clients into 5-star reviews — automatically.",
+    price: "$197",
     features: [
-      "Automatic SMS review request after each job",
+      "Automatic SMS review request after each appointment",
+      "Multi-day SMS + email follow-up sequence",
       "Direct Google review link",
-      "One follow-up reminder (if no review link clicked)",
-      "Intelligent feedback gathering",
-      "Instant owner alert for negative feedback",
-      "Weekly review summary to owner",
+      "Weekly review summary report to owner",
     ],
     tagline: "Stop bad reviews before they happen.",
     cta: "Get Started",
-    color: "green",
   },
   {
-    name: "Revenue Protection",
-    subtitle: "Reviews + Leads — the complete growth engine.",
-    price: "$249",
-    includesFrom: "everything in Lead Capture & Review Booster",
+    name: "Full Growth Bundle",
+    subtitle: "Speed-to-Lead + Reviews — the complete growth system.",
+    price: "$397",
     features: [
-      "All lead capture features",
-      "All review and reputation features",
-      "Weekly lead & review summary",
+      "Everything in Speed-to-Lead & Follow-Up",
+      "Everything in Review Automation",
+      "Monthly lead capture + review performance report",
+      "Priority support",
     ],
     tagline: "Never miss a lead. Never miss a review.",
     cta: "Get Started",
     popular: true,
-    color: "purple",
   },
 ];
 
 const addOn = {
-  name: "AI Call Answering",
-  price: "+$75",
-  subtitle: "Answer every call — even after hours.",
+  name: "Social Media Auto-Response",
+  price: "+$97",
+  subtitle: "Automatically respond to Facebook and Instagram DMs 24/7 — even when you're with clients.",
   features: [
-    "AI answers when you can't",
-    "Qualifies caller intent",
-    "Sends instant SMS follow-up",
-    "Smart call triage and routing",
-    "Notifies owner with caller details",
+    "AI responds to FB/IG DMs instantly",
+    "Captures lead intent and pushes booking link",
+    "Hands off to 3-day SMS drip if no booking",
+    "Works alongside Speed-to-Lead & Follow-Up plan",
   ],
-  tagline: "Perfect for evenings, weekends, or busy days.",
+};
+
+const reactivation = {
+  name: "Lead Reactivation Campaign",
+  subtitle: "Re-engage your cold leads and recover lost revenue.",
+  price: "$497 setup fee + performance pricing per booked appointment",
+  features: [
+    "AI-powered contact list analysis and segmentation",
+    "Niche-specific multi-channel reactivation campaign",
+    "AI agent handles responses and objections",
+    "You only pay for actual booked appointments",
+    "Custom pricing based on niche and list size",
+  ],
+  tagline: "Turn your existing database into booked revenue.",
 };
 
 export function Pricing() {
@@ -96,11 +104,6 @@ export function Pricing() {
               <p className="text-sm text-muted-foreground mb-4">{tier.subtitle}</p>
               <div className="text-4xl font-bold text-foreground mb-1">{tier.price}</div>
               <p className="text-sm text-muted-foreground mb-6">/month</p>
-              {tier.includesFrom && (
-                <p className="text-sm text-muted-foreground mb-3">
-                  Includes {tier.includesFrom}:
-                </p>
-              )}
               <ul className="space-y-3 mb-6 flex-1">
                 {tier.features.map((feature, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
@@ -120,7 +123,7 @@ export function Pricing() {
         </div>
 
         {/* Add-On */}
-        <div className="max-w-3xl mx-auto mb-16">
+        <div className="max-w-3xl mx-auto mb-10">
           <div className="rounded-2xl border border-border p-8 bg-muted/30">
             <div className="flex items-center gap-2 mb-2">
               <Plus className="h-5 w-5 text-primary" />
@@ -129,7 +132,7 @@ export function Pricing() {
             <div className="text-3xl font-bold text-foreground mb-1">{addOn.price}</div>
             <p className="text-sm text-muted-foreground mb-1">/month</p>
             <p className="text-sm text-muted-foreground mb-4">{addOn.subtitle}</p>
-            <ul className="space-y-3 mb-4">
+            <ul className="space-y-3">
               {addOn.features.map((feature, i) => (
                 <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
                   <Check className="h-4 w-4 text-primary mt-0.5 shrink-0" />
@@ -137,11 +140,31 @@ export function Pricing() {
                 </li>
               ))}
             </ul>
-            <p className="text-sm font-medium text-foreground italic">{addOn.tagline}</p>
           </div>
         </div>
 
-        {/* 30-Day Pilot Disclaimer */}
+        {/* Lead Reactivation - separate distinct card */}
+        <div className="max-w-3xl mx-auto mb-16">
+          <div className="rounded-2xl border-2 border-dashed border-primary/30 p-8 bg-background">
+            <h3 className="text-2xl font-bold text-foreground mb-2">{reactivation.name}</h3>
+            <p className="text-sm text-muted-foreground mb-4">{reactivation.subtitle}</p>
+            <div className="text-lg font-semibold text-foreground mb-6">{reactivation.price}</div>
+            <ul className="space-y-3 mb-6">
+              {reactivation.features.map((feature, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                  <Check className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-sm font-medium text-foreground italic mb-6">{reactivation.tagline}</p>
+            <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="w-full sm:w-auto">Talk to Us</Button>
+            </a>
+          </div>
+        </div>
+
+        {/* 30-Day Pilot */}
         <div className="max-w-3xl mx-auto">
           <div className="bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary/20 rounded-2xl p-8 text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4">
@@ -149,13 +172,13 @@ export function Pricing() {
             </h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                We're offering a limited 30-day pilot for local contractors (plumber, HVAC, electrician) who want to capture missed calls and respond to new leads instantly. <span className="font-semibold text-foreground">There is no charge during the 30 days pilot.</span>
+                We're offering a limited 30-day pilot for local service businesses who want to capture missed calls and respond to new leads instantly. <span className="font-semibold text-foreground">There is no charge during the 30 days pilot.</span>
               </p>
               <p>
                 This is not a self-serve trial. We work directly with a small number of businesses to make sure the system is set up correctly, monitor it and review together.
               </p>
               <p>
-                If you've been missing calls or slow to follow up on new leads, you may be a fit. If the system doesn't capture leads for you after 30 days, cancel it, no commitment.
+                If you've been missing calls or slow to follow up on new leads, you may be a fit. If the system doesn't capture leads or book appointments for you after 30 days, cancel it, no commitment.
               </p>
             </div>
             <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer" className="inline-block mt-6">

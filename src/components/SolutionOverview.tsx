@@ -1,30 +1,24 @@
-import { PhoneOff, Globe, Star, Phone } from "lucide-react";
+import { Zap, Star, Repeat } from "lucide-react";
 import { ArrowRight } from "lucide-react";
 
 const solutions = [
   {
-    icon: PhoneOff,
-    title: "Missed calls",
-    description: "AI assistant instantly texts back missed calls and starts the conversation.",
-    href: "/features/missed-call-text-back",
-  },
-  {
-    icon: Globe,
-    title: "Website leads",
-    description: "AI assistant follows up with website leads in seconds before they go cold.",
-    href: "/features/web-widget",
+    icon: Zap,
+    title: "Speed-to-Lead & Follow-Up",
+    description: "Instant SMS response across calls, web forms, widgets, and social DMs — with a 3-day follow-up sequence.",
+    href: "/features/speed-to-lead",
   },
   {
     icon: Star,
-    title: "Reviews",
-    description: "Automatically collect more 5-star Google reviews after the job is done.",
+    title: "Review Automation",
+    description: "Multi-day SMS and email review request sequence after each appointment — more 5-star reviews automatically.",
     href: "/features/reviews",
   },
   {
-    icon: Phone,
-    title: "AI voice",
-    description: "AI voice assistant answers calls after hours and during busy times.",
-    href: "/features/ai-voice",
+    icon: Repeat,
+    title: "Lead Reactivation",
+    description: "AI-powered campaigns that re-engage your cold contact list and turn dormant leads into booked appointments.",
+    href: "/features/lead-reactivation",
   },
 ];
 
@@ -37,11 +31,11 @@ export function SolutionOverview() {
             Relay captures every lead — <span className="gradient-text">automatically</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Four tools working together so you never miss an opportunity.
+            Three systems working together so you never miss an opportunity.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {solutions.map((item) => (
             <a
               key={item.title}
