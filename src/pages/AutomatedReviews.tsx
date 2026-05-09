@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 
 const steps = [
-  { number: "1", title: "You finish a job", description: "Complete the service as usual — no extra steps needed." },
+  { number: "1", title: "You finish an appointment", description: "Complete the appointment or service as usual — no extra steps needed." },
   { number: "2", title: "Relay sends a text", description: '"Thanks for choosing us — how did we do today?"' },
   { number: "3", title: "Customer replies with a rating", description: "They respond with a simple 1–10 score." },
   { number: "4", title: "Smart routing based on response", description: "Happy customers get a Google review link. Unhappy customers send private feedback to you." },
@@ -31,7 +31,7 @@ const steps = [
 const benefits = [
   { icon: Star, title: "More 5-star reviews automatically", description: "Happy customers are guided straight to your Google review page — no manual follow-up needed." },
   { icon: Shield, title: "Catch unhappy customers early", description: "Negative feedback stays private, giving you a chance to fix issues before they go public." },
-  { icon: Clock, title: "No more chasing customers", description: "Stop asking awkwardly for reviews. Relay handles it automatically after every job." },
+  { icon: Clock, title: "No more chasing customers", description: "Stop asking awkwardly for reviews. Relay handles it automatically after every appointment." },
   { icon: Zap, title: "Consistent review requests", description: "Every customer gets asked — not just the ones you remember to follow up with." },
 ];
 
@@ -46,8 +46,8 @@ export default function AutomatedReviews() {
   return (
     <>
       <PageMeta
-        title="Automated Review Requests - Get More 5-Star Google Reviews"
-        description="Get more Google reviews automatically. Relay sends SMS review requests after every job, routes happy customers to Google, and catches negative feedback privately."
+        title="Review Automation - Get More 5-Star Google Reviews"
+        description="Get more Google reviews automatically. Relay sends a multi-day SMS and email review request sequence after every appointment."
         path="/features/reviews"
       />
       <Navigation />
@@ -57,7 +57,7 @@ export default function AutomatedReviews() {
           <div className="container-narrow mx-auto text-center">
             <div className="animate-fade-up">
               <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-                Automated Review Requests
+                Review Automation
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
                 Get more 5-star reviews
@@ -65,7 +65,7 @@ export default function AutomatedReviews() {
                 <span className="gradient-text">— automatically.</span>
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-                Relay texts your customers after each job, asks for feedback, and sends happy customers straight to your Google review page.
+                After every appointment, Relay sends a smart multi-day review request sequence via SMS and email — catching happy customers at the right moment.
               </p>
               <div className="flex flex-col items-center justify-center gap-3">
                 <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
@@ -103,7 +103,7 @@ export default function AutomatedReviews() {
           <div className="container-narrow mx-auto">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-                Reviews drive more calls and jobs
+                Reviews drive more calls and customers
               </h2>
               <div className="grid sm:grid-cols-3 gap-6 mb-8">
                 <div className="card-elevated p-6 text-center">
@@ -119,7 +119,7 @@ export default function AutomatedReviews() {
                 <div className="card-elevated p-6 text-center">
                   <Zap className="h-8 w-8 text-primary mx-auto mb-3" />
                   <h3 className="font-semibold text-foreground mb-2">More calls</h3>
-                  <p className="text-sm text-muted-foreground">Trust turns into phone calls and booked jobs</p>
+                  <p className="text-sm text-muted-foreground">Trust turns into phone calls and booked appointments</p>
                 </div>
               </div>
               <p className="text-foreground font-semibold text-xl">
@@ -137,7 +137,7 @@ export default function AutomatedReviews() {
                 How automated review requests work
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                A simple SMS review request flow that runs after every job.
+                A multi-day SMS and email review request sequence that runs after every appointment.
               </p>
             </div>
             <div className="max-w-2xl mx-auto space-y-6">
@@ -231,7 +231,7 @@ export default function AutomatedReviews() {
               Why this works
             </h2>
             <p className="text-lg text-muted-foreground mb-4">
-              Customers are most likely to leave a review right after the job is done.
+              Customers are most likely to leave a review right after their appointment.
             </p>
             <p className="text-lg text-muted-foreground">
               Relay asks at the perfect moment — when the experience is still fresh. A simple text is all it takes to increase your Google reviews consistently.
