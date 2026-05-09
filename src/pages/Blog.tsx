@@ -19,8 +19,8 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
       <PageMeta
-        title="Blog – Insights for Home Service Businesses"
-        description="Practical tips on capturing more leads and reviews, responding faster, and growing your home service business."
+        title="Blog – Insights for Local Service Businesses"
+        description="Practical tips on capturing more leads and reviews, responding faster, and growing your local service business."
         path="/blog"
       />
       <Navigation />
@@ -28,7 +28,7 @@ const Blog = () => {
         <section className="section-padding">
           <div className="container-narrow mx-auto">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-              Insights for Home Service Businesses
+              Insights for Local Service Businesses
             </h1>
             <p className="text-lg text-muted-foreground mb-12 max-w-2xl">
               Practical tips on capturing more leads and reviews, responding faster, and growing your business.
