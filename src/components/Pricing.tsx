@@ -47,14 +47,15 @@ const tiers = [
 ];
 
 const addOn = {
-  name: "Social Media Auto-Response",
-  price: "+$97",
-  subtitle: "Automatically respond to Facebook and Instagram DMs 24/7 — even when you're with clients.",
+  name: "Social Media DM Lead Capture",
+  price: "+$97/month",
+  subtitle: "When a lead messages your business on Facebook or Instagram, Relay treats it like any other inbound lead — responding instantly and following up until they book.",
   features: [
-    "AI responds to FB/IG DMs instantly",
+    "Instant AI response to incoming FB/IG DMs",
     "Captures lead intent and pushes booking link",
-    "Hands off to 3-day SMS drip if no booking",
-    "Works alongside Speed-to-Lead & Follow-Up plan",
+    "3-day SMS follow-up drip if no booking occurs",
+    "Lead notified owner on booking conversion",
+    "Requires Speed-to-Lead & Follow-Up plan",
   ],
 };
 
