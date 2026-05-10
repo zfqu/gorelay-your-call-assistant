@@ -3,43 +3,44 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { PageMeta } from "@/components/PageMeta";
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import {
   ArrowRight,
   Star,
   MessageSquare,
+  Mail,
   CheckCircle,
-  AlertTriangle,
   ThumbsUp,
   Shield,
   Clock,
   Users,
   Zap,
+  Search,
+  TrendingUp,
+  Award,
 } from "lucide-react";
 
 const steps = [
-  { number: "1", title: "You finish an appointment", description: "Complete the appointment or service as usual — no extra steps needed." },
-  { number: "2", title: "Relay sends a text", description: '"Thanks for choosing us — how did we do today?"' },
-  { number: "3", title: "Customer replies with a rating", description: "They respond with a simple 1–10 score." },
-  { number: "4", title: "Smart routing based on response", description: "Happy customers get a Google review link. Unhappy customers send private feedback to you." },
+  { number: "1", title: "A client completes their appointment or visit", description: "" },
+  { number: "2", title: "Direct SMS review request", description: "Relay sends an SMS with your Google review link — no rating scale, just a simple ask." },
+  { number: "3", title: "Personalized email follow-up", description: "If no review yet, Relay follows up with a personalized email request." },
+  { number: "4", title: "Final SMS reminder", description: "If still no review, a final SMS reminder goes out — the last nudge that often converts." },
+  { number: "5", title: "Auto-response on Google", description: "When a review is posted, Relay automatically posts a professional response on your Google Business Profile — no manual replies needed." },
 ];
 
 const benefits = [
-  { icon: Star, title: "More 5-star reviews automatically", description: "Happy customers are guided straight to your Google review page — no manual follow-up needed." },
-  { icon: Shield, title: "Catch unhappy customers early", description: "Negative feedback stays private, giving you a chance to fix issues before they go public." },
-  { icon: Clock, title: "No more chasing customers", description: "Stop asking awkwardly for reviews. Relay handles it automatically after every appointment." },
-  { icon: Zap, title: "Consistent review requests", description: "Every customer gets asked — not just the ones you remember to follow up with." },
+  { icon: MessageSquare, title: "3-touch SMS + email sequence", description: "Multi-channel review request after every appointment." },
+  { icon: Star, title: "Direct Google review link", description: "No friction, no rating scale — just a simple ask." },
+  { icon: CheckCircle, title: "Auto-stops on review", description: "Sequence stops automatically once the client leaves a review." },
+  { icon: Award, title: "Automatic Google responses", description: "Professional responses posted to your Google Business Profile automatically." },
+  { icon: Shield, title: "Private negative feedback", description: "Negative feedback captured privately before it reaches Google." },
+  { icon: Zap, title: "Instant owner alerts", description: "Get notified instantly when any negative feedback comes in." },
+  { icon: Clock, title: "Weekly performance summary", description: "Review performance summary delivered to your inbox every week." },
+  { icon: TrendingUp, title: "Monthly growth report", description: "Monthly report showing review growth and response rate." },
 ];
 
-const faqs = [
-  { question: "Do customers actually respond?", answer: "Yes — text messages have very high response rates. Most customers are happy to share quick feedback right after a job." },
-  { question: "Can I customize the message?", answer: "Yes — you can adjust the wording to fit your business and brand." },
-  { question: "Does this work with Google reviews?", answer: "Yes — happy customers are directed straight to your Google review page with one tap." },
-  { question: "What if someone leaves bad feedback?", answer: "It stays private. You get an alert so you can reach out and fix the issue before it becomes a public review." },
+const seoCards = [
+  { icon: Search, title: "Google ranks businesses with more reviews higher", body: "Google's local search algorithm directly factors in review quantity and recency. More fresh reviews = higher position in Google Maps and local search results." },
+  { icon: TrendingUp, title: "Higher ranking means more inbound leads", body: "Businesses in the top 3 Google local results capture over 75% of clicks. Every new review moves you closer to that position — without spending more on ads." },
+  { icon: ThumbsUp, title: "Reviews convert browsers into buyers", body: "Over 90% of consumers read reviews before choosing a local service provider. A strong, recent review profile is the difference between getting the call and being skipped." },
 ];
 
 export default function AutomatedReviews() {
@@ -47,7 +48,7 @@ export default function AutomatedReviews() {
     <>
       <PageMeta
         title="Review Automation - Get More 5-Star Google Reviews"
-        description="Get more Google reviews automatically. Relay sends a multi-day SMS and email review request sequence after every appointment."
+        description="Get more Google reviews automatically. Relay sends a multi-touch SMS and email review sequence after every appointment."
         path="/features/reviews"
       />
       <Navigation />
@@ -65,12 +66,12 @@ export default function AutomatedReviews() {
                 <span className="gradient-text">— automatically.</span>
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-                After every appointment, Relay sends a smart multi-day review request sequence via SMS and email — catching happy customers at the right moment.
+                After every appointment, Relay sends a smart multi-touch review sequence across SMS and email — catching happy clients at exactly the right moment, on the channel that works for them.
               </p>
               <div className="flex flex-col items-center justify-center gap-3">
                 <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
                   <Button variant="hero" className="w-full sm:w-auto">
-                    Get Started
+                    Talk to Us
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </a>
@@ -88,10 +89,10 @@ export default function AutomatedReviews() {
                 Most customers never leave a review
               </h2>
               <div className="space-y-4 text-lg text-muted-foreground">
-                <p>You finish a job. The customer is happy. But you never follow up — and neither do they.</p>
-                <p>Without a simple nudge at the right moment, even your happiest customers won't take the time to leave a Google review.</p>
+                <p>You finish an appointment. The client is happy. But you never follow up — and neither do they.</p>
+                <p>Without a simple nudge at the right moment, even your happiest clients won't take the time to leave a Google review.</p>
                 <p className="text-foreground font-semibold text-xl">
-                  Even happy customers won't leave a review unless you ask — and ask at the right time.
+                  Even happy clients won't leave a review unless you ask — and ask at the right time.
                 </p>
               </div>
             </div>
@@ -137,7 +138,7 @@ export default function AutomatedReviews() {
                 How automated review requests work
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                A multi-day SMS and email review request sequence that runs after every appointment.
+                A multi-channel sequence across SMS and email — so more happy clients actually leave a review.
               </p>
             </div>
             <div className="max-w-2xl mx-auto space-y-6">
@@ -148,7 +149,7 @@ export default function AutomatedReviews() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground text-lg">{step.title}</h3>
-                    <p className="text-muted-foreground">{step.description}</p>
+                    {step.description && <p className="text-muted-foreground">{step.description}</p>}
                   </div>
                 </div>
               ))}
@@ -156,12 +157,102 @@ export default function AutomatedReviews() {
           </div>
         </section>
 
-        {/* Benefits */}
+        {/* See it in action — Multi-channel sequence */}
         <section className="section-padding">
           <div className="container-narrow mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-                What you get
+                Your multi-channel review sequence
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                One sequence. Three touches. SMS and email — until they review.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
+              {/* Touch 1 - SMS */}
+              <div className="card-elevated p-6 flex flex-col">
+                <div className="flex items-center gap-2 mb-4">
+                  <MessageSquare className="h-5 w-5 text-primary" />
+                  <span className="font-semibold text-foreground text-sm">Touch 1 · SMS</span>
+                </div>
+                <div className="sms-bubble-outgoing mb-4">
+                  <p className="text-sm">Hi [Name] — thanks for visiting [Business Name]! We'd love to hear about your experience. Mind leaving us a quick Google review? It only takes a minute: [review link]</p>
+                </div>
+                <p className="text-xs text-muted-foreground italic mt-auto">Sent immediately after appointment</p>
+              </div>
+
+              {/* Touch 2 - Email */}
+              <div className="card-elevated p-6 flex flex-col">
+                <div className="flex items-center gap-2 mb-4">
+                  <Mail className="h-5 w-5 text-primary" />
+                  <span className="font-semibold text-foreground text-sm">Touch 2 · Email</span>
+                </div>
+                <div className="rounded-lg border border-border bg-background p-4 mb-4">
+                  <p className="text-xs text-muted-foreground mb-1">Subject</p>
+                  <p className="text-sm font-semibold text-foreground mb-3">How was your visit, [Name]?</p>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Hi [Name], we hope you enjoyed your recent visit with us. If you have a moment, your Google review would mean a lot to our team and helps others find us.
+                  </p>
+                  <p className="text-sm font-medium text-primary">Leave a Review →</p>
+                </div>
+                <p className="text-xs text-muted-foreground italic mt-auto">Sent if no review after Touch 1</p>
+              </div>
+
+              {/* Touch 3 - SMS */}
+              <div className="card-elevated p-6 flex flex-col">
+                <div className="flex items-center gap-2 mb-4">
+                  <MessageSquare className="h-5 w-5 text-primary" />
+                  <span className="font-semibold text-foreground text-sm">Touch 3 · SMS</span>
+                </div>
+                <div className="sms-bubble-outgoing mb-4">
+                  <p className="text-sm">Hey [Name], one last note — we'd really appreciate your feedback on Google. Your review helps our small business grow. [review link]</p>
+                </div>
+                <p className="text-xs text-muted-foreground italic mt-auto">Final reminder. Sequence stops once review is posted.</p>
+              </div>
+            </div>
+
+            {/* Auto-Response mock */}
+            <div className="max-w-2xl mx-auto">
+              <div className="text-center mb-6">
+                <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold uppercase tracking-wide">
+                  Auto-Response on Google Business Profile
+                </span>
+              </div>
+              <div className="card-elevated p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center font-semibold text-primary">S</div>
+                  <div>
+                    <p className="font-semibold text-foreground text-sm">Sarah M.</p>
+                    <div className="flex text-amber-500 text-sm">★★★★★</div>
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground mb-5">
+                  Amazing experience — the staff was so welcoming and professional. Will definitely be back!
+                </p>
+                <div className="border-l-2 border-primary pl-4 py-1">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-xs font-semibold text-foreground">Owner responded</span>
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary">automatically via Relay</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Thank you so much, Sarah! We're thrilled to hear you had a great experience. We can't wait to see you again!
+                  </p>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground text-center mt-4 italic">
+                Every new review gets a professional, timely response — automatically. No more letting reviews sit unanswered.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* What you get */}
+        <section className="section-padding bg-muted/50">
+          <div className="container-narrow mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+                What you get with Review Automation
               </h2>
             </div>
             <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -178,85 +269,40 @@ export default function AutomatedReviews() {
           </div>
         </section>
 
-        {/* Real Example */}
-        <section className="section-padding bg-muted/50">
-          <div className="container-narrow mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-                See it in action
-              </h2>
-              <p className="text-lg text-muted-foreground">Real SMS review request examples.</p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {/* Positive */}
-              <div className="card-elevated p-6">
-                <div className="flex items-center gap-2 mb-4">
-                  <CheckCircle className="h-5 w-5 text-green-600" />
-                  <span className="font-semibold text-foreground">Happy Customer</span>
-                </div>
-                <div className="space-y-3">
-                  <div className="sms-bubble-outgoing"><p className="text-sm">Hi John — thanks for choosing ABC Plumbing. On a scale of 1–10, how did we do?</p></div>
-                  <div className="sms-bubble"><p className="text-sm text-foreground">9</p></div>
-                  <div className="sms-bubble-outgoing"><p className="text-sm">Awesome — would you mind leaving a quick Google review? It helps a lot: [review link]</p></div>
-                </div>
-                <p className="text-xs text-muted-foreground mt-4 italic">Customer is directed to your Google review page.</p>
-              </div>
-
-              {/* Negative */}
-              <div className="card-elevated p-6">
-                <div className="flex items-center gap-2 mb-4">
-                  <AlertTriangle className="h-5 w-5 text-amber-500" />
-                  <span className="font-semibold text-foreground">Unhappy Customer</span>
-                </div>
-                <div className="space-y-3">
-                  <div className="sms-bubble-outgoing"><p className="text-sm">Hi John — thanks for choosing ABC Plumbing. On a scale of 1–10, how did we do?</p></div>
-                  <div className="sms-bubble"><p className="text-sm text-foreground">5</p></div>
-                  <div className="sms-bubble-outgoing"><p className="text-sm">Sorry to hear that — what went wrong?</p></div>
-                  <div className="sms-bubble"><p className="text-sm text-foreground">Technician was late</p></div>
-                </div>
-                <div className="mt-4 p-3 rounded-lg bg-muted border border-border">
-                  <p className="text-xs font-semibold text-foreground mb-1">📋 You receive privately:</p>
-                  <p className="text-xs text-muted-foreground">Feedback: Technician was late</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Why This Works */}
+        {/* Local SEO Impact */}
         <section className="section-padding">
-          <div className="container-narrow mx-auto text-center max-w-3xl">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-              Why this works
-            </h2>
-            <p className="text-lg text-muted-foreground mb-4">
-              Customers are most likely to leave a review right after their appointment.
-            </p>
-            <p className="text-lg text-muted-foreground">
-              Relay asks at the perfect moment — when the experience is still fresh. A simple text is all it takes to increase your Google reviews consistently.
-            </p>
-          </div>
-        </section>
-
-        {/* Who This Is For */}
-        <section className="section-padding bg-muted/50">
-          <div className="container-narrow mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-8">
-              Who this is for
-            </h2>
-            <div className="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto">
-              {["Local service businesses", "Clinics & offices", "Any business relying on Google reviews"].map((item) => (
-                <span key={item} className="px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-sm font-medium">
-                  {item}
-                </span>
+          <div className="container-narrow mx-auto">
+            <div className="text-center mb-12 max-w-3xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+                More reviews = higher Google ranking = more leads
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Reviews aren't just social proof. They're your most powerful local SEO signal.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-10">
+              {seoCards.map((c, i) => (
+                <div key={i} className="card-elevated p-6">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <c.icon className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-foreground mb-2">{c.title}</h3>
+                  <p className="text-sm text-muted-foreground">{c.body}</p>
+                </div>
               ))}
+            </div>
+            <div className="max-w-3xl mx-auto">
+              <div className="rounded-2xl border border-primary/20 bg-primary/5 p-6 text-center">
+                <p className="text-lg font-semibold text-foreground">
+                  The businesses that win local search aren't spending more on ads — they're consistently collecting more reviews than their competitors.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Setup */}
-        <section className="section-padding">
+        <section className="section-padding bg-muted/50">
           <div className="container-narrow mx-auto text-center max-w-2xl">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-8">
               Set up in minutes
@@ -279,36 +325,30 @@ export default function AutomatedReviews() {
           </div>
         </section>
 
-        {/* FAQ */}
-        <section className="section-padding bg-muted/50">
-          <div className="container-narrow mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-                Frequently asked questions
-              </h2>
-            </div>
-            <div className="max-w-2xl mx-auto">
-              <Accordion type="single" collapsible className="w-full">
-                {faqs.map((faq, i) => (
-                  <AccordionItem key={i} value={`item-${i}`}>
-                    <AccordionTrigger className="text-left font-semibold text-foreground">{faq.question}</AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground">{faq.answer}</AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </div>
+        {/* Why this works */}
+        <section className="section-padding">
+          <div className="container-narrow mx-auto text-center max-w-3xl">
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
+              Why this works
+            </h2>
+            <p className="text-lg text-muted-foreground mb-4">
+              Clients are most likely to leave a review immediately after a positive experience — but life gets in the way and they forget. A single SMS request isn't enough. Relay's 3-touch SMS and email sequence catches them across multiple moments and channels, dramatically increasing the chance they follow through.
+            </p>
+            <p className="text-lg text-muted-foreground">
+              And when every new review gets a prompt, professional response on Google, your business signals to both customers and Google that you're active, engaged, and trustworthy — which compounds your local search ranking over time.
+            </p>
           </div>
         </section>
 
         {/* Final CTA */}
-        <section className="section-padding">
+        <section className="section-padding bg-muted/50">
           <div className="container-narrow mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
               Start getting more 5-star reviews today
             </h2>
             <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
               <Button variant="hero">
-                Book a Demo
+                Talk to Us
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </a>
