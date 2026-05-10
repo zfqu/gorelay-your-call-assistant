@@ -8,7 +8,7 @@ const steps = [
   { number: "1", text: "You export your existing contact list from your CRM or booking system" },
   { number: "2", text: "Our AI analyzes every contact — cleaning data, scoring reactivation potential, and identifying the best angle for each lead" },
   { number: "3", text: "Relay launches a personalized multi-channel campaign (SMS + email) tailored to your niche and each contact segment" },
-  { number: "4", text: "Leads who respond get handed off to an AI conversation bot that handles objections and pushes toward booking" },
+  { number: "4", text: "Leads who respond get handed off to an AI agent that handles objections and pushes toward booking" },
   { number: "5", text: "You only pay for results — a setup fee plus a performance fee per booked appointment" },
 ];
 
@@ -79,18 +79,6 @@ export default function LeadReactivation() {
                   <p className="text-foreground text-lg pt-1.5">{step.text}</p>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* PRICING CALLOUT */}
-        <section className="section-padding bg-muted/50">
-          <div className="container-narrow mx-auto">
-            <div className="max-w-3xl mx-auto bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary/20 rounded-2xl p-8 text-center">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Lead Reactivation Pricing</h3>
-              <p className="text-lg text-muted-foreground">
-                $497 setup fee + performance-based pricing per booked appointment. Pricing varies by niche and campaign size. Contact us to get a custom quote.
-              </p>
             </div>
           </div>
         </section>
