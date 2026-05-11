@@ -2,7 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { PageMeta } from "@/components/PageMeta";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone, Globe, FormInput, MessageCircle, Zap } from "lucide-react";
+import { ArrowRight, Phone, Globe, FormInput, MessageCircle, Zap, Check, X } from "lucide-react";
 
 const steps = [
   { number: "1", text: "A lead contacts you — missed call, web form, website widget, or Facebook/Instagram DM" },
