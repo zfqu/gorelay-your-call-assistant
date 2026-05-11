@@ -60,7 +60,7 @@ export default function SpeedToLead() {
                 A lead contacts your business. If no one responds in minutes, they move on to the next option. It's not that you don't care — it's that you're busy running your business. Relay makes sure every lead gets an instant response, no matter when they reach out.
               </p>
               <p className="text-foreground font-semibold text-xl text-center pt-4">
-                Responding within 5 minutes is 400% more likely to convert a lead than responding within 30 minutes.
+                Leads contacted within 5 minutes are 21x more likely to convert than those contacted after 30 minutes. Most businesses respond in 42+ hours — if at all.
               </p>
             </div>
           </div>
