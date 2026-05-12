@@ -2,7 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { PageMeta } from "@/components/PageMeta";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowDown, Repeat, Upload, Brain, Tags, Activity, Smile, Sparkles, Swords, Check } from "lucide-react";
+import { ArrowRight, ArrowDown, Repeat, Upload, Brain, Tags, Activity, Smile, Sparkles, Swords, Check, ShieldCheck, Handshake, Clock, Ban, UserCheck } from "lucide-react";
 
 const steps = [
   { number: "1", text: "You export your existing contact list from your CRM or booking system" },
@@ -329,6 +329,82 @@ export default function LeadReactivation() {
             <p className="text-center text-foreground font-bold text-xl mt-8 max-w-2xl mx-auto">
               You already paid to acquire these leads. Reactivating them costs a fraction of generating new ones.
             </p>
+          </div>
+        </section>
+
+        {/* COMPLIANCE */}
+        <section className="section-padding bg-foreground text-background">
+          <div className="container-narrow mx-auto">
+            <div className="text-center mb-12 max-w-3xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+                Compliant by design — not an afterthought
+              </h2>
+              <p className="text-lg text-background/70">
+                Reactivating old contacts the wrong way can expose the business to legal liability. We handle compliance at every step so you never have to think about it.
+              </p>
+            </div>
+
+            <div className="max-w-3xl mx-auto space-y-8">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-lg bg-background/10 flex items-center justify-center shrink-0">
+                  <ShieldCheck className="h-5 w-5 text-background" />
+                </div>
+                <div>
+                  <p className="font-semibold text-background text-lg mb-1">DNC Scrubbing Before Every Campaign</p>
+                  <p className="text-background/70 text-sm">
+                    Every contact list is scrubbed against Do Not Call registry records before a single message is sent. Contacts on the DNC list are automatically excluded — full stop.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-lg bg-background/10 flex items-center justify-center shrink-0">
+                  <Handshake className="h-5 w-5 text-background" />
+                </div>
+                <div>
+                  <p className="font-semibold text-background text-lg mb-1">Prior Business Relationship Only</p>
+                  <p className="text-background/70 text-sm">
+                    We only reactivate contacts who have a prior relationship with your business — past inquiries, lapsed clients, or one-time visitors. We never contact cold strangers on your behalf.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-lg bg-background/10 flex items-center justify-center shrink-0">
+                  <Clock className="h-5 w-5 text-background" />
+                </div>
+                <div>
+                  <p className="font-semibold text-background text-lg mb-1">Time-of-Day Restrictions Enforced</p>
+                  <p className="text-background/70 text-sm">
+                    All messages are sent between 8am and 8pm local time only — in compliance with TCPA guidelines and basic respect for your contacts.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-lg bg-background/10 flex items-center justify-center shrink-0">
+                  <Ban className="h-5 w-5 text-background" />
+                </div>
+                <div>
+                  <p className="font-semibold text-background text-lg mb-1">Instant Opt-Out Handling</p>
+                  <p className="text-background/70 text-sm">
+                    Any contact who replies STOP, UNSUBSCRIBE, or any opt-out signal is immediately removed from all sequences and flagged as do-not-contact permanently. No exceptions, no delays.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-lg bg-background/10 flex items-center justify-center shrink-0">
+                  <UserCheck className="h-5 w-5 text-background" />
+                </div>
+                <div>
+                  <p className="font-semibold text-background text-lg mb-1">Clear Sender Identification</p>
+                  <p className="text-background/70 text-sm">
+                    Every message clearly identifies your business by name. No mystery numbers, no misleading sender info — every contact knows exactly who is reaching out.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
