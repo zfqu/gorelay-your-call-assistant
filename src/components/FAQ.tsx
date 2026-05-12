@@ -14,17 +14,32 @@ const faqs = [
   {
     question: "Does this replace my staff?",
     answer:
-      "No — it supports and augments your team by handling missed and after-hours interactions.",
+      "No — Relay handles instant response and follow-up automation so your team never has to chase leads manually. Your staff focuses on appointments, consultations, and delivering great service. We handle everything that happens before they walk through the door.",
   },
   {
     question: "How long does setup take?",
     answer:
-      "Just a few minutes. No dashboard, no login, no apps — very simple to use.",
+      "Most clients are live within 3-5 business days. We handle the entire setup — connecting your channels, configuring AI agent for your niche, and integrating with your existing booking system.",
   },
   {
-    question: "Do you integrate with my existing CRM or calendars?",
+    question: "Do I need to switch my CRM or booking system?",
     answer:
-      "Yes — if you choose to book the job directly, Relay can integrate with your existing scheduling system. Otherwise, you can manually confirm with the lead to book the job (safer).",
+      "No. Relay works alongside your existing tools — Mindbody, ChiroTouch, Jane App, Calendly, Google Calendar, and more. You keep running your business exactly as you do today. We just add the automation layer on top.",
+  },
+  {
+    question: "Is there a contract or minimum commitment?",
+    answer:
+      "No long-term contracts. Our plans are month-to-month. We offer a 30-day pilot so you can see real results before committing long-term. If it's not working, you can cancel anytime.",
+  },
+  {
+    question: "How will I know if it's actually working?",
+    answer:
+      "You'll receive a monthly performance report showing lead capture volume, booking conversion rate, response times, and review growth. Everything is tracked and transparent — no guessing whether it's delivering results.",
+  },
+  {
+    question: "What happens when a lead asks a complex question the AI can't answer?",
+    answer:
+      "The AI only handles intent capture and booking — it never attempts to answer medical, legal, or detailed service questions. When a lead asks something outside its scope, it redirects them to book a call or consultation with you directly.",
   },
 ];
 
