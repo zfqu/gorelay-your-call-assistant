@@ -3,7 +3,21 @@ import { Button } from "@/components/ui/button";
 
 const tiers = [
   {
-    name: "Speed-to-Lead & Follow-Up",
+    name: "Review Automation",
+    subtitle: "Turn happy clients into 5-star reviews — automatically.",
+    price: "$197",
+    features: [
+      "Automatic SMS review request after each appointment",
+      "Multi-day SMS + email follow-up sequence",
+      "Direct Google review link",
+      "Automate Google review response",
+      "Weekly review summary report to owner",
+    ],
+    tagline: "Stop bad reviews before they happen.",
+    cta: "Get Started",
+  },
+  {
+    name: "Speed-to-Lead + Follow-Up",
     subtitle: "Respond instantly. Follow up automatically. Never lose a warm lead.",
     price: "$297",
     features: [
@@ -18,24 +32,11 @@ const tiers = [
     cta: "Get Started",
   },
   {
-    name: "Review Automation",
-    subtitle: "Turn happy clients into 5-star reviews — automatically.",
-    price: "$197",
-    features: [
-      "Automatic SMS review request after each appointment",
-      "Multi-day SMS + email follow-up sequence",
-      "Direct Google review link",
-      "Weekly review summary report to owner",
-    ],
-    tagline: "Stop bad reviews before they happen.",
-    cta: "Get Started",
-  },
-  {
     name: "Full Growth Bundle",
     subtitle: "Speed-to-Lead + Reviews — the complete growth system.",
     price: "$397",
     features: [
-      "Everything in Speed-to-Lead & Follow-Up",
+      "Everything in Speed-to-Lead + Follow-Up",
       "Everything in Review Automation",
       "Monthly lead capture + review performance report",
       "Priority support",
