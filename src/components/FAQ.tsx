@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "Do I need to change my number?",
     answer:
-      "No — Relay works with your existing number.",
+      "No — Relay works with your existing number. For missed call text back, missed calls forward to a private number we provide and the SMS flow starts from that number. For regular SMS campaign, we use a toll-free number dedicated to your business.",
   },
   {
     question: "Does this replace my staff?",
