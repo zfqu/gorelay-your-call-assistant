@@ -2,7 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { PageMeta } from "@/components/PageMeta";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowDown, Repeat, Upload, Brain, Tags, Activity, Smile, Sparkles, Swords, Check } from "lucide-react";
+import { ArrowRight, ArrowDown, Repeat, Upload, Brain, Tags, Activity, Smile, Sparkles, Swords, Check, ShieldCheck, Handshake, Clock, Ban, UserCheck } from "lucide-react";
 
 const steps = [
   { number: "1", text: "You export your existing contact list from your CRM or booking system" },
