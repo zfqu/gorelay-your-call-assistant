@@ -98,7 +98,7 @@ export default function SpeedToLead() {
                 See it in action
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                This is what your lead experiences — starting within 60 seconds of contacting you.
+                This is what your lead experiences — starting within 10 seconds of contacting you.
               </p>
             </div>
 
@@ -157,7 +157,7 @@ export default function SpeedToLead() {
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {[
                 { label: "Day 1", text: "Hi Sarah, just checking in — did you get a chance to book your free consultation? We still have spots available this week: [booking link]" },
-                { label: "Day 2", text: "Hey Sarah, we know life gets busy! Your appointment slot is still open. Takes 60 seconds to grab a time: [booking link] 🗓️" },
+                { label: "Day 2", text: "Hey Sarah, we know life gets busy! Your appointment slot is still open. Grab a time: [booking link] 🗓️" },
                 { label: "Day 3 · Final Follow-Up", text: "Hi Sarah, last note from us — we'd love to help with your back pain. If you're ready, here's your link: [booking link] Or just call us directly at [phone number]. Hope to see you soon!" },
               ].map((d) => (
                 <div key={d.label} className="flex flex-col">
@@ -230,7 +230,7 @@ export default function SpeedToLead() {
                 <div className="space-y-3">
                   {[
                     "Lead calls or submits a form",
-                    "Relay responds via SMS in 60 seconds",
+                    "Relay responds via SMS in 10 seconds",
                     "AI captures their intent naturally",
                     "Booking link sent immediately",
                     "Lead books — you're notified instantly",
