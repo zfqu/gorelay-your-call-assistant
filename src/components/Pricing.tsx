@@ -13,7 +13,7 @@ const tiers = [
       "Automate Google review response",
       "Weekly review summary report to owner",
     ],
-    tagline: "Stop bad reviews before they happen.",
+    tagline: "Grow reviews faster. Boost google ranking",
     cta: "Get Started",
   },
   {
