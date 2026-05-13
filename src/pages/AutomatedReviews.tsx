@@ -9,7 +9,6 @@ import {
   Mail,
   CheckCircle,
   ThumbsUp,
-  Shield,
   Clock,
   Users,
   Zap,
