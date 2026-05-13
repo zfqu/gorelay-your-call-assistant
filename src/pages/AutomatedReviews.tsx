@@ -30,8 +30,6 @@ const benefits = [
   { icon: Star, title: "Direct Google review link", description: "No friction, no rating scale — just a simple ask." },
   { icon: CheckCircle, title: "Auto-stops on review", description: "Sequence stops automatically once the client leaves a review." },
   { icon: Award, title: "Automatic Google responses", description: "Professional responses posted to your Google Business Profile automatically." },
-  { icon: Shield, title: "Private negative feedback", description: "Negative feedback captured privately before it reaches Google." },
-  { icon: Zap, title: "Instant owner alerts", description: "Get notified instantly when any negative feedback comes in." },
   { icon: Clock, title: "Weekly performance summary", description: "Review performance summary delivered to your inbox every week." },
   { icon: TrendingUp, title: "Monthly growth report", description: "Monthly report showing review growth and response rate." },
 ];
