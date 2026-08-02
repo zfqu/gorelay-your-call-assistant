@@ -9,18 +9,17 @@ import {
 } from "@/components/ui/dropdown-menu";
 import logoLight from "@/assets/logo-light.png";
 
-const featureLinks = [
-  { href: "/features/speed-to-lead", label: "Speed-to-Lead & Follow-Up" },
+const localSubLinks = [
+  { href: "/features/speed-to-lead", label: "Speed-to-Lead" },
   { href: "/features/reviews", label: "Review Automation" },
   { href: "/features/lead-reactivation", label: "Lead Reactivation" },
 ];
 
 const navLinks = [
-  { href: "/#how-it-works", label: "How It Works" },
-  { href: "/blog", label: "Blog" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/#faq", label: "FAQ" },
+  { href: "/local#faq", label: "FAQ" },
 ];
+
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
