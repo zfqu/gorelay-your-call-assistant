@@ -48,11 +48,6 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/local#how-it-works" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  How It Works
-                </a>
-              </li>
-              <li>
                 <a href="/pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Pricing
                 </a>
