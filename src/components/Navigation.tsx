@@ -35,22 +35,33 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {/* Features Dropdown */}
+            {/* Solutions Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-1 text-[1.05rem] font-bold text-muted-foreground hover:text-foreground transition-colors outline-none">
-                Features
+                Solutions
                 <ChevronDown className="h-3.5 w-3.5" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="start">
-                {featureLinks.map((link) => (
+              <DropdownMenuContent align="start" className="w-64">
+                <DropdownMenuItem asChild>
+                  <a href="/b2b" className="cursor-pointer font-semibold">
+                    B2B GTM OS
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <a href="/local" className="cursor-pointer font-semibold">
+                    Local Revenue Engine
+                  </a>
+                </DropdownMenuItem>
+                {localSubLinks.map((link) => (
                   <DropdownMenuItem key={link.href} asChild>
-                    <a href={link.href} className="cursor-pointer">
+                    <a href={link.href} className="cursor-pointer pl-6 text-muted-foreground">
                       {link.label}
                     </a>
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
+
 
             {navLinks.map((link) => (
               <a
