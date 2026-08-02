@@ -9,18 +9,18 @@ import {
 } from "@/components/ui/dropdown-menu";
 import logoLight from "@/assets/logo-light.png";
 
-const featureLinks = [
-  { href: "/features/speed-to-lead", label: "Speed-to-Lead & Follow-Up" },
+const localSubLinks = [
+  { href: "/features/speed-to-lead", label: "Speed-to-Lead" },
   { href: "/features/reviews", label: "Review Automation" },
   { href: "/features/lead-reactivation", label: "Lead Reactivation" },
 ];
 
 const navLinks = [
-  { href: "/#how-it-works", label: "How It Works" },
   { href: "/blog", label: "Blog" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/#faq", label: "FAQ" },
+  { href: "/local#faq", label: "FAQ" },
 ];
+
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,22 +36,33 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {/* Features Dropdown */}
+            {/* Solutions Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center gap-1 text-[1.05rem] font-bold text-muted-foreground hover:text-foreground transition-colors outline-none">
-                Features
+                Solutions
                 <ChevronDown className="h-3.5 w-3.5" />
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="start">
-                {featureLinks.map((link) => (
+              <DropdownMenuContent align="start" className="w-64">
+                <DropdownMenuItem asChild>
+                  <a href="/b2b" className="cursor-pointer font-semibold">
+                    B2B GTM OS
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <a href="/local" className="cursor-pointer font-semibold">
+                    Local Revenue Engine
+                  </a>
+                </DropdownMenuItem>
+                {localSubLinks.map((link) => (
                   <DropdownMenuItem key={link.href} asChild>
-                    <a href={link.href} className="cursor-pointer">
+                    <a href={link.href} className="cursor-pointer pl-6 text-muted-foreground">
                       {link.label}
                     </a>
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
+
 
             {navLinks.map((link) => (
               <a
@@ -81,22 +92,36 @@ export function Navigation() {
         {isOpen && (
           <div className="md:hidden py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col gap-4">
-              {/* Mobile Features Collapsible */}
+              {/* Mobile Solutions Collapsible */}
               <div>
                 <button
                   className="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors w-full"
                   onClick={() => setFeaturesOpen(!featuresOpen)}
                 >
-                  Features
+                  Solutions
                   <ChevronDown className={`h-3.5 w-3.5 transition-transform ${featuresOpen ? "rotate-180" : ""}`} />
                 </button>
                 {featuresOpen && (
                   <div className="pl-4 mt-2 flex flex-col gap-2">
-                    {featureLinks.map((link) => (
+                    <a
+                      href="/b2b"
+                      className="text-sm font-semibold text-foreground"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      B2B GTM OS
+                    </a>
+                    <a
+                      href="/local"
+                      className="text-sm font-semibold text-foreground"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Local Revenue Engine
+                    </a>
+                    {localSubLinks.map((link) => (
                       <a
                         key={link.href}
                         href={link.href}
-                        className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                        className="pl-3 text-sm text-muted-foreground hover:text-foreground transition-colors"
                         onClick={() => setIsOpen(false)}
                       >
                         {link.label}
@@ -105,6 +130,7 @@ export function Navigation() {
                   </div>
                 )}
               </div>
+
 
               {navLinks.map((link) => (
                 <a

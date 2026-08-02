@@ -43,12 +43,12 @@ export function Footer() {
             <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-              <a href="/#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <a href="/local#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Features
                 </a>
               </li>
               <li>
-                <a href="/#how-it-works" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/local#how-it-works" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   How It Works
                 </a>
               </li>
@@ -58,7 +58,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/local#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   FAQ
                 </a>
               </li>
