@@ -13,8 +13,8 @@ const Index = () => {
               Revenue OS for Growing Businesses
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-              AI-Native Revenue Infrastructure for{" "}
-              <span className="gradient-text">B2B tech &amp; Local Service Companies</span>
+              AI-Native Revenue OS for{" "}
+              <span className="gradient-text">B2B Tech &amp; Local Service Companies</span>
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
               Whether you need signal-driven B2B GTM automation or instant speed-to-lead revenue recovery, Relay builds the intelligent pipeline underneath your stack.

@@ -79,11 +79,49 @@ export function Pricing() {
     <section id="pricing" className="section-padding">
       <div className="container-narrow mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Simple, transparent pricing
-          </h2>
+          <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+            Simple, Predictable Pricing for Revenue OS
+          </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Choose the plan that fits your business.
+          </p>
+        </div>
+
+        {/* B2B GTM OS */}
+        <div className="max-w-3xl mx-auto mb-20">
+          <div className="rounded-2xl border-2 border-primary/40 p-8 bg-gradient-to-br from-primary/10 to-primary/5 shadow-lg">
+            <span className="inline-block px-3 py-1 rounded-full bg-primary/15 text-primary text-xs font-semibold mb-4">
+              B2B Tech, Agencies &amp; Services
+            </span>
+            <h2 className="text-2xl font-bold text-foreground mb-2">Composable GTM Engine</h2>
+            <div className="text-3xl font-bold text-foreground mb-2">Custom / Built to Spec</div>
+            <p className="text-sm text-muted-foreground mb-6">
+              Architected around your tech stack, data volume, and signal requirements.
+            </p>
+            <ul className="space-y-3 mb-8">
+              <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                <Check className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+                <span>Composable Outbound Automation Engine</span>
+              </li>
+              <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                <Check className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+                <span>Intelligent Inbound Automation Engine (coming soon)</span>
+              </li>
+            </ul>
+            <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="w-full sm:w-auto px-8">
+                Book a GTM Infrastructure Audit →
+              </Button>
+            </a>
+          </div>
+        </div>
+
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+            Local Revenue Engine Tiers
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            For local service businesses.
           </p>
         </div>
 
