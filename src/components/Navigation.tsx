@@ -91,22 +91,36 @@ export function Navigation() {
         {isOpen && (
           <div className="md:hidden py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col gap-4">
-              {/* Mobile Features Collapsible */}
+              {/* Mobile Solutions Collapsible */}
               <div>
                 <button
                   className="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors w-full"
                   onClick={() => setFeaturesOpen(!featuresOpen)}
                 >
-                  Features
+                  Solutions
                   <ChevronDown className={`h-3.5 w-3.5 transition-transform ${featuresOpen ? "rotate-180" : ""}`} />
                 </button>
                 {featuresOpen && (
                   <div className="pl-4 mt-2 flex flex-col gap-2">
-                    {featureLinks.map((link) => (
+                    <a
+                      href="/b2b"
+                      className="text-sm font-semibold text-foreground"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      B2B GTM OS
+                    </a>
+                    <a
+                      href="/local"
+                      className="text-sm font-semibold text-foreground"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Local Revenue Engine
+                    </a>
+                    {localSubLinks.map((link) => (
                       <a
                         key={link.href}
                         href={link.href}
-                        className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                        className="pl-3 text-sm text-muted-foreground hover:text-foreground transition-colors"
                         onClick={() => setIsOpen(false)}
                       >
                         {link.label}
@@ -115,6 +129,7 @@ export function Navigation() {
                   </div>
                 )}
               </div>
+
 
               {navLinks.map((link) => (
                 <a
