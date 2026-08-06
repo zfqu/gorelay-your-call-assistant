@@ -4,6 +4,7 @@ import { PageMeta } from "@/components/PageMeta";
 import { SlackApprovalMock } from "@/components/SlackApprovalMock";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowDown, Check, EyeOff, Table2, Network } from "lucide-react";
+import { Fragment } from "react";
 
 const CALENDLY = "https://calendly.com/relayai/30min";
 
