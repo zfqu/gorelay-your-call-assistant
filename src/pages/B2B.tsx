@@ -72,7 +72,7 @@ const B2B = () => {
     <div className="min-h-screen bg-background">
       <PageMeta
         title="B2B GTM OS | AI-Native Revenue OS for B2B Tech & Agencies"
-        description="Relay B2B GTM OS automates account discovery, decision-maker enrichment, and personalized email copy into an owned pipeline — reviewed and approved directly inside Slack."
+        description="Relay B2B GTM OS automates account discovery and qualification, decision-maker enrichment, and personalized email copy into an owned pipeline — SDRs review and approve directly inside Slack."
         path="/b2b"
       />
       <Navigation />
