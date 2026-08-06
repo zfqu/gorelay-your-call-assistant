@@ -88,8 +88,7 @@ const B2B = () => {
               <span className="gradient-text">B2B Tech, Agencies &amp; Services</span>
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-              Automate account discovery, decision-maker enrichment, and personalized email copy into an
-              owned pipeline—reviewed and approved directly inside Slack.
+              Automate account discovery and qualification, decision-maker enrichment, and personalized email copy into an owned pipeline - SDRs review and approve directly inside Slack.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href={CALENDLY} target="_blank" rel="noopener noreferrer">
