@@ -218,12 +218,19 @@ const B2B = () => {
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-center mb-12">
               How the Outbound Engine Operates
             </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {steps.map((s) => (
-                <div key={s.title} className="card-elevated p-6">
-                  <h3 className="font-semibold text-foreground mb-2">{s.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{s.body}</p>
-                </div>
+            <div className="flex flex-col lg:flex-row items-stretch gap-4">
+              {steps.map((s, index) => (
+                <Fragment key={s.title}>
+                  <div className="card-elevated p-6 bg-secondary/50 flex-1">
+                    <h3 className="font-semibold text-foreground mb-2">{s.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{s.body}</p>
+                  </div>
+                  {index < steps.length - 1 && (
+                    <div className="hidden lg:flex items-center justify-center">
+                      <ArrowRight className="h-6 w-6 text-primary" />
+                    </div>
+                  )}
+                </Fragment>
               ))}
             </div>
           </div>
