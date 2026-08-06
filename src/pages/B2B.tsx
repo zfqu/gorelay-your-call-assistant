@@ -63,7 +63,7 @@ const comparisonRows = [
   ["Process Control", "Black-Box / No Control", "Manual / Complex", "Fully Customizable & Owned"],
   ["Workflow Overhead", "Low", "Very High (Spreadsheets)", "Zero (Runs via Slack)"],
   ["Human Oversight", "None / Blind Outreach", "Manual Copy-Paste", "1-Click Interactive Slack Cards"],
-  ["Data Persistence", "Vendor Locked-In", "Locked in Sheets", "Owned in Supabase Postgres DB"],
+  ["Cost and TCO", "High", "High", "Low"],
   ["SDR Productivity", "Risk of spam", "Reps spend hours in tools", "Reps spend 5 mins/day reviewing"],
 ];
 
