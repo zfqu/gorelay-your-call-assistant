@@ -4,6 +4,7 @@ import { PageMeta } from "@/components/PageMeta";
 import { SlackApprovalMock } from "@/components/SlackApprovalMock";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowDown, Check, EyeOff, Table2, Network } from "lucide-react";
+import { Fragment } from "react";
 
 const CALENDLY = "https://calendly.com/relayai/30min";
 
@@ -62,7 +63,7 @@ const comparisonRows = [
   ["Process Control", "Black-Box / No Control", "Manual / Complex", "Fully Customizable & Owned"],
   ["Workflow Overhead", "Low", "Very High (Spreadsheets)", "Zero (Runs via Slack)"],
   ["Human Oversight", "None / Blind Outreach", "Manual Copy-Paste", "1-Click Interactive Slack Cards"],
-  ["Data Persistence", "Vendor Locked-In", "Locked in Sheets", "Owned in Supabase Postgres DB"],
+  ["Cost and TCO", "High", "High", "Low"],
   ["SDR Productivity", "Risk of spam", "Reps spend hours in tools", "Reps spend 5 mins/day reviewing"],
 ];
 
@@ -71,7 +72,7 @@ const B2B = () => {
     <div className="min-h-screen bg-background">
       <PageMeta
         title="B2B GTM OS | AI-Native Revenue OS for B2B Tech & Agencies"
-        description="Relay B2B GTM OS automates account discovery, decision-maker enrichment, and personalized email copy into an owned pipeline — reviewed and approved directly inside Slack."
+        description="Relay B2B GTM OS automates account discovery and qualification, decision-maker enrichment, and personalized email copy into an owned pipeline — SDRs review and approve directly inside Slack."
         path="/b2b"
       />
       <Navigation />
@@ -87,8 +88,7 @@ const B2B = () => {
               <span className="gradient-text">B2B Tech, Agencies &amp; Services</span>
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-              Automate account discovery, decision-maker enrichment, and personalized email copy into an
-              owned pipeline—reviewed and approved directly inside Slack.
+              Automate account discovery and qualification, decision-maker enrichment, and personalized email copy into an owned pipeline - SDRs review and approve directly inside Slack.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href={CALENDLY} target="_blank" rel="noopener noreferrer">
@@ -218,12 +218,19 @@ const B2B = () => {
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-center mb-12">
               How the Outbound Engine Operates
             </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {steps.map((s) => (
-                <div key={s.title} className="card-elevated p-6">
-                  <h3 className="font-semibold text-foreground mb-2">{s.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{s.body}</p>
-                </div>
+            <div className="flex flex-col lg:flex-row items-stretch gap-4">
+              {steps.map((s, index) => (
+                <Fragment key={s.title}>
+                  <div className="card-elevated p-6 bg-secondary/50 flex-1">
+                    <h3 className="font-semibold text-foreground mb-2">{s.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{s.body}</p>
+                  </div>
+                  {index < steps.length - 1 && (
+                    <div className="hidden lg:flex items-center justify-center">
+                      <ArrowRight className="h-6 w-6 text-primary" />
+                    </div>
+                  )}
+                </Fragment>
               ))}
             </div>
           </div>
