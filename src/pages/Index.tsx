@@ -1,10 +1,17 @@
 import { Navigation } from "@/components/Navigation";
 import { SegmentSelector } from "@/components/SegmentSelector";
 import { Footer } from "@/components/Footer";
+import { PageMeta } from "@/components/PageMeta";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <PageMeta
+        exactTitle
+        title="Relay | AI-Native Revenue Engines for B2B & Local Businesses"
+        description="Relay powers high-growth B2B companies and local service businesses with owned revenue automation-from B2B outbound prospecting to instant speed-to-lead followup."
+        path="/"
+      />
       <Navigation />
       <main>
         <section className="pt-28 pb-12 sm:pt-36 sm:pb-16 section-padding">
