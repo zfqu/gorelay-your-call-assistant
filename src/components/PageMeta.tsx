@@ -1,11 +1,9 @@
 import { useEffect } from "react";
+import { SITE, DEFAULT_IMAGE, getRouteMeta } from "@/seo/routeMeta";
 
-const SITE = "https://gorelay.ai";
-const DEFAULT_IMAGE = `${SITE}/logo-light.png`;
-
-const DEFAULT_TITLE = "Relay | AI-Powered Sales Automation for Local Service Businesses";
-const DEFAULT_DESCRIPTION =
-  "Relay helps local service businesses capture every lead, follow up automatically, and reactivate cold leads — so you never lose a customer to slow response again. Trusted by chiropractors, med spas, law firms, dental offices, trades, and more.";
+const root = getRouteMeta("/")!;
+const DEFAULT_TITLE = root.title;
+const DEFAULT_DESCRIPTION = root.description;
 
 interface PageMetaProps {
   /** Page title. Suffixed with " | Relay" unless exactTitle is true. */
