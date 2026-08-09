@@ -34,10 +34,11 @@ const outboundFeatures = [
   "Automatic dispatch to email sequencer",
 ];
 
-const inboundBullets = [
-  "Website visitor deanonymization & intent signal detection",
-  "Automated inbound qualification and instant Slack lead routing",
-  "Automated follow-up sequences",
+const inboundFeatures = [
+  "Real-time webhook ingestion from form submissions",
+  "Person & company enrichment paired with website domain scraping",
+  "Grounded LLM Qualification Gate scoring intent, firmographics, and persona",
+  "Inbound lead classification: Tier 1 (Urgent) & Tier 2 (Warm) → Slack card alerts to SDR and speed-to-lead campaign routing; Tier 3 (Low) → discard",
 ];
 
 const steps = [
