@@ -162,12 +162,6 @@ const B2B = () => {
                     </li>
                   ))}
                 </ul>
-                <a href={CALENDLY} target="_blank" rel="noopener noreferrer">
-                  <Button>
-                    Schedule Outbound Audit
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </a>
               </div>
 
               <div className="rounded-xl border border-dashed border-border bg-secondary/30 p-8">
