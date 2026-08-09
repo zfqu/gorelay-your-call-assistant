@@ -34,10 +34,11 @@ const outboundFeatures = [
   "Automatic dispatch to email sequencer",
 ];
 
-const inboundBullets = [
-  "Website visitor deanonymization & intent signal detection",
-  "Automated inbound qualification and instant Slack lead routing",
-  "Automated follow-up sequences",
+const inboundFeatures = [
+  "Real-time webhook ingestion from form submissions",
+  "Person & company enrichment paired with website domain scraping",
+  "Grounded LLM Qualification Gate scoring intent, firmographics, and persona",
+  "Inbound lead classification: Tier 1 (Urgent) & Tier 2 (Warm) → Slack card alerts to SDR and speed-to-lead campaign routing; Tier 3 (Low) → discard",
 ];
 
 const steps = [
@@ -56,6 +57,25 @@ const steps = [
   {
     title: "4. Slack Review & Auto-Dispatch",
     body: "Pushes interactive approval cards to Slack. Once approved by an SDR, the lead automatically dispatches to your email sequencer.",
+  },
+];
+
+const inboundSteps = [
+  {
+    title: "1. Real-Time Webhook Ingestion & Pre-Check",
+    body: "Listens for instant POST webhooks from form submitters (Typeform, HubSpot, Webflow etc), checking existing leads to manage resubmissions without duplicate outreach.",
+  },
+  {
+    title: "2. Multi-Source Enrichment & Web Scraping",
+    body: "Enriches contact titles, retrieves company tech stack and firmographics, and scrapes live domain content via Firecrawl in seconds.",
+  },
+  {
+    title: "3. Grounded LLM Qualification Gate",
+    body: "Evaluates form intent, firmographic fit, and persona against your specific ICP criteria to assign a 0–100 score, tier level (Tier 1/2/3), and SDR research brief.",
+  },
+  {
+    title: "4. Sub-60s Slack Alerts & Campaign Routing",
+    body: "Delivers urgent/warm Slack cards with 1-click SDR approval buttons. Tier 1 & 2 leads dispatch directly to target campaign sequences, while Tier 3 auto-archives.",
   },
 ];
 
@@ -162,32 +182,28 @@ const B2B = () => {
                     </li>
                   ))}
                 </ul>
-                <a href={CALENDLY} target="_blank" rel="noopener noreferrer">
-                  <Button>
-                    Schedule Outbound Audit
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </a>
               </div>
 
-              <div className="rounded-xl border border-dashed border-border bg-secondary/30 p-8">
+              <div className="card-elevated p-8">
                 <div className="flex flex-wrap items-center gap-3 mb-3">
                   <h3 className="text-2xl font-bold text-foreground">Relay Inbound Engine</h3>
-                  <span className="px-3 py-1 rounded-full bg-muted text-muted-foreground text-xs font-semibold">
-                    COMING SOON
+                  <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">
+                    AVAILABLE NOW
                   </span>
                 </div>
                 <p className="text-lg font-semibold text-foreground mb-2">
                   Real-Time Intent Capture &amp; Instant Speed-to-Lead
                 </p>
                 <p className="text-muted-foreground mb-6 max-w-3xl">
-                  Transform high-intent website visitors and inbound lead forms into real-time sales
-                  conversations.
+                  An event-driven inbound engine that ingests form submissions, enriches lead data,
+                  evaluates ICP fit via an LLM Gate, and delivers actionable Slack alerts in sub-60
+                  seconds.
                 </p>
-                <ul className="space-y-2">
-                  {inboundBullets.map((b) => (
-                    <li key={b} className="text-sm text-muted-foreground">
-                      • {b}
+                <ul className="grid sm:grid-cols-2 gap-3 mb-8">
+                  {inboundFeatures.map((f) => (
+                    <li key={f} className="flex items-start gap-3">
+                      <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">{f}</span>
                     </li>
                   ))}
                 </ul>
@@ -226,6 +242,30 @@ const B2B = () => {
                     <p className="text-sm text-muted-foreground leading-relaxed">{s.body}</p>
                   </div>
                   {index < steps.length - 1 && (
+                    <div className="hidden lg:flex items-center justify-center">
+                      <ArrowRight className="h-6 w-6 text-primary" />
+                    </div>
+                  )}
+                </Fragment>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Inbound Steps */}
+        <section className="section-padding bg-muted/40">
+          <div className="container-wide mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-center mb-12">
+              How the Inbound Engine Operates
+            </h2>
+            <div className="flex flex-col lg:flex-row items-stretch gap-4">
+              {inboundSteps.map((s, index) => (
+                <Fragment key={s.title}>
+                  <div className="card-elevated p-6 bg-secondary/50 flex-1">
+                    <h3 className="font-semibold text-foreground mb-2">{s.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{s.body}</p>
+                  </div>
+                  {index < inboundSteps.length - 1 && (
                     <div className="hidden lg:flex items-center justify-center">
                       <ArrowRight className="h-6 w-6 text-primary" />
                     </div>
