@@ -164,24 +164,26 @@ const B2B = () => {
                 </ul>
               </div>
 
-              <div className="rounded-xl border border-dashed border-border bg-secondary/30 p-8">
+              <div className="card-elevated p-8">
                 <div className="flex flex-wrap items-center gap-3 mb-3">
                   <h3 className="text-2xl font-bold text-foreground">Relay Inbound Engine</h3>
-                  <span className="px-3 py-1 rounded-full bg-muted text-muted-foreground text-xs font-semibold">
-                    COMING SOON
+                  <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">
+                    AVAILABLE NOW
                   </span>
                 </div>
                 <p className="text-lg font-semibold text-foreground mb-2">
                   Real-Time Intent Capture &amp; Instant Speed-to-Lead
                 </p>
                 <p className="text-muted-foreground mb-6 max-w-3xl">
-                  Transform high-intent website visitors and inbound lead forms into real-time sales
-                  conversations.
+                  An event-driven inbound engine that ingests form submissions, enriches lead data,
+                  evaluates ICP fit via an LLM Gate, and delivers actionable Slack alerts in sub-60
+                  seconds.
                 </p>
-                <ul className="space-y-2">
-                  {inboundBullets.map((b) => (
-                    <li key={b} className="text-sm text-muted-foreground">
-                      • {b}
+                <ul className="grid sm:grid-cols-2 gap-3 mb-8">
+                  {inboundFeatures.map((f) => (
+                    <li key={f} className="flex items-start gap-3">
+                      <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">{f}</span>
                     </li>
                   ))}
                 </ul>
