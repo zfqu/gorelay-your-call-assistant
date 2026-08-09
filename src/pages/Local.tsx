@@ -28,8 +28,9 @@ const Local = () => {
   return (
     <div className="min-h-screen bg-background">
       <PageMeta
-        title="Local Revenue Engine"
-        description="Never lose another lead. Relay captures missed calls and web inquiries, automates Google review requests, and reactivates dormant contacts for local service businesses."
+        exactTitle
+        title="Relay Local | AI Sales Automation for Local Service Businesses"
+        description="Relay helps local service businesses capture every lead, follow up instantly, and reactivate cold leads - so you never lose a customer to slow response again."
         path="/local"
       />
       <Navigation />
