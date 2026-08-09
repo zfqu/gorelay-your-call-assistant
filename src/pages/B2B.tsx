@@ -74,7 +74,7 @@ const inboundSteps = [
     body: "Evaluates form intent, firmographic fit, and persona against your specific ICP criteria to assign a 0–100 score, tier level (Tier 1/2/3), and SDR research brief.",
   },
   {
-    title: "4. Sub-60s Slack Alerts & Campaign Routing",
+    title: "4. Slack Alerts & Campaign Routing",
     body: "Delivers urgent/warm Slack cards with 1-click SDR approval buttons. Tier 1 & 2 leads dispatch directly to target campaign sequences, while Tier 3 auto-archives.",
   },
 ];
@@ -196,8 +196,8 @@ const B2B = () => {
                 </p>
                 <p className="text-muted-foreground mb-6 max-w-3xl">
                   An event-driven inbound engine that ingests form submissions, enriches lead data,
-                  evaluates ICP fit via an LLM Gate, and delivers actionable Slack alerts in sub-60
-                  seconds.
+                  evaluates ICP fit via an LLM Gate, and delivers actionable Slack alerts for SDRs
+                  to review and approve.
                 </p>
                 <ul className="grid sm:grid-cols-2 gap-3 mb-8">
                   {inboundFeatures.map((f) => (
