@@ -60,6 +60,25 @@ const steps = [
   },
 ];
 
+const inboundSteps = [
+  {
+    title: "1. Real-Time Webhook Ingestion & Pre-Check",
+    body: "Listens for instant POST webhooks from form submitters (Typeform, HubSpot, Webflow etc), checking existing leads to manage resubmissions without duplicate outreach.",
+  },
+  {
+    title: "2. Multi-Source Enrichment & Web Scraping",
+    body: "Enriches contact titles, retrieves company tech stack and firmographics, and scrapes live domain content via Firecrawl in seconds.",
+  },
+  {
+    title: "3. Grounded LLM Qualification Gate",
+    body: "Evaluates form intent, firmographic fit, and persona against your specific ICP criteria to assign a 0–100 score, tier level (Tier 1/2/3), and SDR research brief.",
+  },
+  {
+    title: "4. Sub-60s Slack Alerts & Campaign Routing",
+    body: "Delivers urgent/warm Slack cards with 1-click SDR approval buttons. Tier 1 & 2 leads dispatch directly to target campaign sequences, while Tier 3 auto-archives.",
+  },
+];
+
 const comparisonRows = [
   ["Process Control", "Black-Box / No Control", "Manual / Complex", "Fully Customizable & Owned"],
   ["Workflow Overhead", "Low", "Very High (Spreadsheets)", "Zero (Runs via Slack)"],
