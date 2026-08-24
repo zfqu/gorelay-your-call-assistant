@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import logoLight from "@/assets/logo-light.png";
-import { Mail, Phone, Youtube } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 export function Footer() {
 
@@ -21,20 +21,11 @@ export function Footer() {
                 info@gorelay.ai
               </a>
               <a
-                href="tel:8016923196"
+                href="tel:5125932788"
                 className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Phone className="h-4 w-4" />
-                801.692.3196
-              </a>
-              <a
-                href="https://www.youtube.com/@go-relay-ai"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <Youtube className="h-4 w-4" />
-                YouTube
+                512.593.2788
               </a>
             </div>
           </div>
