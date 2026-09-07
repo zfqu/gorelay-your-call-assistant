@@ -129,8 +129,10 @@ export function Pricing() {
               )}
               <h3 className="text-xl font-bold text-foreground">{tier.name}</h3>
               <p className="text-sm text-muted-foreground mb-4">{tier.subtitle}</p>
-              <div className="text-4xl font-bold text-foreground mb-1">{tier.price}</div>
-              <p className="text-sm text-muted-foreground mb-1">/month</p>
+              <div className="flex items-baseline gap-1 mb-1">
+                <span className="text-4xl font-bold text-foreground">{tier.price}</span>
+                <span className="text-sm text-muted-foreground">/month</span>
+              </div>
               <p className="text-sm font-medium text-foreground mb-6">+$497 one-time setup</p>
               <ul className="space-y-3 mb-6 flex-1">
                 {tier.features.map((feature, i) => (
