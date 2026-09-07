@@ -1,4 +1,4 @@
-import { Check, Plus } from "lucide-react";
+import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const tiers = [
@@ -46,19 +46,6 @@ const tiers = [
     popular: true,
   },
 ];
-
-const addOn = {
-  name: "Social Media DM Lead Capture",
-  price: "+$97/month",
-  subtitle: "When a lead messages your business on Facebook or Instagram, Relay treats it like any other inbound lead — responding instantly and following up until they book.",
-  features: [
-    "Instant AI response to incoming FB/IG DMs",
-    "Captures lead intent and pushes booking link",
-    "3-day SMS follow-up drip if no booking occurs",
-    "Lead notified owner on booking conversion",
-    "Requires Speed-to-Lead & Follow-Up plan",
-  ],
-};
 
 const reactivation = {
   name: "Lead Reactivation Campaign",
@@ -163,29 +150,8 @@ export function Pricing() {
           ))}
         </div>
 
-        {/* Add-On */}
-        <div className="max-w-3xl mx-auto mb-10">
-          <div className="rounded-2xl border border-border p-8 bg-muted/30">
-            <div className="flex items-center gap-2 mb-2">
-              <Plus className="h-5 w-5 text-primary" />
-              <h3 className="text-xl font-bold text-foreground">Add-On: {addOn.name}</h3>
-            </div>
-            <div className="text-3xl font-bold text-foreground mb-1">{addOn.price}</div>
-            <p className="text-sm text-muted-foreground mb-1">/month</p>
-            <p className="text-sm text-muted-foreground mb-4">{addOn.subtitle}</p>
-            <ul className="space-y-3">
-              {addOn.features.map((feature, i) => (
-                <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                  <Check className="h-4 w-4 text-primary mt-0.5 shrink-0" />
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
         {/* Lead Reactivation - separate distinct card */}
-        <div className="max-w-3xl mx-auto mb-16">
+        <div className="max-w-3xl mx-auto">
           <div className="rounded-2xl border-2 border-dashed border-primary/30 p-8 bg-background">
             <h3 className="text-2xl font-bold text-foreground mb-2">{reactivation.name}</h3>
             <p className="text-sm text-muted-foreground mb-4">{reactivation.subtitle}</p>
@@ -201,31 +167,6 @@ export function Pricing() {
             <p className="text-sm font-medium text-foreground italic mb-6">{reactivation.tagline}</p>
             <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="w-full sm:w-auto">Talk to Us</Button>
-            </a>
-          </div>
-        </div>
-
-        {/* 30-Day Pilot */}
-        <div className="max-w-3xl mx-auto">
-          <div className="bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary/20 rounded-2xl p-8 text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
-              30-Day Pilot
-            </h3>
-            <div className="space-y-4 text-muted-foreground">
-              <p>
-                We're offering a limited 30-day pilot for local service businesses who want to capture missed calls and respond to new leads instantly. <span className="font-semibold text-foreground">There is no charge during the 30 days pilot.</span>
-              </p>
-              <p>
-                This is not a self-serve trial. We work directly with a small number of businesses to make sure the system is set up correctly, monitor it and review together.
-              </p>
-              <p>
-                If you've been missing calls or slow to follow up on new leads, you may be a fit. If the system doesn't capture leads or book appointments for you after 30 days, cancel it, no commitment.
-              </p>
-            </div>
-            <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer" className="inline-block mt-6">
-              <Button size="lg" className="px-8">
-                Request a Pilot
-              </Button>
             </a>
           </div>
         </div>
