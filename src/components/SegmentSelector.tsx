@@ -4,6 +4,20 @@ import { ArrowRight, Check } from "lucide-react";
 
 const paths = [
   {
+    badge: "For Local Service Businesses",
+    kicker: "Local Revenue Engine",
+    title: "Local Service Revenue Engine",
+    description:
+      "Never lose another lead. Capture missed calls and web inquiries, automate Google review requests, and reactivate dormant contact lists automatically.",
+    features: [
+      "Instant SMS response for missed calls & web inquiries",
+      "Multi-day review request sequences (Google review automation)",
+      "Database reactivation for cold contacts",
+    ],
+    cta: "Explore Local Solutions",
+    to: "/local",
+  },
+  {
     badge: "For B2B Tech, Agencies & B2B Services",
     kicker: "B2B GTM OS",
     title: "Composable GTM Engine",
@@ -18,20 +32,6 @@ const paths = [
     ],
     cta: "Explore B2B GTM OS",
     to: "/b2b",
-  },
-  {
-    badge: "For Local Service Businesses",
-    kicker: "Local Revenue Engine",
-    title: "Local Service Revenue Engine",
-    description:
-      "Never lose another lead. Capture missed calls and web inquiries, automate Google review requests, and reactivate dormant contact lists automatically.",
-    features: [
-      "Instant SMS response for missed calls & web inquiries",
-      "Multi-day review request sequences (Google review automation)",
-      "Database reactivation for cold contacts",
-    ],
-    cta: "Explore Local Solutions",
-    to: "/local",
   },
 ];
 
