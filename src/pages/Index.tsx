@@ -17,7 +17,7 @@ const Index = () => {
         <section className="pt-28 pb-12 sm:pt-36 sm:pb-16 section-padding">
           <div className="container-narrow mx-auto text-center animate-fade-up">
             <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              Revenue OS for Growing Businesses
+              Custom Revenue OS for SMBs
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
               AI-Native Revenue OS for{" "}
