@@ -105,7 +105,7 @@
           el("div", { class: "rw-header" }, [
             el("div", { class: "rw-title" }, [
               el("strong", { text: "Text us" }),
-              el("span", { text: "We’ll text you back ASAP." }),
+              el("span", { text: "We’ll text you back ASAP. (Note: this is a sample demo)" }),
             ]),
             el("button", { class: "rw-close", type: "button", text: "Close" }),
           ]),
