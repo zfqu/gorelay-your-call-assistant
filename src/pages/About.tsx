@@ -32,7 +32,7 @@ export default function About() {
             </div>
             <div className="mt-5 inline-flex items-center gap-2 rounded-md border border-primary/20 bg-primary/5 px-3 py-2 text-sm font-semibold text-foreground">
               <BadgeCheck className="h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
-              Austin Based 🤠
+              Austin Based
             </div>
             <ul className="mt-4 space-y-3 border-l-2 border-primary/20 pl-5">
               {credentials.map(({ icon: Icon, text }) => (
