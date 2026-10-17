@@ -1,9 +1,8 @@
-import { ArrowRight, BriefcaseBusiness, Code2, MapPin } from "lucide-react";
+import { ArrowRight, BadgeCheck, BriefcaseBusiness, Code2, MapPin } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { PageMeta } from "@/components/PageMeta";
 import { Button } from "@/components/ui/button";
-import founderPhoto from "@/assets/zheng-founder.jpg.asset.json";
 
 const credentials = [
   { icon: Code2, text: "15+ Yrs Software Architect" },
@@ -25,16 +24,17 @@ export default function About() {
           <div className="w-full max-w-lg mx-auto lg:mx-0">
             <div className="relative overflow-hidden rounded-lg border border-border shadow-sm">
               <img
-                src={founderPhoto.url}
+                src="/zheng-founder.jpg"
                 alt="Zheng Qu, founder of Relay, outdoors among flowering trees"
                 className="block w-full aspect-[4/5] object-cover"
                 fetchPriority="high"
               />
-              <div className="absolute bottom-5 right-5 rounded-md bg-background/95 border border-border px-4 py-2.5 text-sm font-semibold text-foreground shadow-sm">
-                Austin Based 🤠
-              </div>
             </div>
-            <ul className="mt-6 space-y-3 border-l-2 border-primary/20 pl-5">
+            <div className="mt-5 inline-flex items-center gap-2 rounded-md border border-primary/20 bg-primary/5 px-3 py-2 text-sm font-semibold text-foreground">
+              <BadgeCheck className="h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
+              Austin Based 🤠
+            </div>
+            <ul className="mt-4 space-y-3 border-l-2 border-primary/20 pl-5">
               {credentials.map(({ icon: Icon, text }) => (
                 <li key={text} className="flex items-center gap-3 text-sm text-muted-foreground">
                   <Icon className="h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
@@ -63,7 +63,7 @@ export default function About() {
             <p className="mt-7 font-semibold text-foreground">— Zheng Qu, Founder &amp; Systems Architect</p>
           </div>
           <div className="lg:col-span-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 rounded-lg border border-primary/20 bg-primary/5 p-6 sm:p-8">
-            <h2 className="text-2xl font-semibold text-foreground">Want to simplify your business operations?</h2>
+            <h2 className="text-2xl font-semibold text-foreground">Tired of overcomplicated tech? Let's cut noises, build a clean system that actually work for your business.</h2>
             <Button asChild size="lg" className="shrink-0 w-full sm:w-auto whitespace-normal h-auto min-h-12 py-3">
               <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
                 Book a Free Discovery Call
