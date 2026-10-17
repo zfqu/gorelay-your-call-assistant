@@ -54,7 +54,7 @@ export default function About() {
                 After 15+ years designing enterprise software and advising large companies on digital transformation, alongside 5+ years on my own entrepreneurial journey, I noticed a huge disconnect: modern technology and AI can transform businesses, but local small businesses are largely left behind in a market full of hype, confusion, and frustration.
               </p>
               <p>
-                As a 10+ year Texan, my mission is to bridge that gap across Central Texas. I take proven technical know-how, best practices and tailor them specifically for local business owners—helping you cut through the noise, streamline operations, deliver exceptional customer experiences, and drive real revenue.
+                As a 10+ year Texan, my mission is to bridge that gap across Central Texas. I take proven technical know-how, best practices and tailor them specifically for local business owners - helping you cut through the noise, streamline operations, deliver exceptional customer experiences, and drive real revenue.
               </p>
               <p>
                 Relay was built to give local teams reliable, transparent systems that actually work inside your daily operations - without the steep learning curves or technical burden.
