@@ -58,7 +58,7 @@ const Local = () => {
             <div className="flex flex-col items-center justify-center gap-3">
               <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
                 <Button variant="hero" className="w-full sm:w-auto">
-                  Talk to Us
+                  Book a Call
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>

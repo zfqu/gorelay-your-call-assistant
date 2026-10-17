@@ -10,7 +10,7 @@ export function FinalCTA() {
         </h2>
         <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
           <Button variant="hero">
-            Book a Demo
+            Book a Call
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </a>

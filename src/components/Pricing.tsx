@@ -168,7 +168,7 @@ export function Pricing() {
             </ul>
             <p className="text-sm font-medium text-foreground italic mb-6">{reactivation.tagline}</p>
             <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="w-full sm:w-auto">Talk to Us</Button>
+              <Button variant="outline" className="w-full sm:w-auto">Book a Call</Button>
             </a>
           </div>
         </div>

@@ -71,7 +71,7 @@ export default function LeadReactivation() {
               Most local businesses are sitting on hundreds of leads who inquired, went cold, and were never followed up with. Relay's AI-powered reactivation campaigns identify, segment, and re-engage those contacts — turning a dormant list into booked appointments.
             </p>
             <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
-              <Button variant="hero">Talk to Us</Button>
+              <Button variant="hero">Book a Call</Button>
             </a>
           </div>
         </section>
@@ -428,7 +428,7 @@ export default function LeadReactivation() {
               </p>
               <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
                 <Button variant="hero">
-                  Talk to Us — Get a Custom Quote
+                  Book a Call — Get a Custom Quote
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
@@ -447,7 +447,7 @@ export default function LeadReactivation() {
             </h2>
             <a href="https://calendly.com/relayai/30min" target="_blank" rel="noopener noreferrer">
               <Button variant="hero">
-                Talk to Us
+                Book a Call
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </a>
