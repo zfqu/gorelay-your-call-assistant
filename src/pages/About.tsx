@@ -47,7 +47,7 @@ export default function About() {
           <div>
             <p className="text-sm font-semibold text-primary mb-4">ABOUT THE FOUNDER</p>
             <h1 id="about-heading" className="text-4xl sm:text-5xl font-bold leading-tight text-foreground mb-8">
-              Enterprise-Grade Systems. Built for Main Street.
+              No Hype. No Complexity. Just Systems that Work for Main Street
             </h1>
             <div className="space-y-5 text-lg leading-relaxed text-muted-foreground">
               <p>
