@@ -9,7 +9,7 @@
 
 - [x] Rename the primary call-to-action to "Book a Call" in the header nav (desktop + mobile) and on /local.
 - [x] Keep the label consistent on every other page that used "Talk to Us" or "Book a Demo"; update the stored CTA naming rule.
-- [ ] Confirm the mobile menu drawer button renders "Book a Call".
+- [x] Confirm the mobile menu drawer button renders "Book a Call".
 
 # About page copy
 
