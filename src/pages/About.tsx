@@ -60,7 +60,7 @@ export default function About() {
                 Relay was built to give local teams reliable, transparent systems that actually work inside your daily operations - without the steep learning curves or technical burden.
               </p>
             </div>
-            <p className="mt-7 font-semibold text-foreground">— Zheng Qu, Founder &amp; Systems Architect</p>
+            <p className="mt-7 font-semibold text-foreground">Zheng Qu, Founder &amp; Software Architect</p>
           </div>
           <div className="lg:col-span-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 rounded-lg border border-primary/20 bg-primary/5 p-6 sm:p-8">
             <h2 className="text-2xl font-semibold text-foreground">Tired of overcomplicated tech? Let's cut noises, build a clean system that actually work for your business.</h2>
