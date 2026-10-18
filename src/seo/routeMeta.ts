@@ -18,7 +18,7 @@ export interface RouteMeta {
 export const routeMeta: RouteMeta[] = [
   {
     path: "/about",
-    title: "About Zheng Qu, Founder & Systems Architect | Relay",
+    title: "About | Relay",
     description:
       "Meet Zheng Qu, Relay's Austin-based founder. Enterprise software expertise tailored to local business owners across Central Texas.",
   },
