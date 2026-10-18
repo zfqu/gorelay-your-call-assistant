@@ -14,7 +14,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-background">
       <PageMeta
-        title="About Zheng Qu, Founder & Systems Architect"
+        title="About"
         description="Meet Zheng Qu, Relay's Austin-based founder. Enterprise software expertise tailored to local business owners across Central Texas."
         path="/about"
       />
