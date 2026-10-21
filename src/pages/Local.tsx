@@ -41,9 +41,9 @@ const Local = () => {
               For Local Service Businesses
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-              Win more customers — without
+              Win more booking jobs
               <br />
-              <span className="gradient-text">missing a single lead.</span>
+              <span className="gradient-text">without burning your marketing budget</span>
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
               Relay responds instantly to missed calls, website leads, and after-hours inquiries — so every lead hears back fast and you get the first shot at the booking.
