@@ -20,7 +20,7 @@ export function ProblemSection() {
     <section className="section-padding bg-muted/50">
       <div className="container-narrow mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-          Leads are lost in minutes
+          Jobs are lost in minutes
         </h2>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-4">
           Customers don't wait. If you miss a call and respond late, they move on to the next company.
